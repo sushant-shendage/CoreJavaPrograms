@@ -1,5 +1,5 @@
 
-//pgm Title:program to check given number is prime or not[approch5-m!]
+//pgm Title:program to check given number is prime or not[approch6-m!]
 //imported scanner file
 import java.util.Scanner;
 
