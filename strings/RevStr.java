@@ -1,6 +1,7 @@
 public class RevStr {
     public static void main(String[] args) {
         String str="acag";
+        // String str2=rev(str);
          
 
         if (str.equals(new StringBuffer(str).reverse().toString().toString())) {
@@ -42,5 +43,17 @@ public class RevStr {
 //         int num = 123;
 // String str = num + "";
 
+//converting String-digit to number-digit
+System.out.println(('0'-48));
+System.out.println(('1'-48));
+
+//converting  number to  string
+
+
+
+
+
+
     }
+
 }
