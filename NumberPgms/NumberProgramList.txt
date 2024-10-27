@@ -1,0 +1,15 @@
+A]number program
+   - extract digits from number
+   - program tocheck given year is leap year or not
+   - total digits in a number
+   - reverce digits in a given number
+   - palindrom number
+   - sum/product of digits in a number
+   - factorial of a given number❌
+
+   - factors of a given number❌
+   - prime factors of given number
+   - duck number❌
+
+   
+   

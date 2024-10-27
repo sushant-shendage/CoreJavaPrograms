@@ -1,3 +1,4 @@
+package javapgms.NumberPgms.popularNumPgm;
 class PrimeNumberApproch1
 {
     public static void main(String[] args) 

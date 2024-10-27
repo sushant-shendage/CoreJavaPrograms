@@ -1,3 +1,4 @@
+package javapgms.NumberPgms.popularNumPgm;
 //Title:prime number approch 2
 //(num/2) approch
 
