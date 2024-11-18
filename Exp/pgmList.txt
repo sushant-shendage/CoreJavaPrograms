@@ -1,0 +1,27 @@
+Here’s a list of basic programs on **String** and **Array** in Java:
+
+### **String Programs:**
+1. Reverse a string.
+2. Check if a string is a palindrome.
+3. Count the number of vowels in a string.
+4. Find the length of a string without using `length()` method.
+5. Convert a string to uppercase and lowercase.
+6. Check if a string is an anagram of another string.
+7. Find the first non-repeating character in a string.
+8. Remove all spaces from a string.
+9. Replace all occurrences of a character in a string.
+10. Find the character at a specific index in a string.
+
+### **Array Programs:**
+1. Find the largest element in an array.
+2. Find the smallest element in an array.
+3. Calculate the sum of all elements in an array.
+4. Reverse an array.
+5. Check if an array is a palindrome.
+6. Count the number of even and odd elements in an array.
+7. Merge two arrays.
+8. Find the second largest element in an array.
+9. Sort an array in ascending order.
+10. Remove duplicates from an array.
+
+These are some basic programs that you can practice to get more familiar with strings and arrays in Java.

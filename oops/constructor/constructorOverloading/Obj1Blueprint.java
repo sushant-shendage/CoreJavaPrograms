@@ -5,7 +5,7 @@ public class Obj1Blueprint {
     Obj1Blueprint() {
         System.out.println("DEFAULT constructor");
     }
-
+Thread 
     //constructor with single integer argument
     Obj1Blueprint(int a) {
         System.out.println("constructor with 1 argument (int)");
