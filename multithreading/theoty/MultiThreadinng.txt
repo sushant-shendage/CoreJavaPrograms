@@ -40,6 +40,7 @@
      ANS:-
          -We do constructor chaining in order to avoid duplicate code in constructors
  07) what is Encapsulation?
+ 08) difference between arrayulisy and vector?
 
 
 What is data inconsistency problem?
@@ -49,4 +50,5 @@ there might be chances of data consistance .To avoid this problem we go for Sync
 data consistency with analogy of biryani problem.
 Solution:giving one person chance at a time
 Solution:Executing one thread at a time insted of simulataniously
+
 
