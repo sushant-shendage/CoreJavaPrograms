@@ -42,7 +42,7 @@
  07) what is Encapsulation?
 
 
-What is datat inconsistency problem?
+What is data inconsistency problem?
 When multiple threads executing simulataniously on same java object 
 there might be chances of data consistance .To avoid this problem we go for Synchronisation.
 
