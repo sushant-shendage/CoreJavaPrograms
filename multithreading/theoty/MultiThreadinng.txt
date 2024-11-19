@@ -51,4 +51,9 @@ data consistency with analogy of biryani problem.
 Solution:giving one person chance at a time
 Solution:Executing one thread at a time insted of simulataniously
 
+1)vectors are thread safe:One thread execute at time 
+default size for vector=10  increses 100% in array list 50% increses
+
+project of seat booking(implement it[!])
+
 
