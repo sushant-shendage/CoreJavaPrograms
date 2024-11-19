@@ -41,3 +41,12 @@
          -We do constructor chaining in order to avoid duplicate code in constructors
  07) what is Encapsulation?
 
+
+What is datat inconsistency problem?
+When multiple threads executing simulataniously on same java object 
+there might be chances of data consistance .To avoid this problem we go for Synchronisation.
+
+data consistency with analogy of biryani problem.
+Solution:giving one person chance at a time
+Solution:Executing one thread at a time insted of simulataniously
+
