@@ -1,0 +1,43 @@
+-thread.sleep() is static method
+
+-when thread is waiting or sleeping thread then and then only we can disturb thread
+-by using interupt method we can disturb executing thread
+-when thread is inturepted ,exception occured and catched in catch block
+-it throws exception in presence of above states
+  -it behaves as normal program in absence above mentioned states
+
+-protottype is 'public void inturupt()'
+
+-when we get illigal thread exception
+-can we create our own exception?
+  -using throw
+  -difference between throw and throws 
+  [19/11/24]\\
+  ===============================================================================================\
+  Q::How and why intureup thread?
+  Q::When it get inturupt?
+     ans:when thread is in waiting or sleeping thread
+
+  ***HOW CAN WWEE INTURUPT A THREAD***
+  -To inturupt a thread java thread will class will provide inturupt method
+  -inturupt method will help us to disturb the executing thread
+  -it is anon-static method
+  -prototype:'public void inturupt()'
+  -If a thread are in waiting state are or sleeping state then only inturupt method will disturbs the thread
+  -If a threads are not going in eigther in waiting statte or sleeping state then inturupt method will wait till 
+   to thread will go to watinig state or sleeping state
+  -If threads are not at all going to waiting state or sleeping state then there is no impact of inturupt method 
+
+  ===============================================================================================/
+ [19/11/24]//
+ Questionns on string:
+ 01) String chararecters?
+ 02) why string are immutable?
+ 03) Why do we require OOPs concepts?
+ 04) what is object? Why we require object?
+ 05) What is constructor?
+ 06) What is constructor chaining?why we do constructor chaining?
+     ANS:-
+         -We do constructor chaining in order to avoid duplicate code in constructors
+ 07) what is Encapsulation?
+
