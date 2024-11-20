@@ -239,13 +239,13 @@ Here byte is keyword and datatype which specifies declaring variable data type w
 
 
 We have total 8 datypes in java and they are
-byte :This datatype is of primitive integral type,stores 1 byte data .will store value from[ -2^-7 to 2^7 (-1)]
+byte :This datatype is of primitive integral type,stores 1 byte data .will store value from[ -2^7 to 2^7 (-1)]
 
-short This datatype is of primitive integral type,stores 2 byte data .will store value from[ -2^-15 to 2^15 (-1)]
+short This datatype is of primitive integral type,stores 2 byte data .will store value from[ -2^15 to 2^15 (-1)]
 
-int :This datatype is of primitive integral type,stores 4 byte data .will store value from[ -2^-31to 2^31 (-1)]
+int :This datatype is of primitive integral type,stores 4 byte data .will store value from[ -2^31to 2^31 (-1)]
 
-long :This datatype is of primitive integral type,stores 8 byte data .will store value from[ -2^-63 to 2^63 (-1)]
+long :This datatype is of primitive integral type,stores 8 byte data .will store value from[ -2^63 to 2^63 (-1)]
 
 float :this datype will store floating point integral type with less number of presisions and of size 4 bytes.
 
