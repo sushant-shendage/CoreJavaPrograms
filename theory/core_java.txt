@@ -177,22 +177,71 @@ Use of logical and comparison operator will result in boolean value
 
 We have various type of operators in java 
 
-Operation based operator
+Operation based operator(use of each oerator mentioned in square bracket)
 -Arithmetic operator
--Compound assignment operator
+-Assignment operator 
+-Compound assignment operator 
 -Logical operator 
--Comparison operator 
+-relational operator 
+-conditional ioperator
 -Bitwise operator
+-increment /decriment operator
+-miscillanious operator
 
+
+-Assignment operator :
+  -binary operator used to assign/store value to a variable 
+  -LHS ,RHs must be variable and value respectively
+  -value type and variable type must be same if types are not same 
+  we have either widning happens or will throw compile time error
+-Arithmetic operator:
+  -binary operator used to perform mathiamatical operations like      
+  -[+,-,*,/,%]
+-Compound assignment operator:
+-Logical operator :used for logical desion making.
+  -used for desion making based on multiple conditions
+  -it may be uniary and binary operator
+-relational operator
+  -binary operator used to compare primitive values(operennds)
+  -[== >= <= > < !=]
+  -return type is boolean used for desion making
+  -we can use relational operatiors other than (>,<,<=,>=) this relational operatorsi.e with(==,!=)
+-conditional operator
+ - ternary operator used to for desion making
+  - Syntax()?(operend 1):(Operend 2);  (with explanation)
+  -reult type depends on operend 2 and operend 3
+  
+-Bitwise operator
+-increment /decriment operator:
+  -unary operator used to update variable value by one
+  -4 types unary operator
+    -preincriment operator:incrses value after use
+    -post incriment operator:increses value before use
+    -pre dicriment operator :decreses value after use
+    -post dicriment operator:decreses value before use
+-miscillanious operator
+[dot operator,onstanceOf(),new opeerator]
 
 Operand based operator
 -Unary
 -Binary
 -Ternery
 
-.
-Instances operator
-New operator
+
+-Unary:operator perform operation on sinle operand
+-Binary:operator perform operation on two operand
+-Ternery:operator perform operation 3 operand
+
+`````````````````````````````````````````````````````````````````````````````````````````
+Difference between = and == operator 
+ANS:
+A]used for:
+= assignment operator used to assign value to variable while == is comparision operator
+ used to compare two primitive type values
+
+`````````````````````````````````````````````````````````````````````````````````````````
+
+
 ________________________________________________________________________________
 Comments:
 -It is the information or note written by programer related to program inn order to understand program in better way.
@@ -310,17 +359,98 @@ Q1::Difference between local and global variables
 Ans:
 A]DECLARATION:
 local varables are declared in method block while global variable declared in class block
+
 B]ACCESSIBLITY OUT OF BLOCK:
-local variables can't be accessed out side block block while global varables can be access 
+local variables can't be accessed out side  block while global varables can be access 
 outside block using class or object name as refrence.
+
 c]ACCESSIBLITY OUT OF CLASS:
 local variables can't be used in other class while global variable can be used in other class
+
 D]DEFAULT VALUE:
 Befotre uew initilisation of local variable is compulsory but in case of global variable 
 it is not compulsory as they are initilised with default values implicitly if programer do not to initilise them.
+
+
+Q2::Difference between static and non-static variables
+Ans:
+A]Named as:
+static variables are also known as class variable or class member 
+while non-static variables are also known as instance variable 
+B]Acess
+we can access static variable using class name as efrence 
+while non-static variables can be accessed using object name as refrence 
+c] Use:
+we use static gloabal variables when we want do programing without using object
+while non-static global variables are used to do programing without using objects
 `````````````````````````````````````````````````````````````````````````````````````````````````````````
 ==================================================================
+Typecasting :
+A]primitive     (I.widning    II.narrowing  )
+B]non-primitive (I.upcasting  II.downcasting)
+
+Typecasting:
+process of converting one type of data into another type
+
+primitive Typecasting:
+-process of converting one type of primitive data into another primitive type
+-to do primitive typecasting literal type should be in primitive data type only
+
+non-primitive Typecasting:
+-process of converting one type ofnon- primitive data into another type of non-primitive 
+-to do non-primitive typecasting class shoiuld be in 'is a ' relation
+
+widning:
+-primitive typecasting in which datatype with less size converted into datype with large size
+-as widning do not leads to data loss it is done implicitly by compiler
+
+narrowing:
+-primitive typecasting in which datatype with larger size converted into datype with smaller size
+-as narrowing do leads to data loss it is done implicitly by compiler.Programer has to done it explicitly
+
+upcasting:
+-non-primitive typecasting in which dervied class type object is converted/upcasted to it's base class type
+-we do upcasting to achive generalisation
+-doing upcasing we can overide methods of base class
+-after doing upcasting through derived class we can use members of base class only
+
+downcasting:
+-non-primitive typecasting in which upcasted derived class type object converted back to it's orignal base class type
+ 
+-we do upcasting to achive generalisation
+-doing upcasing we can overide methods of base class
+-after doing upcasting through derived class we can use members of base class only
+
 ==================================================================
+Control flow statements :
+ - A]conditional statements
+      -if else -statements
+        -'if' statement
+        -'if-else' statement
+        -'if-elseif' ladder
+        -'if-elseif' ladder followed by else stement
+      -switch case -statements
+ - B]loop statements
+      -LOOPS
+        -while
+        -do while
+        -for
+        -for each
+        (each loop with flow and working)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Control flow statements :
+The statement used control the execution flo flow of program are known as control flow statements
+
+control flow statemnts are of two types anf they are ,
+A]conditional statements:
+B]loop statements:
+
+A]conditional statements:
+  -The control flow statements which are used for desicion making while execution of program are known as conditional statement.
+  
+B]loop statements:
+  -the control flow statement which are used for to do repetative task are known as loop statements
+
 ==================================================================
 ==================================================================
 ==================================================================
