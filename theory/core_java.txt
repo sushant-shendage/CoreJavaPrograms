@@ -3,7 +3,7 @@ Computer
  -S/w component
  -H/w components
 
-What is g Computer?
+What is Computer?
 Computer is an electronic device which is composed of software and hardware components. Primarily used to store, process and retrive data
 
 Examples of software components consist of 
@@ -231,7 +231,8 @@ D)interface
 E)enum
 ==================================================================
 Explain datatypes in java:
-Datatypes  are the keyword which are used to declare variable and it specifies which kind of Literals it will be stored,what will be its size and default value  and what will be it's range.
+Datatypes  are the keyword which are used to declare variable and it specifies which kind of Literals it will be stored,
+what will be its size and default value  .
 E.g: byte a ;
 
 Here byte is keyword and datatype which specifies declaring variable data type will of integer literal and it will store value within range -128 to 127
@@ -254,7 +255,8 @@ char :the char dattype stores charecteral literal type value 0 to 2^16,and of si
 boolean:size can't determine as it depend on code.stores boolean literal type of value()
 ==================================================================
 Variables in java:
-Variables are the container which stores value and is created with the help of datatyes.As java is statically typed language without specifying datypes of variable we can't declare variable.
+Variables are the container which stores value and is created with the help of datatyes.
+As java is statically typed language without specifying datypes of variable we can't declare variable.
 
 Variable declaration is the proceass of declaring variable along with it's datatype
 Syntax of variable declaration is ,
@@ -271,13 +273,52 @@ We certain rules to naming variables and that are ,
 3)should not consist of blank spaces
 4)keyword can't be used as an identifier
 
-Also we have certain rules to declare variable and that are,
--we can't have multiple variable of same in same blck 
+In java variables are mainly classifeied into two types and that are ,
+A]Local variables 
+B]Global variables
+
+A]local varables :
+Varables declared in any method block are known as local varable of that block and can't be acces out of that block .
+I.e local variable's scope is limited to block only in which they are declared.
+
+In have certain rules for declaring local variables and that are,
+-we can't have multiple variable of same in same block 
 -but can have multiple variable of same name in different blocks 
--scope of variable local to block in which is it is declared 
+-scope of local variable  is limited to block in which  they are decclared
+-we can't use local variable without initilisation .I.e before using variables in 
+instruction the must be initilised with some value explicitly
+
+B]Global varables :
+Varibles declared in class block not in method block are known as global varables.
+They can be accessed within class anywhere.
+
+Global variables are further classified into two sub-types and taht are,
+a]static variables 
+b]non static variables 
+
+a]static variables :
+The global varables which are prefixed with 'static'  keyword (which work as non-access modifier) are known as static variables.
+static variables are also known as class variables.
 
 
+b]non-static variables :
+The global varables which are not prefixed with 'static' keyword are known as non-satic variables.
+Non-static variables are also known as 'Instance variables'.
 
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Q1::Difference between local and global variables
+Ans:
+A]DECLARATION:
+local varables are declared in method block while global variable declared in class block
+B]ACCESSIBLITY OUT OF BLOCK:
+local variables can't be accessed out side block block while global varables can be access 
+outside block using class or object name as refrence.
+c]ACCESSIBLITY OUT OF CLASS:
+local variables can't be used in other class while global variable can be used in other class
+D]DEFAULT VALUE:
+Befotre uew initilisation of local variable is compulsory but in case of global variable 
+it is not compulsory as they are initilised with default values implicitly if programer do not to initilise them.
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
 ==================================================================
 ==================================================================
 ==================================================================
