@@ -1,459 +1,168 @@
-==================================================================
-Computer
- -S/w component
- -H/w components
 
-What is Computer?
-Computer is an electronic device which is composed of software and hardware components. Primarily used to store, process and retrive data
-
-Examples of software components consist of 
-Os,VM,device drivers,firmwares,programing softwares, middlewares
-Examples of hardware components consist of
-Processing units, input device,output device
-
-==================================================================
-What are hardware ?
-Set of electronic components on which applications runs are known as hardware
-E.g::CPU,GPU,SSD,HDD
-==================================================================
-what is software?
-Set of programs which works in co-ordination with each other to perform a specific task In order to solve real world problem are together known as software
-E.g:power point presentation,excel,Pubg etc
-==================================================================
-Programing language:
-
-Language :
-Language is medium of communication 
-
-Programing language:
-Programing languagea are the languages used to communicate with Computer 
-
-Technically we can say that,
-The languages by using which we command or provide instructions to the computer in order to perform task from computer is known as Programing language
-________________________________________________________________________________
-Types of Programing languages:
-LLL:
-LLL are also known as machine level languages.
-
-The Programing languages which are directly understandable to computer are known as LLL
-
-MLL:
-The Programing languages which consist of predefined code words which are understandable to computer through inyernideate code
-
-
-HLL:
-The language close to human language and easily understandable and instructible by programer to computer is known as High Level Language.
-E.g:c++,Java,python,perl,Scala,ruby,php,kotlin,c#
- 
-==================================================================
-About Java Language:
-
--Java is a high-level, object-oriented programming language.
-
--It was developed by James Gosling and his team at Sun Microsystems in 1995. It was initially called Green Talk and later renamed Java. The purpose of its creation was to develop a language suitable for embedded systems and to address the limitations of C and C++ languages.
-
--Java is popular for its features like platform independence (thanks to the Java Virtual Machine) and built-in support for multithreading.
-
--It is a statically typed and strongly coupled language.
-
--Its standardized support for exception handling makes it a robust language.
-
-==================================================================
-History  of java:
-It was developed by James Gosling and his team at Sun Microsystems in 1995. It was initially called Green Talk and later renamed Java. The purpose of its creation was to develop a language suitable for embedded systems and to address the limitations of C and C++ languages.
-
--It's first version was released in 1996
--in 2010 Java was owned by oracal
--stable version of java language was jdk 1.8 which was released in 2014
--Latest version is java 21 released in 2023
-==================================================================
-Platform:.
-The combination of s/w and h/w component on which computer software runs is known as platform
-
-Platform dependent softwares:
-The softwares which run on only that type of platform on which they made I.e native type of platform are known as platform dependent softwares
-E.g:software made using cand c++ 
-
-Platform independent softwares:
-The softwares which run on any  type of platform irrespective of platform on which they made  are known as platform independent softwares
-E.g:software made using java 
-==================================================================
-Why s/w made using c and c++  are platform dependent and java are platform independent?
-When we write code in c++,save with .cpp extension.Afyer successfully compilation of code native code is generated.Native code is the kanguage code which will execute only platform type on which they made.
-Due to this s/w made using c and c++ are platform dependent
-
-In contrast 
-When we write code java save it with .java extention.After csuccessfull compilation of code will generate class file also known as byte code
-
-This byte code is nighters understandable to programer as well as computer.
-But this byte code can be converted into corresponding native machine code using JVM
-
-JVM is Java Virtual Machine is a interpreter ,is a platform dependent s/w
-
-Due to this java code cam run on any platform irrespective of platform on which it is made
-
-Eventually this results in achieving platform independency
-
-So .software made using java are platform dependent
-==================================================================
-Explain jdk architecture :
-
-Jdk architecture consist of JDK ,JREand jvm
-
-JDK:
-JDk stands for 'Java Development Kit' is a package given oracal community.It is used to develop as well run java application.it internally consist of JRE and JVM
-Technically we can define it as 
-JRE along with development tool is termed as JDK.
-
-JRE:
-JRE stands for Java Runtime Environment. It is used to run java applications .
-It internally consist of JVM
-Technically we can define it as ,
-JVM along with built in Libraries termed as JRE
-
-JVM
-JVM stand for Java Virtual Machine .
-It is an interpreter of java language which converts byte code which can be  generated by any platform  into corresponding platforms machine code ,which will lead to achive platform independency feature.
-
-Summery
-Jdk=JRE+Development tools(used to devlop an run java applications)
-Jre=jvm+built in Libraries(used to run hava applications)
-Jvm=java interpreter used to achive platform independency(used to convert byte code to corresponding platform's native machine code)
-
-==================================================================
-Explain structure of java language
--Package name
--import statements
--class block
- -method blocks
-    -each method consist of set of instruction
-
-Execution of class starts from main method, all other methods are directly or indirectly called by main method,and execution ends at main method
-
-==================================================================
-Tokens in java:
-Tokens are the building blocks of programing language .They are smallest Unit of language used to build instructions
-
-We several Tokens of java and they are
--keywords
--identifiers
--separator
--operator
--comment
--literals
-________________________________________________________________________________
-Keywords:keywords are reserve words.these are compiler aware words whoes meaning already known to compiler used to build instruction.
--Programer can't alter keywords
--Always in lowercase
--We can't use them as identifier
--java language has 51+ keywords (!!!)
--Eg::static,public,private,int,long,short,byte,float,for ,continue,break
-________________________________________________________________________________
-Identifiers:
-Identifiers in java are nothing but names given to java members such as method,variable,interface and class
--we follow pascalse concention for class and interface Identifiers while for variable and method identifier we follow camalcase convention
--we have certain rules to for creating Identifiers and that are
-  1)Identifiers should not start with digits
-  2)Identifiers should not consist of special charecters except _ and $
-  3)it should not consist of blank spaces
-  4)keywords can't  be used as an identifier
-________________________________________________________________________________
-Separators in java:
-Special charecters used to define and organise java program.they are used to separate block of related statement and defines the scope of variable,separate multiple variables,and ±p0pacess java members
-E.g:
-{}
-Will represent block of related statement
-
-And the scope of variable declared inside block is limited to that block inly
-
-E.g:braces,parenthesis,round bracket,square bracket,comma,semicolon,
-________________________________________________________________________________
-Operators :
-These are special symbols which perform operations on operand (values) to get final result.
-The final result is dependent on type of Porbandar used
-
-For exaplme:Use of arithmetic operators will result interger or float value
-Use of logical and comparison operator will result in boolean value
-
-We have various type of operators in java 
-
-Operation based operator(use of each oerator mentioned in square bracket)
--Arithmetic operator
--Assignment operator 
--Compound assignment operator 
--Logical operator 
--relational operator 
--conditional ioperator
--Bitwise operator
--increment /decriment operator
--miscillanious operator
-
-
--Assignment operator :
-  -binary operator used to assign/store value to a variable 
-  -LHS ,RHs must be variable and value respectively
-  -value type and variable type must be same if types are not same 
-  we have either widning happens or will throw compile time error
--Arithmetic operator:
-  -binary operator used to perform mathiamatical operations like      
-  -[+,-,*,/,%]
--Compound assignment operator:
--Logical operator :used for logical desion making.
-  -used for desion making based on multiple conditions
-  -it may be uniary and binary operator
--relational operator
-  -binary operator used to compare primitive values(operennds)
-  -[== >= <= > < !=]
-  -return type is boolean used for desion making
-  -we can use relational operatiors other than (>,<,<=,>=) this relational operatorsi.e with(==,!=)
--conditional operator
- - ternary operator used to for desion making
-  - Syntax()?(operend 1):(Operend 2);  (with explanation)
-  -reult type depends on operend 2 and operend 3
-  
--Bitwise operator
--increment /decriment operator:
-  -unary operator used to update variable value by one
-  -4 types unary operator
-    -preincriment operator:incrses value after use
-    -post incriment operator:increses value before use
-    -pre dicriment operator :decreses value after use
-    -post dicriment operator:decreses value before use
--miscillanious operator
-[dot operator,onstanceOf(),new opeerator]
-
-Operand based operator
--Unary
--Binary
--Ternery
-
-
--Unary:operator perform operation on sinle operand
--Binary:operator perform operation on two operand
--Ternery:operator perform operation 3 operand
-
-`````````````````````````````````````````````````````````````````````````````````````````
-Difference between = and == operator 
-ANS:
-A]used for:
-= assignment operator used to assign value to variable while == is comparision operator
- used to compare two primitive type values
-
-`````````````````````````````````````````````````````````````````````````````````````````
-
-
-________________________________________________________________________________
-Comments:
--It is the information or note written by programer related to program inn order to understand program in better way.
--Comments are ignored during execution
--there are 2 types of comments
-  -single line comment
-  -multi line comments
-      -official
-      -unofficial
-________________________________________________________________________________
-Literals in java:
-Literals are nothing but kinds of data we are going to deal while Programing in java.
-
-In java Literals are of two types
-A)primitive Literals
-   Primitive Literals are the single value Literals. This Literals are further classified into 2 types
-     A.a1)numerical primitive Literals 
-             This Literals deal with number format values.Again this Literals are classified in two types and they are
-              A.a1.a11)integer literals:numerical Literals without point values
-              A.a1.a12)floating point  literals:numerical Literals with point values
-     A.a2)non-numerical literals
-             Charecter Literals, all charecters on keyboard are comes under chrecter Literals.Again this Literals is divided into 3 types and that types are
-            A.a2.a21)Alphabets:these literal consist of English alphabets from a-z 
-They are aging divided in to three types and that types are
-                             A.a2.a21.1)uppercase charecter
-                             A.a2.a21.1)lowercase charecter
-             A.a2.a22) digits:there total 10 digits from 0-9
-             A.a2.a23) special charecters:charecters other than digits and alphabets  
-B)Non primitive literals
-    These are multiple valued a Literals.
-Different non-primitive Literals are
-A)class
-B)strings
-C)array
-D)interface
-E)enum
-==================================================================
-Explain datatypes in java:
-Datatypes  are the keyword which are used to declare variable and it specifies which kind of Literals it will be stored,
-what will be its size and default value  .
-E.g: byte a ;
-
-Here byte is keyword and datatype which specifies declaring variable data type will of integer literal and it will store value within range -128 to 127
-
-
-We have total 8 datypes in java and they are
-byte :This datatype is of primitive integral type,stores 1 byte data .will store value from[ -2^7 to 2^7 (-1)]
-
-short This datatype is of primitive integral type,stores 2 byte data .will store value from[ -2^15 to 2^15 (-1)]
-
-int :This datatype is of primitive integral type,stores 4 byte data .will store value from[ -2^31to 2^31 (-1)]
-
-long :This datatype is of primitive integral type,stores 8 byte data .will store value from[ -2^63 to 2^63 (-1)]
-
-float :this datype will store floating point integral type with less number of presisions and of size 4 bytes.
-
-double :float :this datype will store floating ppint integral type with more number of presisions and of size 8 bytes
-
-char :the char dattype stores charecteral literal type value 0 to 2^16,and of size 2 byte
-boolean:size can't determine as it depend on code.stores boolean literal type of value()
-==================================================================
-Variables in java:
-Variables are the container which stores value and is created with the help of datatyes.
-As java is statically typed language without specifying datypes of variable we can't declare variable.
-
-Variable declaration is the proceass of declaring variable along with it's datatype
-Syntax of variable declaration is ,
-<datype-keword>  <variable-identifier>;
-
-Variable initilisation the process of assigning value to declared variable
-When we declare ad initilize variable simultaneously then we call it as variable declaration and initilisation
-
-We can reassign value to declared variable an this process is known as reinitilization
-
-We certain rules to naming variables and that are ,
-1)variable name should not  start with number 
-2) it should nt consist of special charecters other than $ and _
-3)should not consist of blank spaces
-4)keyword can't be used as an identifier
-
-In java variables are mainly classifeied into two types and that are ,
-A]Local variables 
-B]Global variables
-
-A]local varables :
-Varables declared in any method block are known as local varable of that block and can't be acces out of that block .
-I.e local variable's scope is limited to block only in which they are declared.
-
-In have certain rules for declaring local variables and that are,
--we can't have multiple variable of same in same block 
--but can have multiple variable of same name in different blocks 
--scope of local variable  is limited to block in which  they are decclared
--we can't use local variable without initilisation .I.e before using variables in 
-instruction the must be initilised with some value explicitly
-
-B]Global varables :
-Varibles declared in class block not in method block are known as global varables.
-They can be accessed within class anywhere.
-
-Global variables are further classified into two sub-types and taht are,
-a]static variables 
-b]non static variables 
-
-a]static variables :
-The global varables which are prefixed with 'static'  keyword (which work as non-access modifier) are known as static variables.
-static variables are also known as class variables.
-
-
-b]non-static variables :
-The global varables which are not prefixed with 'static' keyword are known as non-satic variables.
-Non-static variables are also known as 'Instance variables'.
-
-`````````````````````````````````````````````````````````````````````````````````````````````````````````
-Q1::Difference between local and global variables
-Ans:
-A]DECLARATION:
-local varables are declared in method block while global variable declared in class block
-
-B]ACCESSIBLITY OUT OF BLOCK:
-local variables can't be accessed out side  block while global varables can be access 
-outside block using class or object name as refrence.
-
-c]ACCESSIBLITY OUT OF CLASS:
-local variables can't be used in other class while global variable can be used in other class
-
-D]DEFAULT VALUE:
-Befotre uew initilisation of local variable is compulsory but in case of global variable 
-it is not compulsory as they are initilised with default values implicitly if programer do not to initilise them.
-
-
-Q2::Difference between static and non-static variables
-Ans:
-A]Named as:
-static variables are also known as class variable or class member 
-while non-static variables are also known as instance variable 
-B]Acess
-we can access static variable using class name as efrence 
-while non-static variables can be accessed using object name as refrence 
-c] Use:
-we use static gloabal variables when we want do programing without using object
-while non-static global variables are used to do programing without using objects
-`````````````````````````````````````````````````````````````````````````````````````````````````````````
-==================================================================
-Typecasting :
-A]primitive     (I.widning    II.narrowing  )
-B]non-primitive (I.upcasting  II.downcasting)
-
-Typecasting:
-process of converting one type of data into another type
-
-primitive Typecasting:
--process of converting one type of primitive data into another primitive type
--to do primitive typecasting literal type should be in primitive data type only
-
-non-primitive Typecasting:
--process of converting one type ofnon- primitive data into another type of non-primitive 
--to do non-primitive typecasting class shoiuld be in 'is a ' relation
-
-widning:
--primitive typecasting in which datatype with less size converted into datype with large size
--as widning do not leads to data loss it is done implicitly by compiler
-
-narrowing:
--primitive typecasting in which datatype with larger size converted into datype with smaller size
--as narrowing do leads to data loss it is done implicitly by compiler.Programer has to done it explicitly
-
-upcasting:
--non-primitive typecasting in which dervied class type object is converted/upcasted to it's base class type
--we do upcasting to achive generalisation
--doing upcasing we can overide methods of base class
--after doing upcasting through derived class we can use members of base class only
-
-downcasting:
--non-primitive typecasting in which upcasted derived class type object converted back to it's orignal base class type
- 
--we do upcasting to achive generalisation
--doing upcasing we can overide methods of base class
--after doing upcasting through derived class we can use members of base class only
-
-==================================================================
-Control flow statements :
- - A]conditional statements
-      -if else -statements
-        -'if' statement
-        -'if-else' statement
-        -'if-elseif' ladder
-        -'if-elseif' ladder followed by else stement
-      -switch case -statements
- - B]loop statements
-      -LOOPS
-        -while
-        -do while
-        -for
-        -for each
-        (each loop with flow and working)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Control flow statements :
-The statement used control the execution flo flow of program are known as control flow statements
-
-control flow statemnts are of two types anf they are ,
-A]conditional statements:
-B]loop statements:
-
-A]conditional statements:
-  -The control flow statements which are used for desicion making while execution of program are known as conditional statement.
-  
-B]loop statements:
-  -the control flow statement which are used for to do repetative task are known as loop statements
-
-==================================================================
-==================================================================
-==================================================================
-==================================================================
-==================================================================
-==================================================================
+-------------------------------------------------------------------------------------------------------------|
+✅️✅️what is computer?
+✅️✅️s/w ,h/w & h/w components 
+✅️✅️language and programming language
+✅️✅️levels of programing language
+✅️✅️history of java
+✅️✅️about java[⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️platform and types of platform based on platform
+✅️✅️why s/w made using c,c++ are platform dependent?
+✅️✅️Why s/w made using  java are platform independent?[⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️JDK vs JRE vs JVM [jdk architecture][⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️structure of java program 
+✅️✅️literals in java
+✅️✅️tokens in java
+✅️✅️conventions in java
+✅️✅️Ascii value of chars
+✅️✅️datatypes-primitive datatypes in detail
+✅️✅️variable ,variable classification and rules of local variables
+✅️✅️refrence variable  vs object refrence variable
+✅️✅️scope of vaiable in java
+✅️✅️operator and types of operators in java
+✅️✅️typecasting in java-primitive typecasting
+✅️✅️conditional operator
+✅️✅️operator precedence
+✅️✅️reading data dynamically from user
+✅️✅️control flow statements
+✅️✅️when we use loop and nested loops
+✅️✅️continue vs break statement
+✅️✅️2 ways to break loop
+✅️✅️faster alternative for loop statement 
+✅️✅️recursion vs loop
+✅️✅️explain methods(method,returntype,code modularity and advantages,syntax,charecteristics,3 types)
+✅️✅️rerurn statement
+
+✅️✅️ methods and recursion[⭐⭐⭐⭐⭐⭐⭐]
+
+❌❌ byte cycle
+-------------------------------------------------------------------------------------------------------------|
+✅️✅️methos binding process  [⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️class loading process   [⭐⭐⭐⭐⭐⭐⭐] (?)
+-------------------------------------------------------------------------------------------------------------|
+✅️✅️mis.s operators(. operator,new operator,instanceof())
+✅️✅️multiple class file creation and creation rules
+✅️✅️static and non static members
+✅️✅️object loading process[⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️explain constructors in java
+✅️✅️explain constructor{overloading and chaining} AND method {overloading and chaining}
+✅️✅️packages in javaclass in java
+✅️✅️relationship and it's types
+✅️✅️oops and objects
+✅️✅️instance variables
+✅️✅️instanciation
+✅️✅️ How objects are created?
+✅️✅️explain encapsulation[⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️generalisatoion vs sepcialiation
+✅️✅️types of inheritancediamond problem and ambiguties[⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️super() statement
+✅️✅️super () vs this()|super vs this|super vs super()|this vs this()
+✅️✅️non-primitive typecasting[upcasting and downcasting|method overiding with explaination]
+✅️✅️variable and method shadowing
+✅️✅️Abstraction[⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️Abstraction[⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️Abstraction vs inheritance [⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️Polymorphism  [⭐⭐⭐⭐⭐⭐⭐]
+
+✅️✅️abstarct methid,absratct class,concrete method ,concerete class
+✅️✅️object class and its 11 non-static methods with use
+✅️✅️overriding toString (),equal() and hashcode() methods
+✅️✅️handshake property between equal() and hashcode() method
+✅️✅️explain interface
+✅️✅️explain multiple inheritance using interface[⭐⭐⭐⭐⭐⭐⭐]
+-------------------------------------------------------------------------------------------------------------|
+✅️✅️explain exception concept in java(exception|exception handling|exception flow |exception hirarchy
+     |exception object propogation|finally block||||)[⭐⭐⭐⭐⭐⭐⭐]
+.... Different ways to handle exception
+      - using try-catch block
+      - using Throws keyword
+....  custom exceptions
+      - what
+      - Why we use it
+
+
+-------------------------------------------------------------------------------------------------------------|
+✅️✅️wrapper class(boxing,unboxing,auto boxing ,auto unboxing)
+-------------------------------------------------------------------------------------------------------------|
+✅️✅️modifiers (acess /member )[⭐⭐⭐⭐⭐⭐⭐]
+✅️✅️final modifiers[⭐⭐⭐⭐⭐]
+-------------------------------------------------------------------------------------------------------------|
+✅️✅️array
+✅️✅️string -string creation using String|Builder|Buffer class
+✅️✅️string mutability and how to make string mutable
+✅️✅️diiference between String buffer and builder
+-------------------------------------------------------------------------------------------------------------|
+Collection theory ::
+
+✅️✅️Collection interface
+✅️✅️Collection framework
+
+
+✅️✅️hirarchies in Collection framework 
+✅️✅️Collection hirarchy
+✅️✅️list interface
+✅️✅️array list
+✅️✅️Set,hasset,treeset
+✅️✅️queue,priority queue
+
+
+✅️✅️map hirarchy
+✅️✅️map,hash map,
+
+
+✅️✅️Collections class,Collection .sort
+✅️✅️Iterator vs list iterator
+✅️✅️Java generics
+❌❌comparable interface
+❌❌comparator interface
+❌❌comparable vs Comparator interface
+-------------------------------------------------------------------------------------------------------------|
+- Multithreading in java:
+  - Concurrency Vs Parallalism(though mutithreading achived)
+  - What is multitasking?
+  - Telll me about thread sheduler
+  - Explain types of multitasking.
+      - process based 
+       - thread based=multithreading[⭐⭐⭐]
+  - Applications where multithreading is used.
+  - Explain How multithreading achived in java.[⭐⭐⭐]
+  - Explain two ways of achiving mutithrading in java.[⭐⭐⭐]
+  - Explain thread class and various method in thread class.[10/15]
+  - Explain attributes of thread classs.
+  - Thread class methods with theory
+     - getName()
+     - setName()
+     - getPriority()
+     - setPriority()
+  - Thread life cycle[⭐⭐⭐]
+
+      ref:
+      ~to understand the concept of multithrading lern OS sub in CSE
+-------------------------------------------------------------------------------------------------------------|
+Hirarchies
+  -Throwable-H
+     -Ecception-H1  (comple-time and run-time)
+     -errors-H2    
+  -collection-h 
+     -Collection-H1 
+     -Map-H2  
+-------------------------------------------------------------------------------------------------------------|
+ Package-Interface-Methods
+  -java.lang[p1]
+    - collection/list
+    - collection/set
+    - collection/queue
+-------------------------------------------------------------------------------------------------------------|
+ Exceptions
+  -ArrayIndexOutOfBound
+  -InputMismatchException
+  -ClassCastException
+  -ClassNotFoundException
+  -IllegalArgumentException(invalid input which lead to not fullfillment of requirement  ||ex:give age in negative  value is as per datatype and range but not as per requirement)
+
+
+  (?)Which exception occurs when we give non-supprting range value to a variable
+ Errors
+  -incompatiblie type
+  -possible lossy conversion
+-------------------------------------------------------------------------------------------------------------|
