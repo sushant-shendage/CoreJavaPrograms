@@ -3,6 +3,7 @@ public class Driver1{
         Driver1.NestedClass1 ob1=new NestedClass1();
         Driver1.NestedNonStaticClass1 ob2=(new Driver1()).new NestedNonStaticClass1();
 
+         
     }
 
     
