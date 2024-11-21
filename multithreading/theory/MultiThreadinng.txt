@@ -1,66 +1,128 @@
--thread.sleep() is static method
+-thread. Sleep() is static method
 
 -when thread is waiting or sleeping thread then and then only we can disturb thread
--by using interupt method we can disturb executing thread
--when thread is inturepted ,exception occured and catched in catch block
+-by using interrupt method we can disturb executing thread
+-when thread is interrupted ,exception occurred and catches in catch block
 -it throws exception in presence of above states
   -it behaves as normal program in absence above mentioned states
 
--protottype is 'public void inturupt()'
+-prototype is 'public void inturupt()'
 
--when we get illigal thread exception
+-when we get illegal thread exception
 -can we create our own exception?
   -using throw
   -difference between throw and throws 
   [19/11/24]\\
   ===============================================================================================\
-  Q::How and why intureup thread?
-  Q::When it get inturupt?
-     ans:when thread is in waiting or sleeping thread
+  Q::How and why interrupt thread?
+  Q::When it get interrupt?
+     Ans: when thread is in waiting or sleeping thread
 
   ***HOW WE CAN INTURUPT A THREAD***
-  -To inturupt a thread java thread will class will provide inturupt method
-  -inturupt method will help us to disturb the executing thread
+  -To interrupt a thread java thread will class will provide interrupt method
+  -interrupt method will help us to disturb the executing thread
   -it is anon-static method
-  -prototype:'public void inturupt()'
-  -If a thread are in waiting state are or sleeping state then only inturupt method will disturbs the thread
-  -If a threads are not going in eigther in waiting statte or sleeping state then inturupt method will wait till 
-   to thread will go to watinig state or sleeping state
-  -If threads are not at all going to waiting state or sleeping state then there is no impact of inturupt method 
+  -prototype: 'public void interrupt()'
+  -If a thread are in waiting state are or sleeping state then only interrupt method will disturbs the thread
+  -If a threads are not going in eighter in waiting state or sleeping state then interrupt method will wait till 
+   to thread will go to waiting state or sleeping state
+  -If threads are not at all going to waiting state or sleeping state then there is no impact of interrupt method 
 
   ===============================================================================================/
  [19/11/24]//
- Questionns on string:
- 01) String chararecters?
+ Questions on string:
+ 01) String characters?
  02) why string are immutable?
  03) Why do we require OOPs concepts?
  04) what is object? Why we require object?
  05) What is constructor?
- 06) What is constructor chaining?why we do constructor chaining?
+ 06) What is constructor chaining? Why we do constructor chaining?
      ANS:-
          -We do constructor chaining in order to avoid duplicate code in constructors
  07) what is Encapsulation?
- 08) difference between arrayulisy and vector?
+ 08) difference between arraylist and vector?
 
 
 What is data inconsistency problem?[!][program to demonstrate data inconsistency problem]
-When multiple threads executing simulataniously on same java object 
-there might be chances of data consistance .To avoid this problem we go for Synchronisation.
+When multiple threads executing simultaneously on same java object 
+there might be chances of data consistence .To avoid this problem we go for Synchronization.
 
 data consistency with analogy of biryani problem.
-Solution:giving one person chance at a time
-Solution:Executing one thread at a time insted of simulataniously
+Solution: giving one person chance at a time
+Solution: Executing one thread at a time instead of simultaneously
 
-1)vectors are thread safe:One thread execute at time 
-default size for vector=10  increses 100% in array list 50% increses
+1)vectors are thread safe: One thread execute at time 
+default size for vector=10  increases 100% in array list 50% increases
 
 project of seat booking(implement it[!])
 
+
+limitation of synchronization:
+Time consuming as one thread is allowed to execute at a time
 [21/11/24]\\
-  ===============================================================================================\
+===============================================================================================\
   ***SYNCHRONISATION***
   TOPIC LEFT...
    -FILE HANDLING
-  -JAVA 1.8
-  ===============================================================================================/
+   -JAVA 1.8
+
+***Data inconsistency problem***:
+  -when multiple threads are executing simultaneously on the same java object 
+   then there may be chances of data inconsistency problem
+  -diagram[!] showing object represented by circle of which let semi circle is set of non -synchronized method other right will part-synchronized
+  -to overcome data inconsistency problem we go for synchronization .
+
+***Synchronization*** :
+  -To achieve synchronization java will provide 'Synchronized' keyword
+  -Synchronization is the process by which we are going to control 
+    accessibility of multiple threads to a particular resource object.
+  -'Synchronized' is a modifier ,it is applicable only for 'methods'(for both static and non-static method) and 'blocks'
+  -we can't use synchronized keyword for classes and variables
+  -The main advantage of synchronization is we can overcome data inconsistency problem
+  -The main disadvantage of synchronization is it will increase waiting period of other threads so that it affect the performance
+
+{NOT RECOMMANDED TO ANSWER IN INTERVIEW}
+TYPES OF SYNCHRONIZATION :
+A] process synchronization
+B] thread synchronization
+   -a)Mutual  exclusion(synchronized block)(static synchronized method)
+   -b)cooperation(inter thread communication)
+      -wait and notify overloaded methods in object class
+      -itc=threads communicating is each other using object class methods mentioned above
+{
+WAHT IS DEADLOCK?
+WHAT ARE DEOMON THREADS?
+}
+
+***object level lock***:
+-Whenever we are using synchronized concept automatically lock concept will come into picture 
+  because synchronization is internally implemented by 'lock' concept
+-In java each and every object is having it's own unique lock
+-If any thread wants to execute synchronized  method then that thread should have object level lock 
+  then it will execute synchronized method of the same object 
+-If thread is having object level lock all synchronized method of the same object will be executed alone by that thread one by one
+-if one thread having lock then all other threads are not allowed to execute synchronized method simultaneously
+-Acquiring and releasing the lock is responsible by jvm or thread scheduler but as a programmer we are not responsible for that. 
+-When one thread is executing synchronized method other threads are allowed to execute non--Synchronized method simultaneously
+
+***class level lock***:(replace object with class in above points)
+
+***Synchronized block***:
+-Because of very few lines of code if we are getting the data inconsistency  problem then
+  instead of making whole method as a synchronized we will write those statement inside a synchronized block
+-the block which is prefixed with synchronized keyword is known as synchronized block 
+-Synchronized(this){...}  or Synchronized(object reference){...}
+
+
+Questions:
+Q:What is method overloading?(in absence of method overloading what is problem? How it is resolved by method overloading?)Advantage?
+Q:constructor overloading
+Q:What is inhritance ?Advantage ?
+Q:Explain diamond problem
+Q:difference between method overloading and method overriding.
+===============================================================================================/
  [21/11/24]//
+
+{
+vectors are synchronized while arraylist is not
+}
