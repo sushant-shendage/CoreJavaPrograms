@@ -18,7 +18,7 @@
   Q::When it get inturupt?
      ans:when thread is in waiting or sleeping thread
 
-  ***HOW CAN WWEE INTURUPT A THREAD***
+  ***HOW WE CAN INTURUPT A THREAD***
   -To inturupt a thread java thread will class will provide inturupt method
   -inturupt method will help us to disturb the executing thread
   -it is anon-static method
@@ -43,7 +43,7 @@
  08) difference between arrayulisy and vector?
 
 
-What is data inconsistency problem?
+What is data inconsistency problem?[!][program to demonstrate data inconsistency problem]
 When multiple threads executing simulataniously on same java object 
 there might be chances of data consistance .To avoid this problem we go for Synchronisation.
 
@@ -59,8 +59,8 @@ project of seat booking(implement it[!])
 [21/11/24]\\
   ===============================================================================================\
   ***SYNCHRONISATION***
-
-  FILE HANDLING
-  JAVA 1.8
+  TOPIC LEFT...
+   -FILE HANDLING
+  -JAVA 1.8
   ===============================================================================================/
  [21/11/24]//
