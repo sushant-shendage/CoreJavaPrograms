@@ -126,3 +126,18 @@ Q:difference between method overloading and method overriding.
 {
 vectors are synchronized while arraylist is not
 }
+
+
+
+
+ [21/11/24]\\
+===============================================================================================\
+{
+  -using synchonized block we can reduce waiting period of threads 
+  -instead of making whole method we can make specific set of statement/instruction(responsible for data inconsistency) 
+    synchronized using synchronized block which will lead to reduce waiting period of thread
+    Q:DIFFERENCE BETWEEN SYNCHRONIZED BLOCK AND SYNCHRONIZED METHOD
+}
+
+===============================================================================================/
+ [21/11/24]//
