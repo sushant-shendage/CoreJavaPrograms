@@ -10,14 +10,6 @@ public class Driver1 {
         MyThread t2=new MyThread();
         t2.seat=(int)(Math.random()*100%10);
         t2.start();
-
-        
-
-         
- 
-        
-        
-        
     }
     
 }
