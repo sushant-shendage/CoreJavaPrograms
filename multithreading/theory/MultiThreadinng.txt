@@ -115,11 +115,11 @@ WHAT ARE DEOMON THREADS?
 
 
 Questions:
-Q:What is method overloading?(in absence of method overloading what is problem? How it is resolved by method overloading?)Advantage?
-Q:constructor overloading
-Q:What is inhritance ?Advantage ?
-Q:Explain diamond problem
-Q:difference between method overloading and method overriding.
+Q: What is method overloading?(in absence of method overloading what is problem? How it is resolved by method overloading?)Advantage?
+Q: Constructor overloading
+Q: What is inheritance ?Advantage ?
+Q: Explain diamond problem
+Q: Difference between method overloading and method overriding.
 ===============================================================================================/
  [21/11/24]//
 
@@ -133,11 +133,22 @@ vectors are synchronized while arraylist is not
  [21/11/24]\\
 ===============================================================================================\
 {
-  -using synchonized block we can reduce waiting period of threads 
+  -using synchronized block we can reduce waiting period of threads 
   -instead of making whole method we can make specific set of statement/instruction(responsible for data inconsistency) 
     synchronized using synchronized block which will lead to reduce waiting period of thread
     Q:DIFFERENCE BETWEEN SYNCHRONIZED BLOCK AND SYNCHRONIZED METHOD
+ -[!]program to demonstrate above statements
+ -there is no specific order for modifiers in java
+ -to make common variable for all object we make it as static variable
 }
 
+-the main advantage of synchronized block is ,it help us to reduce the waiting period of thread to improve the performance.
+
+***STATIC SYNCHRONIZED METHOD***
+-in java each and every class having there own lock
+-if any threads wants to execute static synchronized method then that thread should have class level block
+-If one thread is executing static synchronized method other threads are not allowed to execute static synchronized method
+-Acquiring or releasing class level lock , depends on jvm or thread scheduler
+//-diagram for class level lock 
 ===============================================================================================/
  [21/11/24]//
