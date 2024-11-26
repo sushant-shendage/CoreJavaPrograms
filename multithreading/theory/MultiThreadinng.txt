@@ -1,3 +1,62 @@
+Q:In multithrading why we can't tell exact output of program?
+Q:Which is the best way to define thread ?why?
+P:program to prove threads are independent
+P:program to get default name,current thread name,set own name to thread
+P:program to rename thread
+P:program to prove execution of main and custom thread
+-Multitasking{defination type ,type difference,advantage},application of multithreading,diff:thread vs process
+-thread class and it's methods and constructors
+-ways to define threads
+-Deining threads in java{using runnable and threadclass,}
+-why we can't tell exact output in multithreading
+-Thread life-cycle
+-thread shedular
+-runnable interface
+-diff:start() and run()
+-when we can disturb,how?why to disturb thread?
+-data inconsistency problem?solution for data inconsitency :Synchronisation using -->synchronized membre using -->'synchronized' keyword
+-object level lock and class level lock
+-synchronized method vs block
+-static synchronized method
+-yield methods of thread class
+[--/--/--]\\
+===============================================================================================\
+-Thread shedular:
+   -it is part of jvm/present inside jvm
+   -thread shedular is responcible to shedule thread
+   -In multithrading ,thread shedular decides which thrad should be exicuted
+   -because thread shedular programer can't analyse exact output.
+-Runnable interface:
+   -It is functional interface present in java.lang package
+   -It has one abstract method i.e run() method
+   -prototype of run() method:'public absract void run()'
+   -Which is best way to definne thread ?why?
+     -Defining thread using runnable interface is the best way.Beacuse it provides us 
+      flexibility to extend other class which was not possible using thread class
+-Difference between start() and run() method:
+   - present inside(thread class         |runnable interface              )
+   -help us to     (create thread        |execute thread                  )
+   -it is          (concrete method      |abstract method                 )
+   -called         (only once for thread |called multiple times for thread)  
+   -called         (explicitly           | implicitly                     )
+
+-thread life-cycle :
+ -In java all thread follow thread life-cycle.
+ -thread life cycle consist of various states and thata are,
+   -new:when thread object is created
+   -runnable:when main method is called and thread is ready for execution
+   -running:thread shedular allocates processor for thread for execution
+   -blocked:current thread excution paused for execution of higher priority thread 
+   -terminated:after execution of main thread ,thread will go to dead state
+
+
+===============================================================================================/
+[--/--/--]//
+
+
+
+
+
 -thread. Sleep() is static method
 
 -when thread is waiting or sleeping thread then and then only we can disturb thread
