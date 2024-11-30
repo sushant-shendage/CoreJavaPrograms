@@ -11,6 +11,7 @@ public class Anagram1 {
             }
         } else {
             System.out.println("NOT ANAGRAM...!");
+            return;
         }
 
         if (flag==0) {
@@ -19,6 +20,9 @@ public class Anagram1 {
             System.out.println("NOT ANAGRAM...!");
         }
 
+
+
+         
     }
 
 }
