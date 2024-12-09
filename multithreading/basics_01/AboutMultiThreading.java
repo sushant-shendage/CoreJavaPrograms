@@ -1,3 +1,4 @@
+package basics_01;
 /*
  * 1. Introduction to Multithreading
  * - Explanation: Multithreading allows executing multiple threads simultaneously to 

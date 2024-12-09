@@ -1,3 +1,4 @@
+package basics_01;
 public class PrintingMainThread{
     public static void main(String[] args) {
         Thread MyThread= new Thread();

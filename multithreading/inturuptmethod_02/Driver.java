@@ -1,3 +1,4 @@
+package inturuptmethod_02;
  class MyThread1 extends Thread {
     @Override
     public void run(){

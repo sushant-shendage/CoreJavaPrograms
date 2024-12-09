@@ -1,3 +1,4 @@
+package staticSynchronizedMethod_04;
 // package javapgms.multithreading.staticSynchronizedMethod;
 
 public class Driver1 {
