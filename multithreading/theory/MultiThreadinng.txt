@@ -235,3 +235,140 @@ vectors are synchronized while arraylist is not
 //-diagram for class level lock 
 ===============================================================================================/
  [21/11/24]//
+
+ multitasking 
+ advantages and application
+ how to cret thread?whixh is better and why?
+ start and run method
+ o/p analysis
+ thread dhedular
+ methods related to thread
+ explain threads are independent
+ how to prevent thread
+ how to intruppt thread
+ data inconsistencty pproblem
+ Synchronisation
+ synchronisation block and class
+ class and object lebvel lock
+ diff join yield and sleep method
+ 
+ [09/12/2024]\\
+===============================================================================================\
+{
+   -communication:sharing of info
+   -interthread communication for sharing of info
+   -when to go for interthread communication(communication between thread)
+   -technique by which thread comminicate with each other
+   -***INTERTHREADCOMMINICATION(co-operation)
+   -why interthread comminication is required
+      -we have two threads t1 and t2
+         -t2 requires data produced by t1
+         -t1 should tell t2 that data is produced and t1 can recive it.to tell t2-t1 data is produced produce next data
+         -one thread should execute at a time -synchronisation
+            -while t1 producing data t2 should go to waiting state ,lly t1 should go waiting state while data consumption by t2
+
+  -methods to achive interthread communication 
+   -final void wait()
+   -final void wait(long ms)
+   -final void wait(long ms,int ns)
+   -final void notify()
+   -final void notifyAll()
+
+
+   -all methods are final method
+   -wait method will throw intterpted exception
+   -we have to call above method for synchronised area
+     -why :i want to execution of a single thread at a time
+   -why all above methoda used in mutithreading are created in object class
+      -thread can call on any java objects
+   -[?]difference between diver class and method 
+
+   -when we call above method all will throw checked exception have to handle using try-catch bock
+   -thread expecting for updation should call wait() method and then call notify() method otherwise call notify()after call this will call wait () method 
+
+   -thread should have object lock-thread should be owner
+}
+
+-***INTERTHREAD COOMUNICATION( CO-OPERATIONS)***
+  -It is a technique by which multiple threads are going to communicate with each other 
+  -when multiple threads are executing simultaniously ,some times threads want to communicate with each other 
+    to exchang information in between them
+  -to achive interthread communication java provides some methods and those are 
+   -final void wait()
+   -final void wait(long ms)
+   -final void wait(long ms,int ns)
+   -final void notify()
+   -final void notifyAll()
+     -all these methods are present in java.lang.object class because thread can call these methods on any java obbject
+     -all are final methods
+     -wait methods will always throws checked exception and it is highly recommanded to handle when we are using this methods
+     -we can call these methods only on synchronised area otherwise will get a exception
+  -the thread which is expecting updation is responsible to call wait() method 
+  -the thread which is responsible for updation will call notify() method
+
+    
+............................................................................................
+class A {
+   int i;
+   boolean flag=false;
+
+   public synchronized void produce(int i){
+    if(flag)
+    try {
+      wait();
+    }catch(IntrruptedException e){
+      e.printStackTrace();
+    }
+    this.i=i;
+    flag=true;
+    System.out.println("data produced :"+i);
+    notify();
+   }
+
+   public synchronized int consume(){
+    if(!flag)
+    try{
+      wait();
+    }catch(InterruptedException e){
+       e.printStackTrace();
+    }
+    flag=false;
+    System.out.println("Data consumed :"+i);
+   }
+ 
+}
+
+class myThread extends Threads{
+  A obj;
+  public myThreadA(A obj){
+    this.obj=obj;
+  }
+  public void run(){
+    for(  ,  , ){
+      obj.produce();
+    }
+  }
+}
+
+class myThreadB extends Threads{
+  A obj;
+  public myThreadA(A obj){
+    this.obj=obj;
+  }
+  public void run(){
+    for(  ,  , ){
+      obj.consume();
+    }
+  }
+}
+
+public class Driver{
+  main(){
+    A a=new A();
+
+    MyThreadA t1=new MyThreadA(a)
+  }
+}
+............................................................................................
+===============================================================================================/
+[09/12/2024]//
