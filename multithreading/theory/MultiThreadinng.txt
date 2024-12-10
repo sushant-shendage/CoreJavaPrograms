@@ -25,8 +25,6 @@ P:program to prove execution of main and custom thread
 
 
 
-
-
 -runnable interface
 -diff:start() and run()
 -when we can disturb,how?why to disturb thread?
@@ -289,7 +287,7 @@ vectors are synchronized while arraylist is not
    -thread should have object lock-thread should be owner
 }
 
--***INTERTHREAD COOMUNICATION( CO-OPERATIONS)***
+-***INTERTHREAD COMMUNICATION( CO-OPERATIONS)***
   -It is a technique by which multiple threads are going to communicate with each other 
   -when multiple threads are executing simultaniously ,some times threads want to communicate with each other 
     to exchang information in between them
@@ -369,6 +367,165 @@ public class Driver{
     MyThreadA t1=new MyThreadA(a)
   }
 }
+
 ............................................................................................
 ===============================================================================================/
 [09/12/2024]//
+
+
+[10/12/2024]\\
+===============================================================================================\
+{
+  DEADLOCK:2 or more threads are waiting for each other forever...
+
+  when deadlock occurs?
+  -in synchronaisation lock conceot is used also introduce lock
+}
+- Deadlock :
+  -when two or more threads are waiting for each other forever such type of infinity waiting period is called as deadlock
+  -when we are using a synchronized keyword then only there is chance of deadlock situation
+  -whenever we are using synchronized keyword we have to take special care of that writing code is leading to deadlock or not
+  -
+.....................................PROGRAM TO DEMONSTRATE DEADLOCK.......................................................
+public class Driver1 {
+    public static void main(String[] args) {
+        MyThread1 t1=new MyThread1();
+        t1.start();
+        MyThread2 t2=new MyThread2();
+        t2.start();
+
+        System.out.println("active threads :"+Thread.activeCount());
+    }
+    
+}
+class  MyThread1 extends Thread {
+    @Override
+    public synchronized void run() {
+        try {
+            wait();
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        for (int i = 0; i <=10; i++) {
+            System.out.println("I am thread 1");
+        }
+    }
+}
+
+class MyThread2 extends Thread{
+    @Override
+    public synchronized void run() {
+        try {
+            wait();
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        for (int i = 0; i <=10; i++) {
+            System.out.println("I am thread 2");
+        }
+    }
+}
+............................................................................................
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\OUTPUTS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+OUTPUT1:
+ACTIVE THREAD :3
+<executing program for infnite time as deadlock occured..!>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+===============================================================================================/
+[10/12/2024]//
+
+===============================================================================================/
+[10/12/2024]//
+{
+  daemon:the threads which are executing background for execution of non-daemon thread
+  example of daemn thread:garbage collection
+
+  why we can't chane nature of main thread and child thread?//driver 2/
+}
+
+***DAEMON THREAD***
+ -The threads which are executing at background are called as daemon thread
+ -The main objective of daemon thread to provide support for non-daemon thread for there proper execution 
+   -example :garbadge collection
+ -Thread class will provide some methods for daemon thread and those are 
+   -isDeamon()     return type -->boolean  use:used to check..
+   -setDaemon()   return type -->void use:used to set nature of thread
+ -When we want to change nature of any thread then we have to change before starting that thread
+ -child thread have nature as parent thread
+ -if we are changing daemon nature after creating a thread /after starting a thread 
+   i.e after calling start() method then we will get a exception
+   -Exception we get:IllegatThreadStateException
+............................................................................................
+public class Driver1 {
+    public static void main(String[] args) {
+        boolean flag=Thread.currentThread().isDaemon();
+        System.out.println((flag)?"daemon thread":"non-daemon thread" );
+
+        Mythread t1=new Mythread();
+        // t1.setDaemon(true);
+        t1.start();
+        System.out.println((t1.isDaemon())?"daemon thread":"non-daemon thread" );
+
+    }
+}
+
+class Mythread extends Thread{
+     
+   
+}
+............................................................................................
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\OUTPUTS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+OUTPUT1:
+non-daemon thread
+non-daemon thread
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+deafult nature of main thread:
+ -bydeafult main thread is a nion-daemon in nature 
+ -we can't change the daemon nature of main thread because if we want to chane nature of any 
+   thread then we have to change before stating a thread but main thread is always started by jvm 
+.........................pgm to prove main thread is non-daemon.................................
+
+   public class Driver1 {
+    public static void main(String[] args) {
+      
+        System.out.println((Thread.currentThread().isDaemon())?"daemon thread":"non-daemon thread" );
+
+        // Mythread t1=new Mythread();
+        // // t1.setDaemon(true);
+        // t1.start();
+        // System.out.println((t1.isDaemon())?"daemon thread":"non-daemon thread" );
+
+    }
+}
+............................................................................................
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\OUTPUTS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+non-daemon thread
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+.........................pgm to prove we can't vhange default nature of main thread..........
+
+   public class Driver1 {
+    public static void main(String[] args) {
+      
+      Thread.currentThread.setDaemon(true);
+        System.out.println((Thread.currentThread().isDaemon())?"daemon thread":"non-daemon thread" );
+
+    }
+}
+............................................................................................
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\OUTPUTS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+non-daemon thread
+Exception in thread "main" java.lang.IllegalThreadStateException
+        at java.lang.Thread.setDaemon(Unknown Source)
+        at Driver1.main(Driver1.java:7)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+===============================================================================================/
+[10/12/2024]//
+
+
