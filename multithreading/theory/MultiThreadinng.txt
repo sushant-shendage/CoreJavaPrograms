@@ -234,21 +234,6 @@ vectors are synchronized while arraylist is not
 ===============================================================================================/
  [21/11/24]//
 
- multitasking 
- advantages and application
- how to cret thread?whixh is better and why?
- start and run method
- o/p analysis
- thread dhedular
- methods related to thread
- explain threads are independent
- how to prevent thread
- how to intruppt thread
- data inconsistencty pproblem
- Synchronisation
- synchronisation block and class
- class and object lebvel lock
- diff join yield and sleep method
  
  [09/12/2024]\\
 ===============================================================================================\
@@ -385,7 +370,7 @@ public class Driver{
   -when two or more threads are waiting for each other forever such type of infinity waiting period is called as deadlock
   -when we are using a synchronized keyword then only there is chance of deadlock situation
   -whenever we are using synchronized keyword we have to take special care of that writing code is leading to deadlock or not
-  -
+  
 .....................................PROGRAM TO DEMONSTRATE DEADLOCK.......................................................
 public class Driver1 {
     public static void main(String[] args) {
@@ -528,4 +513,24 @@ Exception in thread "main" java.lang.IllegalThreadStateException
 ===============================================================================================/
 [10/12/2024]//
 
+-MULTITHREADING:
+  -multitasking 
+  -advantages and application
+  -how to cret thread?whixh is better and why?
+  -start and run method
+  -o/p analysis
+  -thread dhedular
+  -methods related to thread
+  -explain threads are independent
+  -how to prevent thread
+  -how to intruppt thread
+  -data inconsistencty pproblem
+  -Synchronisation
+  -synchronisation block and class
+  -class and object lebvel lock
+  -diff join yield and sleep method
+  -interthread communication
+  -deadlock
+  -daemon thread
 
+ 
