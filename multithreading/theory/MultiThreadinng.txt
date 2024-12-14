@@ -20,11 +20,8 @@ P:program to prove execution of main and custom thread
 -thread class and it's methods and constructors
   -use
   -❌methods
-  -❌constructis
+  -❌constructors
 -Thread life-cycle
-
-
-
 -runnable interface
 -diff:start() and run()
 -when we can disturb,how?why to disturb thread?
@@ -514,23 +511,43 @@ Exception in thread "main" java.lang.IllegalThreadStateException
 [10/12/2024]//
 
 -MULTITHREADING:
-  -multitasking 
-  -advantages and application
-  -how to cret thread?whixh is better and why?
-  -start and run method
-  -o/p analysis
-  -thread dhedular
-  -methods related to thread
-  -explain threads are independent
-  -how to prevent thread
-  -how to intruppt thread
-  -data inconsistencty pproblem
-  -Synchronisation
-  -synchronisation block and class
-  -class and object lebvel lock
-  -diff join yield and sleep method
-  -interthread communication
-  -deadlock
-  -daemon thread
+  -☑️multitasking 
+  -☑️advantages and application
+  -☑️how to cret thread?whixh is better and why?
+  -☑️start and run method
+  -☑️o/p analysis
+  -☑️thread dhedular
+  -☑️methods related to thread
+  -☑️explain threads are independent
+  -☑️how to prevent thread
+  -☑️how to intruppt thread
+  -☑️data inconsistencty pproblem
+  -☑️Synchronisation
+  -☑️synchronisation block and class
+  -☑️class and object lebvel lock
+  -☑️diff join yield and sleep method
+  -☑️interthread communication
+  -☑️deadlock
+  -☑️daemon thread
 
- 
+- Multitasking and its type and advantages of type(t)
+- Applications of multithreading(t)
+- What is thread ?Difference between thread and process(t)
+- Ways to create thread ? Which is best way and why?(t)
+- Methods of thread class and constructor with use explanation(t+p)
+- Difference between start() and run() method(t)
+- Uncertainty in o/p with explanation(t)
+- About ‘thread scheduler’(t)
+- Explain threads are independent .Write code to prove(t+p)
+- Why we prevent threads ? ways to prevent threads?(t+p)
+- Difference between yield () ,join and sleep() method(t+p)
+- Why we interrupt method? How to interrupt method?(t+p)
+- Explain what is ‘data inconsistency problem’ ? How it is resolved ?(t+p)
+- Explain what is Synchronization?(t+p)
+- Tell me about ‘Synchronized’ keyword(t+p)
+- Give difference between Synchronized block and method(t+p)
+- Explain lock concept?(t)
+- Give difference between object level lock and class level lock(t)
+- Tell me about ‘ interthread communication’(t+p)
+- Tell me about deadlock(t)
+- Tell me about daemon thread(t+p)

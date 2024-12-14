@@ -1,0 +1,215 @@
+{
+  Q:
+  - when we go for lambda expression?
+}
+[12/12/2014]D2\\
+ ==========================================================================================================================================\
+  ***xyz***
+ ==========================================================================================================================================/
+[12/12/2014]//
+{
+  
+  -ENUM
+-INNER CLASS
+-WHEN TO GO FOR SPECIFIC CLASS IN COLLECTION
+    -oracal owned java from sun-microsystem in 2010
+------------------------------------------------------------------------------------
+  -using stream perform operation on collection
+  -difference between capacity and size
+------------------------------------------------------------------------------------
+ WHY WE ARE LEARNING JAVA 1.8?wHY IT IS INTRODUCED ?
+    ANSWER:
+-1995  java 1.0
+-2012-2013 black period for java language 
+-started to migrate to other language leading to decrese value of java
+  -reasions are 
+     -leangthy boiler plate code (number of lines of code)
+     -reqire more time for development
+-to overcome this problem they java language creators introduced java 1.8 (March 18,2014)
+  -version which reduce number of lines of code.version incorporated sevelral concept to achive code consizeness
+  -due to this java servived 
+  -again pepole shifted back to java language becase features or concepts introduced in java 1.8
+   ANSWER:
+    -most of the java project USES java 1.8 concept for code consizeness.Without using java 1.8 code duplication perccentage will be reduced.
+------------------------------------------------------------------------------------
+
+    SONARqUBE TOOL:tool is used to cheque code quality
+       -duplicate code (10 to 70 % code ai acceptible)
+       -check rules and conventions
+       -check test cases(min 80% acceptible)
+
+       -while doing project it is mandatory to use/implement java 8 features
+------------------------------------------------------------------------------------
+features introduced in java:
+  -A]lambda expression
+  -B]functional interface
+  -F]predefined functional interface
+  -c]static and default methods
+  -D]:: oerator (method refrence)
+  -E]constructor refrence
+  -G]streams
+  -H]date and time
+  -I]OPtional class
+------------------------------------------------------------------------------------ 
+}
+
+
+ 
+ 
+[11/12/2014]\\
+ ==========================================================================================================================================\
+ ***java 1.8 features:
+  -introduced in March 18,2014 by 'oracal' company
+  -the main advantage of java 1.8 is to reduce the number of lines of code 
+  -concepts introduced in java 1.8 are ,
+   -A]lambda expression
+   -B]functional interface
+   -c]static and default methods
+   -D]:: oerator (method refrence)
+   -E]constructor refrence
+   -F]predefined functional interface
+   -G]streams
+   -H]date and time
+   -I]Optional class
+   and other...(these concepts are used frequently)
+   -these concepts leads to consizeness of code 
+
+ ==========================================================================================================================================/
+[11/12/2014]//
+
+
+[11/12/2014]\\
+ ==========================================================================================================================================\
+ ***concept 01:lambada expression(LISP)***(Ananymous expression):
+  -anonymous functional
+  -It does not have modifiers 
+  -it does not have identifier/name
+  -It does not have return type
+  -sytax:
+    (optional:formal arguments)-->{
+        //stmt
+    };
+  -EXAMPLES:
+    ()-->{
+        SYSO("THIS IS MSG")
+    };
+    ...
+     ()-->SYSO("THIS IS MSG");
+    ...
+    -->SYSO("THIS IS MSG")
+    ..........................................
+
+    (int a)-->{return a*a}
+    ...
+    ( a)-->{return a*a}
+    ...
+    a-->{return a*a}
+    ..........................................
+
+    a--> a*a
+    ..........................................
+
+    ( a,b)-->{return a*b}
+    ..........................................
+    ( a,b)-->SYSO(a*b)
+    
+
+    {
+        - functional interface holds lambda expression
+    }
+
+ -to hold lambda expression we need a functional interfacce 
+ -the main objective of lambda of expression is enabling functional programing in java
+ -LISP is programing language where they used lambda expression for the first time
+ {functional programing is enabled with lambda expression released in java 1.8}
+ -functional interface=Interface having single abstract method 
+   -'@FunctionalInterface' annotation is recommanded to use
+==========================================================================================================================================/
+[11/12/2014]//
+
+14/12/24
+{==========================================================================================================================================/
+-ways to implement functional interface
+-how to resolve problem/error occured while creating implementation class of interface?{T}
+-"in lambda expression no need to specify datatype of formal argument" why?
+--------------------------------------------------------------
+
+
+}
+-HOW CODE IS REDUCED?
+-while writing lambda expression writing datatypes are optional
+-parenthesis and curly braces are optional in case of single arument and statement respectively otherwise it is compulsory
+-when there is single return statement ,should not write return statement otherwise will get error
+-lambda expression is one of the way to implement functional interface
+-number of argument in lambda expression and abstract method of functional interface must be equal
+.... PGM.................................................................................................
+public class Driver {
+    public static void main(String[] args) {
+        // overiding method in functional interface usinf=g lambda expression
+        checkNumberEvenOdd var1 = (a) -> {
+            return (a % 2 == 0) ? true : false;
+        };
+        System.out.println(var1.checkNum(7));
+        // --------------------------------------------------------------------------------------
+        // no compulsion to use parenthesis when there is single formal argument
+        // no compulsion to use curly braces when there is single statement
+        // implesit return type
+        checkNumberEvenOdd var2 = a -> (a % 2 == 0) ? true : false;
+        System.out.println(var2.checkNum(6));
+    }
+}
+interface checkNumberEvenOdd {
+    boolean checkNum(int n);
+}
+.....................................................................................................
+
+
+functional interface:
+-interface having single an=bstract method is called as functional interface
+-feature introduced in java 1.8
+- To hold lambda expression we need functional interface refrence variable
+-'@FunctionalInterface' annotation is used to specify the functional interface
+...PGM(example for lambda expression:01)..............................................................................................
+public class Driver3 {
+    public static void main(String[] args) {
+        Voter var1= a-> (a>18)?"is eligible for voating":"not eligible for voating";
+        System.out.println(var1.printVoterOrNot(19));
+        System.out.println(var1.printVoterOrNot(15));
+
+        Discount var2=a-> (a>60)?"Your are eligible for discount":"Your are not eligible for discount";
+        System.out.println(var2.printDiscountMsg(99));
+        System.out.println(var2.printDiscountMsg(15));
+
+        Authorization var3=a-> (a.toLowerCase().equals("admin"))?"You are Authorized..!":"You are not Authorized..!";
+
+        System.out.println(var3.printAuthorizationMsg("Admin"));
+        System.out.println(var3.printAuthorizationMsg("team lead"));
+    }
+}
+@FunctionalInterface
+ interface Voter {
+    String printVoterOrNot(int age);
+}
+
+@FunctionalInterface
+ interface Discount {
+    String printDiscountMsg(int age);
+}
+
+@FunctionalInterface
+ interface Authorization {
+    String printAuthorizationMsg(String roleName );
+}
+output//////////////////////////////////////////////////////////////////////////////////////
+is eligible for voating
+not eligible for voating
+Your are eligible for discount
+Your are not eligible for discount
+You are Authorized..!
+You are not Authorized..!
+////////////////////////////////////////////////////////////////////////////////////////////
+.................................................................................................
+
+ASSIGNMENT:
+-give imlementation for comaparable ,comparator and runnable interface using lambda expression
+==========================================================================================================================================/
