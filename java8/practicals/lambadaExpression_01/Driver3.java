@@ -17,12 +17,10 @@ public class Driver3 {
  interface Voter {
     String printVoterOrNot(int age);
 }
-
 @FunctionalInterface
  interface Discount {
     String printDiscountMsg(int age);
 }
-
 @FunctionalInterface
  interface Authorization {
     String printAuthorizationMsg(String roleName );

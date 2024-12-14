@@ -62,15 +62,15 @@ features introduced in java:
   -introduced in March 18,2014 by 'oracal' company
   -the main advantage of java 1.8 is to reduce the number of lines of code 
   -concepts introduced in java 1.8 are ,
-   -A]lambda expression
-   -B]functional interface
-   -c]static and default methods
-   -D]:: oerator (method refrence)
-   -E]constructor refrence
-   -F]predefined functional interface
-   -G]streams
-   -H]date and time
-   -I]Optional class
+   -A] lambda expression
+   -B] functional interface
+   -c] static and default methods
+   -D] :: oerator (method refrence)
+   -E] constructor refrence
+   -F] predefined functional interface
+   -G] streams
+   -H] date and time
+   -I] Optional class
    and other...(these concepts are used frequently)
    -these concepts leads to consizeness of code 
 
@@ -128,13 +128,12 @@ features introduced in java:
 [11/12/2014]//
 
 14/12/24
-{==========================================================================================================================================/
+==========================================================================================================================================/
+{
 -ways to implement functional interface
 -how to resolve problem/error occured while creating implementation class of interface?{T}
 -"in lambda expression no need to specify datatype of formal argument" why?
 --------------------------------------------------------------
-
-
 }
 -HOW CODE IS REDUCED?
 -while writing lambda expression writing datatypes are optional
