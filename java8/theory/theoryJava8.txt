@@ -1,6 +1,8 @@
 {
   Q:
   - when we go for lambda expression?
+  - coding problem:print missing alphabets from given string
+  -How to change default natural sorting of tree set?
 }
 [12/12/2014]D2\\
  ==========================================================================================================================================\
@@ -71,6 +73,7 @@ features introduced in java:
    -G] streams
    -H] date and time
    -I] Optional class
+   -J] Diamond operator
    and other...(these concepts are used frequently)
    -these concepts leads to consizeness of code 
 
@@ -211,4 +214,12 @@ You are not Authorized..!
 
 ASSIGNMENT:
 -give imlementation for comaparable ,comparator and runnable interface using lambda expression
+
 ==========================================================================================================================================/
+
+[16/12/24]\
+==========================================================================================================================================\
+***comparable vs comparator***
+-Comparable and Comparator are predefined functional interface used for used for sorting of custom object 
+==========================================================================================================================================/
+[16/12/24]/

@@ -15,5 +15,7 @@ public class Driver4Assignment1Task {
         };
         Thread t2=new Thread(thread2);
         t2.start();
+
+       
     }
 }

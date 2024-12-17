@@ -15,14 +15,17 @@ public class Driver1 {
         listOfIntegers.add( 26);
         listOfIntegers.add( 56);
 
+        System.out.println("orginal integer list..!");
         System.out.println(listOfIntegers);
 
+        //implicit sorting in asencending order by sort() method
         Collections.sort(listOfIntegers);
         System.out.println(listOfIntegers);
 
- 
 
-        
+       //changing default sorting order by sort() and compare method of comparator functinal interface
+        listOfIntegers.sort((i1,i2)->(int)i2-(int)i1);
+        System.out.println(listOfIntegers);
+
     }
-    
 }
