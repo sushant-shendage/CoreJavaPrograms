@@ -19,8 +19,6 @@ public class Driver4AssignmentComparableComparator {
         System.out.println("----------sorting using comparator---------------------------------");
         userInfoList.sort((o1,o2)->o2.name.compareTo(o1.name));
         userInfoList.forEach(System.out::println);
-
-        
     }
 }
 class UserInfo implements Comparable<UserInfo>{
