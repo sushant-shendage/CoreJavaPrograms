@@ -27,5 +27,8 @@ public class Driver1 {
         listOfIntegers.sort((i1,i2)->(int)i2-(int)i1);
         System.out.println(listOfIntegers);
 
+         //changing default sorting order by sort() and compare method of comparable functinal interface
+         //code pending..!????????????????????????[WRITE CODE HERE..!]
+         System.out.println(listOfIntegers);
     }
 }

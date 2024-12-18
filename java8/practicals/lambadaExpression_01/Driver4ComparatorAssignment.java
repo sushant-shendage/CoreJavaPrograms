@@ -6,14 +6,19 @@ import java.util.List;
 public class Driver4ComparatorAssignment {
     public static void main(String[] args) {
         List<PersonInfo> pIList=new ArrayList<>();
-        pIList.add(new PersonInfo(4, "Z-name1", 45.77f));
+        pIList.add(new PersonInfo(4, "A-name1", 45.77f));
         pIList.add(new PersonInfo(7, "A-name2", 95.90f));
-        pIList.add(new PersonInfo(2, "P-name3", 59.67f));
-        pIList.add(new PersonInfo(56, "H-name4", 49.34f));
+        pIList.add(new PersonInfo(49, "A-name3", 59.67f));
+        pIList.add(new PersonInfo(6, "A-name4", 49.34f));
         System.out.println(pIList);
 
+        //id based comparision
         Collections.sort(pIList,(o1,o2)->o1.id-o2.id );
-        System.out.println(pIList);
+       
+        //name and id based comparison using comparator
+        Collections.sort(pIList,(o1,o2)->(o1.name.charAt(0)!=o2.name.charAt(0))?o1.name.charAt(0)-o2.name.charAt(0):(o1.id!=o2.id)?o1.id-o2.id:0 );
+
+        pIList.forEach(System.out::println);
 
 
     }
