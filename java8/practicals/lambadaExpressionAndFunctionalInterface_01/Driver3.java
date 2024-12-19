@@ -1,3 +1,4 @@
+package javapgms.java8.practicals.lambadaExpressionAndFunctionalInterface_01;
 public class Driver3 {
     public static void main(String[] args) {
         Voter var1= a-> (a>18)?"is eligible for voating":"not eligible for voating";

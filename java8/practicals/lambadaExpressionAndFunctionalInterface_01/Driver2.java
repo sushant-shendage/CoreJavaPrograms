@@ -1,3 +1,4 @@
+package javapgms.java8.practicals.lambadaExpressionAndFunctionalInterface_01;
 public class Driver2 {
     public static void main(String[] args) {
         // overiding method in functional interface usinf=g lambda expression

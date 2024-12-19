@@ -1,3 +1,4 @@
+package javapgms.java8.practicals.lambadaExpressionAndFunctionalInterface_01;
 public class Driver4Assignment1Task {
     public static void main(String[] args) {
         Runnable thread1= ()-> {
