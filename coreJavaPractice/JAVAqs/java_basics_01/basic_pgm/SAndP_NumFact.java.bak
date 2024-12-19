@@ -1,0 +1,30 @@
+class SAndP_NumFact
+{
+	public static void main(String[] args) 
+	{
+		int num=1,cnum1,facter=1,sum=0,prod=1;
+		cnum1=num;
+
+		for (int i=1;i<=num/2 ;i++ )
+		{
+			if(num%2==0)
+			{
+				facter=i;
+				prod*=facter;
+				sum+=facter;
+			}
+			
+		}
+
+		System.out.println("sum  : "+(sum+cnum1));
+		System.out.println("prod : "+(prod*cnum1));
+
+		if(sum==prod)
+		{
+			System.out.println("Result  :Sum and product are same .");
+		}else
+		{
+			System.out.println("Result  :Sum and product are not same .");
+		}
+	}
+}

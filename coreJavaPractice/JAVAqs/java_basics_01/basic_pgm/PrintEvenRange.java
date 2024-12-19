@@ -1,0 +1,13 @@
+class  PrintEvenRange
+{
+	public static void main(String[] args) 
+	{
+		int range_start=500,range_end=2000;
+
+		    while(range_start<2000)
+			{
+				range_start+=2;
+				System.out.println(range_start);
+			}
+	}
+}

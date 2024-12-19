@@ -1,0 +1,45 @@
+class TypeCastingInt
+{
+	public static void main(String[] args) 
+	{
+		int intvar=5678;
+		
+		byte bytevar;
+		//bytevar=intvar;
+		 //incompatible types: possible lossy conversion from int to byte
+		 
+		short shortvar;
+		//shortvar=intvar;
+		/*incompatible types: possible lossy conversion 
+		from int to short*/
+
+		long longvar;
+		longvar=intvar;
+
+		float floatvar;
+		floatvar=intvar;
+
+		double doublevar;
+		doublevar=intvar;
+
+		char charvar;
+		//charvar=intvar;
+	 /* incompatible types: possible lossy conversion from int to char*/
+		
+		boolean booleanvar;
+		//booleanvar=intvar;
+		/*incompatible types: int cannot be converted to boolean*/
+		
+		 
+
+		//System.out.println("int variable      : "+intvar);//CTE
+		//System.out.println("int in byte       : "+bytevar);//CTE
+		//System.out.println("int in short        : "+shortvar);//CTE
+		System.out.println("int in long       : "+longvar);
+		System.out.println("int in float      : "+floatvar);
+		System.out.println("int in double     : "+doublevar);
+		//System.out.println("int in char     : "+charvar); //CTE
+		//System.out.println("int in boolean  : "+booleanvar);//CTE
+		
+	}
+}

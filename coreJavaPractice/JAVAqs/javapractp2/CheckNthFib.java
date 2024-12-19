@@ -1,0 +1,51 @@
+class CheckNthFib 
+{
+	public static void main(String[] args) 
+	{
+		checkFib(5);
+	}
+
+	public static void checkFib(int num)
+	{
+		int i;
+		
+		int num1 = 0;
+		int num2 = 1;
+		int nextNum;
+
+		for (i = 1; i <= num - 1  ;i++ )
+		{
+			nextNum = num1 + num2;
+
+			num1 = num2;
+			num2 = nextNum;		
+			
+		}	
+		System.out.println(i+"th Fib value : " + num1);
+		isPrime(num1);
+		
+
+		
+	}
+
+	public static void isPrime(int num)
+	{
+		int i;
+		for (i = 2 ; i < num   ; i++)
+		{
+			if (num % i == 0)
+			{
+				break;
+			}
+		}
+		System.out.println(i);
+		if (num == i)
+		{
+			System.out.println(num + " is Prime!");
+		}
+		else
+		{
+			System.out.println(num + " is Not prime!");
+		}
+	}
+}

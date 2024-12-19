@@ -1,0 +1,14 @@
+import Object_creation.Obj1;
+
+class Obj1Driver 
+{
+	public static void main(String[] args) 
+	{
+			 Obj1 b1 = new Obj1();
+
+		 b1.obj11m1Alldetails();
+		 //b1.obj11m1Alldetails();
+		 
+	}
+	
+}

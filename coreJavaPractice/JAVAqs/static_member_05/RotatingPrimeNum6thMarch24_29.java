@@ -1,0 +1,37 @@
+class RotatingPrimeNum6thMarch24_29 
+{
+	public static void main(String[] args) 
+	{
+		int num=113;
+		 if (Bl.prime(num))
+		 {
+			 int c1num=num;
+
+			 do
+			 {
+				if( Bl.prime(Bl.rotateNum(num)))
+				{
+					num=Bl.rotateNum(num);
+				}
+				else
+				{
+					break;
+				}
+			 }while (num!=c1num);
+
+			 if (num==c1num)
+			 {
+				System.out.println(num+" is a  rotating prime number");
+			 }
+			else 
+			 {
+				System.out.println(num+" is NOT rotating prime number");
+			 }
+			 
+		 }
+		 else
+		 {
+			System.out.println(num+" is not a prime number");
+		 }
+	}
+}

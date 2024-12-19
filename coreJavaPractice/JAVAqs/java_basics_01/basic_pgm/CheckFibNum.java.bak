@@ -1,0 +1,27 @@
+class CheckFibNum
+{
+	public static void main(String[] args) 
+	{
+		int num1=0,gnum=7,num2=1,sum;
+
+		for (int i=1; i<=gnum;i++ )
+		{
+			 if(num1==gnum)
+			{
+				break;
+			}
+			sum=num1+num2;
+			num1=num2;
+			num2=sum;
+		}
+
+		if(num1==gnum)
+		{
+			System.out.println("fib number");
+		}else
+		{
+			System.out.println("not fib number");
+		}
+	}
+}
+//logic1,logic2 4th march

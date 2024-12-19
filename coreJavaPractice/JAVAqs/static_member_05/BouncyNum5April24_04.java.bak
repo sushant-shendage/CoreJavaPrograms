@@ -1,0 +1,18 @@
+class BouncyNum5April24_04 
+{
+	public static void main(String[] args) 
+	{
+		int num=123245;
+		 if (Bl.digitICount(num)==Bl.digitCount(num)-1 || Bl.digitDCount(num)==Bl.digitCount(num)-1)
+		 {
+			 System.out.println(num+" is a bouncy number");
+		 }
+		else
+		 {
+			 System.out.println(num+" is NOT a bouncy number");
+		 }
+	System.out.println(Bl.digitICount(num)+" Bl.digitICount(num)");
+	System.out.println(Bl.digitCount(num)+" Bl.digitCount(num) ");
+	System.out.println(Bl.digitDCount(num) +" Bl.digitDCount(num) ");
+	}
+}//not exicuted-logical error -fix method and then solve 4 april 24

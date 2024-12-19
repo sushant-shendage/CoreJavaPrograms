@@ -1,0 +1,45 @@
+class  NestedLoops05_07thmarch
+{
+	public static void main(String[] args) 
+	{
+		 int c1num,sum=0,start=1,end=10,num;
+		num=start;
+		 c1num=num;
+		 
+		System.out.println("num :"+num);
+
+		for (start=1;start<=end ;start++ )
+		{
+			num=start;
+			while (num>0)
+		{
+			int mod=num%10;
+
+			
+			int fact=1;
+			for (int i=1;i<=mod ;i++ )
+			{
+				fact=fact*i;
+			}
+
+			sum=sum+fact;
+			//System.out.println("sum of all  :"+sum);
+
+			num/=10;
+
+		}
+
+		 
+		 if (c1num==sum)
+		 {
+			System.out.println("Strong num:"+sum);
+			break;
+		 }
+		 
+		 }
+		
+		
+		
+
+	}
+}

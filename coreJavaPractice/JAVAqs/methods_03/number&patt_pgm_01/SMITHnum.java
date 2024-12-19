@@ -1,0 +1,61 @@
+class SMITHnum
+{
+	public static void main(String[] args) 
+	{
+		for (int i=1;i<=200 ;i++ )
+		{
+			smithNum(i);
+		}
+		 
+		 
+	}
+	public static void smithNum(int num)
+	{
+		if (smith(num))
+		{
+			System.out.println(num+" is a smith number");
+		}
+		else
+		{
+			System.out.println(num+" is not a smith number");
+		}
+		
+	}
+	public static boolean smith(int num)
+	{
+		int sumD=0;
+
+		for (int i=num;i!=0 ;i/=10 )
+		{
+			sumD+=i%10;
+		}
+
+		int sumPD=0;
+		for (int i=2;num!=1 ;i++ )
+		{
+			if(num%i==0)
+			{
+				num=num/i;
+				sumPD+=sumDp(i);
+				//System.out.println("sumPD in loop :"+sumPD);
+				//System.out.println("num in loop :"+num);
+			}
+			
+		}
+		//System.out.println("sum of digit :"+sumD);
+		//System.out.println("sum of digit pFactor :"+sumPD);
+
+		return sumD==sumPD;
+	}
+	public static int sumDp(int num)
+	{
+		int sum=0;
+		for (int i=num;i!=0 ;i/=10 )
+		{
+			sum+=i%10;
+
+		}
+		//System.out.println("sum of digit pf :"+sum);
+		return sum;
+	}
+}

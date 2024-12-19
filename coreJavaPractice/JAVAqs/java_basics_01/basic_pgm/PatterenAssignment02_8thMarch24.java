@@ -1,0 +1,15 @@
+class PatterenAssignment02_8thMarch24 
+{
+	public static void main(String[] args) 
+	{
+		 for (int i=65;i<=80 ;i++ )
+		 {
+			 System.out.print((char)i);
+			 if(i%4==0)
+			 {
+				System.out.println();
+			 }
+			 
+		 }
+	}
+}

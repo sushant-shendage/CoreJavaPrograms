@@ -1,0 +1,52 @@
+class  StrongNumRange7thmarch24
+{
+	public static void main(String[] args) 
+	{
+		int starting=1,ending=200;
+	for (int i=starting;i<=ending ;i++ )
+	{
+			int c1num,sum=0,start=1,end=10,num=starting;
+			num=start;
+			c1num=num;
+		 
+		for (start=1;start<=end ;start++ )
+		{
+			num=start;
+			while (num>0)
+			{
+				int mod=num%10;
+				
+				int fact=1;
+				for (int j=1;j<=mod ;j++ )
+				{
+					fact=fact*j;
+				}
+
+				sum=sum+fact;
+				num/=10;
+			}
+
+			if (c1num==sum)
+			{
+				System.out.println("Strong num:"+sum);
+			}
+		 
+	   }
+		
+
+	}
+
+
+
+
+
+
+
+
+
+		 
+		
+		
+
+	}
+}

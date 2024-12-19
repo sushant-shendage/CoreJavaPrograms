@@ -1,0 +1,19 @@
+class CompleteRotate5thMarch_14
+{
+	public static void main(String[] args) 
+	{
+		 int num=1234,c1num=num;
+
+		  System.out.println("num : "+num);
+
+
+	do
+	{
+	  num= num%10*Bl.pow(10,Bl.digitCount(num/10))+num/10;
+	 System.out.println("num : "+num);
+
+	}while (num!=c1num);
+		
+		 
+	}
+}

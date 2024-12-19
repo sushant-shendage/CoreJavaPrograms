@@ -1,0 +1,48 @@
+class TypeCastingChar
+{
+	public static void main(String[] args) 
+	{
+		char charvar='S';
+
+
+		byte bytevar;
+		//bytevar=charvar;
+		/* incompatible types: possible lossy conversion 
+		from char to byte*/
+		
+		short shortvar;
+		//shortvar=charvar;
+		/* incompatible types: possible lossy conversion 
+		from char to short*/
+		 
+		int intvar;
+		intvar=charvar;
+		 
+		long longvar;
+		longvar=charvar;
+		 
+		
+		 float floatvar;
+		 floatvar=charvar;
+		  
+		double doublevar;
+		doublevar=charvar;
+		 
+		boolean booleanvar;
+		//booleanvar=charvar;
+		/*incompatible types: char cannot 
+		be converted to boolean*/
+		
+
+		System.out.println("char variable   : "+charvar);
+		
+		//System.out.println("char in short   : "+shortvar);
+		System.out.println("char in int     : "+intvar);
+		System.out.println("char in long    : "+longvar);
+		//System.out.println("char in byte    : "+bytevar);
+		System.out.println("char in float   : "+floatvar);
+		System.out.println("char in double  : "+doublevar);
+		//System.out.println("char in boolean : "+booleanvar);
+		
+	}
+}

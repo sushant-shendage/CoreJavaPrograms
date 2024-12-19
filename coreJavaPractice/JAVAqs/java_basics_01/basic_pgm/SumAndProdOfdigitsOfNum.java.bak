@@ -1,0 +1,28 @@
+class SumAndProdOfdigitsOfNum
+{
+	public static void main(String[] args) 
+	{
+		
+		 int num=3,sum=0,prod=1;
+
+		 while(num>0)
+		{
+			int last_digit=num%10;
+			sum+=last_digit;
+			prod*=last_digit;
+			num/=10;
+		}
+
+			System.out.println("Sum    : "+sum+"\nprod   : "+prod );
+		if(sum==prod)
+		{
+			System.out.println("Result : sum and product are same");
+		}
+		else
+		{
+			System.out.println("Result : sum and product are different");
+		}
+
+
+	}
+}

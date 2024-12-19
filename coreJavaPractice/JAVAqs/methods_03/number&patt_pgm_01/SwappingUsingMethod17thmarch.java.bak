@@ -1,0 +1,50 @@
+class SwappingUsingMethod17thmarch 
+{
+	public static void main(String[] args) 
+	{
+
+		swap_l1(3,4);
+		swap_l2(4,5);
+		//swap_l1(6,7);
+
+	}
+
+	public static void swap_l1(int num1,int num2)
+	{
+		System.out.println("num1:"+num1+"  num2:"+num2);
+
+       num1=num1+num2;
+	   num2=num1-num2;
+	   num1=num1-num2;
+
+	   System.out.println("num1:"+num1+"   num2:"+num2);
+		
+
+	}
+	public static void swap_l2(int num1,int num2)
+	{
+		System.out.println("num1:"+num1+"  num2:"+num2);
+
+       num1=num1*num2;
+	   num2=num1/num2;
+	   num1=num1/num2;
+
+	   System.out.println("num1:"+num1+"   num2:"+num2);
+		
+
+	}
+	public static void swap_l3(int num1,int num2)
+	{
+		System.out.println("num1:"+num1+"  num2:"+num2);
+
+       int temp;
+
+	   temp=num1;
+	   num1=num2;
+	   num2=temp;
+
+	   System.out.println("num1:"+num1+"   num2:"+num2);
+		
+
+	}
+}

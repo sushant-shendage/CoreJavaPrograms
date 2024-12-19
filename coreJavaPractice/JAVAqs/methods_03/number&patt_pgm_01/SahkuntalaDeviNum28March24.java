@@ -1,0 +1,117 @@
+class SahkuntalaDeviNum28March24 
+{
+	public static void main(String[] args) 
+	{
+		for (int i=1;i<=100000000 ;i++ )
+		{
+			shakuntalaDeviNum(i);
+		}
+		 System.out.println("program exicution completed");
+		 
+	}
+	public static void shakuntalaDeviNum(int num)
+	{
+		 if (shakuntalaDevi(num))
+		 {
+			 System.out.println(num+" is a shakuntala Devi number");
+		 }
+		
+	}
+	public static boolean shakuntalaDevi(int num)
+	{
+		int desendDigits=desendDigits(num),ans,i;
+		for (i=2;i<=6 ;i++ )
+		{
+			ans=num*i;
+			if(desendDigits(num)!=desendDigits(ans))
+			{
+				break;
+			}
+		}
+
+		return i-1==6;
+		
+	}
+	 public static int totalDigits(int num)
+	{
+		int total_digits=0;
+		 for (int i=num;i!=0 ;i/=10 )
+		 {
+			total_digits++;
+		 }
+			return total_digits;
+	}
+
+	public static int dCount(int digit,int num)
+	{
+		int occ=0;
+		for (int i=num;i!=0 ;i/=10 )
+		{
+			
+			if(i%10==digit)
+			{
+				occ++;
+			}
+		}
+		return occ;
+	}
+	public static int asendDigits(int num)
+	{
+		int numA=0;
+		int tD=(totalDigits(num)-dCount(0,num));
+		for (int i=1;i<=9;i++ )
+		{
+			if(dCount(i,num)>1)
+			{
+				numA+=dGroup(i,dCount(i,num))*pow(10,tD-dCount(i,num));
+				tD-=dCount(i,num);
+			}
+			else if(dCount(i,num)==1)
+			{
+				numA+=i*pow(10,tD-1);
+				tD--;
+			}
+		}
+
+		return numA;
+	}
+	//dese
+
+	public static int desendDigits(int num)
+	{
+		 return reverse(asendDigits(num))*pow(10,dCount(0,num)); 
+	} 
+
+	 
+
+	public static int pow(int base,int index)
+	{
+		int prod=1;
+		for (int i=1;i<=index ;i++ )
+		{
+			prod*=base;
+		}
+		return prod;
+	}
+
+	 public static int dGroup(int digit,int occ)
+	 {
+		 int G=0;
+		 for (int i=1;i<occ ;i++ )
+		 {
+			 G+=digit*pow(10,i);
+		 }
+		return G+digit;
+	 }
+	 public static int reverse(int num)
+	{
+		 int rev=0;
+		for (int i=num;i!=0 ;i/=10 )
+		{
+			rev=rev*10+i%10;
+		}
+		return rev;
+	}
+
+}
+//not completed

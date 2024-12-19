@@ -1,0 +1,15 @@
+class PrintAlternate
+{
+	public static void main(String[] args) 
+	{
+		int Num=1;
+
+		 while(Num<101)
+			 {
+				System.out.println(Num);
+				 Num+=2;
+
+				 //other logic
+				 //num++;num++;			 }
+	}
+}

@@ -1,0 +1,44 @@
+class March29_24_BouncyNum 
+{
+	public static void main(String[] args) 
+	{
+		bouncyNum(12343);
+	}
+	public static void bouncyNum(int num)
+	{
+		int dcount=0,icount=0;
+
+		for (int i=num;i<10;i/=10 )
+		{
+			if((i%10)>((i/10)%10))
+			{
+				icount++;
+				System.out.println(icount+" is a icount");
+			}
+			else if((i%10)<((i/10)%10))
+			{
+				dcount++;
+				System.out.println(dcount+" is a dcount");
+			}
+		}
+
+		if(icount==count(num)-1 || dcount==count(num)-1)
+		{
+			System.out.println(num+" is a bouncy num");
+		}
+		else
+		{
+			System.out.println(num+" is not a bouncy num");
+		}
+		
+	}
+	public static int count(int num)
+	{
+		int count=0;
+		for (int i=num;i!=0 ;i/=10 )
+		{
+			count++;
+		}
+		return count;
+	}
+}

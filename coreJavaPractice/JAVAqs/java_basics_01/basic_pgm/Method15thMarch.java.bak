@@ -1,0 +1,11 @@
+class Method15thMarch 
+{
+	public static void main(String[] args) 
+	{
+		
+printstmt();
+	}
+	public static void printstmt(){
+		System.out.println("this is printstmt method");
+	}
+}

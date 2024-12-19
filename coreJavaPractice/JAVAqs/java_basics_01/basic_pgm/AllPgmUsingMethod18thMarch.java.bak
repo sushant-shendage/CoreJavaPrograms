@@ -1,0 +1,585 @@
+class  AllPgmUsingMethod18thMarch
+{
+	public static void main(String[] args) 
+	{
+		
+	//pg1:fib serires
+	//fibRange(8);
+	//pg2:fib or not
+	//checkfibornot(4);
+	//pg3:total number of digits in given number
+	//totalNumberOfDigits(3546);
+	//pg4:nth fib val
+	//nthFibVal(4);
+	//pg5:alll digit fib or not
+	//AllDFibOrNot(81235);
+	//pg6:all digits are prime or not
+	//AllDprime(62357);
+	//pg7:arm num or not 
+	//ArmOrnot(154);
+	//pg8:arm num range[!]
+	//pg9:palindrom num
+	//palindromNum(222);
+	//pg10:buzz num
+	//buzzNum(128);
+	//pg11:buz num range
+	//pg12:charecter checking
+	//checkCharType('$');
+	//pg13:check prime num
+	//checkPrime(9);
+	//pg14:prime num range
+	//pg15:coprime
+	//pg16:count of even digits in num
+	//pg17:count of odd digits in num(16 and 17 in one method)
+	//evenOddDCountInnum(1234567);
+	//number:even,odd,total,prime,non prime,neon
+	//pg18:decimal to binary [! use array]
+	//pg19:duck num
+	//duckOrNot(12304);
+	//pg20:neon num
+	//neonNum(10);
+	//pg21:tech num
+	//pg22:occurence of digit in num
+	//pg23:pronic num
+	//pronicNum(42);
+	//pg24:fact of num
+	//factOfnum(32);
+	//pg25:strong num
+	//strongNum(145);
+	//sum of n number
+	//sumOfNNum(10);
+	//factorial of num
+	//factNum(5);
+	//pg26:sum of fact
+	//sumOfFact(32);//sum and product
+	//pg27:product of fact
+	//pg28:cross box pattern
+	//crossBoxPatt(11);
+	//pg29:triangle patteren
+	//rightAngledTrianglePatt(7);
+	//pg29:triangle patteren/mirror image
+	//rightAngledTrianglePattMI(7);
+	//patt numa
+	//patt1(7);
+	//trianlg patteren
+	//TPatt(9);
+	//pg30:rectangle patteeren/mirror image
+	//pg31:hource time patteren/mirror image
+	//pg32:LCM of num
+	//LCM(18,23);
+	//pg33:HCF of num
+	//HCF(10,12);
+	//pg34:leap year or not
+	//leapOrNot(2720);
+	//pg35:leap year range
+	//pg36:sum of natural num[_/]
+	//pg37:uppercase charecter
+	//pg38:lowercase charecter
+	uLCharConversion('a');
+
+	
+	System.out.println("\npgm ended completely");
+
+	}
+
+	public static void fibRange(int numM)
+	{
+		int num1=0,num2=1,sum;
+		for (int i=1;i<=numM ;i++ )
+		{
+			System.out.print(num1+",");
+			sum=num1+num2;
+			num1=num2;
+			num2=sum;
+		}
+	}
+	public static void checkfibornot(int numM)
+	{
+		int num1=0,num2=1,sum;
+		for (int i=1;i<=numM ;i++ )
+		{
+			sum=num1+num2;
+			num1=num2;
+			num2=sum;
+			
+			if (num1==numM)
+			{
+				break;
+			}
+		}
+
+		if (num1==numM)
+		{
+			System.out.println(numM+" is a fib series element");
+		}
+		else
+		{
+			System.out.println(numM+" is not a fib series element");
+		}
+	}
+
+	public static void totalNumberOfDigits(int numM)
+	{
+		int count=0;
+		for (int i =numM;i!=0 ;i/=10 )
+		{
+		count++;
+		}
+		System.out.println("Total digits in given num "+numM+" are :"+count );
+
+	}
+		public static void nthFibVal(int numM)
+		{
+			int num1=0,num2=1,sum;
+			for (int i=1;i<=numM-1 ;i++ )
+			{
+				sum=num1+num2;
+				num1=num2;
+				num2=sum;
+			}
+
+			System.out.println("the nth fib value : "+num1);
+		}
+
+		public static void AllDFibOrNot(int numM)
+		{
+			int i;
+			 
+			for ( i=numM;i!=0 ;i/=10)
+			{
+				int mod=i%10;
+
+				if (mod!=0&&mod!=1&&mod!=2&&mod!=3&&mod!=5&&mod!=8)
+				{
+					System.out.println("mod in loop :"+mod);
+					System.out.println("break");
+					break;
+
+				}
+				System.out.println("i val in loop :"+i);
+			}
+			
+
+			if (i==0)
+			{
+				System.out.println("All digits of number "+numM+" are fib digits");
+			}
+			else
+			{
+				System.out.println("All digits of number "+numM+" are not  fib digits");
+			}
+		}
+		public static void AllDprime(int numM)//2357
+		{
+			int i;
+			for (i=numM;i!=0 ;i/=10 )
+			{
+				if (i%10!=2 &&i%10!=3 &&i%10!=5 &&i%10!=7)
+				{
+					break;
+				}
+			}
+			if (i==0)
+			{
+				System.out.println("All digits of number "+numM+" are prime ");
+			}
+			else
+			{
+				System.out.println("All digits of number "+numM+" are not prime ");
+			}
+
+
+		}
+			public static void ArmOrnot(int numM)
+		{
+				int count=0;
+			for (int i=numM;i!=0 ;i/=10 )
+			{
+				count++;
+			}
+			//System.out.println("count :"+count);
+			int sum=0;
+			for (int i=numM;i!=0 ;i/=10 )
+			{
+			int mod =i%10;
+				
+				int prod=1;
+				for (int j=1;j<=count ;j++ )
+				{
+					prod*=mod;
+				}
+				sum+=prod;
+			}
+			if (sum==numM)
+			{
+				System.out.println("given num "+numM+" is arm num");
+			}
+			else
+			{
+				System.out.println("given num "+numM+" is not a arm num");
+			}
+			
+		}
+		public static void palindromNum(int numM)
+		{
+			int rev=0;
+			for (int i=numM;i!=0 ;i/=10 )
+			{
+				int mod=i%10;
+				 rev=rev*10+mod;
+			}
+
+			if (rev==numM)
+			{
+				System.out.println("given num "+numM+" is palindrom num");
+			}
+			else 
+			{
+				System.out.println("given num "+numM+" is not a palindrom num");
+			}
+		}
+		public static void buzzNum(int numM)
+		{
+			if(numM%10==7 || numM%7==0)
+			{
+				System.out.println("given num "+numM+" is buzz num");
+			}
+			else 
+			{
+				System.out.println("given num "+numM+" is not a buzz num");
+			}
+		}
+		public static void checkCharType(char charM)
+		{
+			if (charM>='a'&&charM<='z')
+			{
+				System.out.println(charM+" is lowercase charecter");
+			}
+			else if (charM>='A'&&charM<='Z')
+			{
+				System.out.println(charM+" is uppercase charecter");
+			}
+			else
+			{
+				System.out.println(charM+" is a special charecter");
+			}
+
+		}
+
+		public static void checkPrime(int numM)
+		{
+			int i;
+			for ( i=2; i<numM;i++ )
+			{
+				if (numM%i==0)
+				{
+					break;
+				}
+			}
+			
+			if (i==numM)
+			{
+				System.out.println(numM+" is a prime number");
+			}
+			else
+			{
+				System.out.println(numM+" is not a prime number");
+			}
+		}
+		public static void evenOddDCountInnum(int numM)
+		{
+			int ecount=0,ocount=0;
+			for (int i=numM;i!=0 ;i/=10 )
+			{
+				int mod=i%10;
+
+				if (mod%2==0)
+				{
+					ecount++;
+				}
+				else
+				{
+					ocount++;	
+				}
+
+			}
+
+			System.out.println("Even count of num "+numM+" : "+ecount);
+			System.out.println("Odd count of num "+numM+" : "+ocount);
+		}
+		public static void duckOrNot(int numM)
+		{
+			int i;
+			for (i=numM;i!=0 ;i/=10)
+			{
+				if (i%10==0)
+				{
+					System.out.println("i%10 :"+i%10);
+					System.out.println("break");
+					break;
+				}
+			}
+			if (i==0)
+			{
+				System.out.println(numM+" is NOT a duck num.");
+			}
+			else
+			{
+				System.out.println(numM+" is a duck num .");
+			}
+			
+		}
+		public static void neonNum(int numM)
+		{
+			int numMSqr=numM*numM,sum=0;
+			 for (int i=numMSqr;i!=0 ;i/=10 )
+			 {
+				 sum+=i%10;
+			 }
+
+			 if (sum==numM)
+			 {
+				System.out.println(numM+" is a neon num .");
+			 }
+			 else
+			{
+				System.out.println(numM+" is not a neon num .");
+			}
+		}
+		public static void pronicNum(int numM)
+		{
+			int i;
+			for (i=1;i<=numM ;i++ )
+			{
+				if (i*(i+1)==numM)
+				{
+					break;
+				}
+			}
+
+			if(i>numM)
+			{
+				System.out.println(numM+" is not a pronic num");
+			}
+			else
+			{
+				System.out.println(numM+" is a pronic num");
+			}
+		}
+		public static void factOfnum(int numM)
+		{
+			System.out.println("factors of num "+numM+" :");
+			for (int i=1;i<=numM/2 ;i++ )
+			{
+				if (numM%i==0)
+				{
+					System.out.print(i+",");
+				}
+			}
+				System.out.print(numM+",");
+		}
+		public static void strongNum(int numM)
+		{
+			int sum=0;
+			for (int i=numM;i!=0 ;i/=10 )
+			{
+				int mod=i%10,fact=1;
+
+				for (int j=1;j<=mod;j++ )
+				{
+					fact*=j;
+				}
+				 
+				sum+=fact;
+				 
+
+			}
+			 if (sum==numM)
+			 {
+				 System.out.println(numM+" is a strong num .");
+			 }
+			 else
+			 {
+				System.out.println(numM+" is NOT a strong num .");
+			 }
+			 
+		}
+		public static void factNum(int numM)
+		{
+			int fact=1;
+			for (int i=1;i<=numM ;i++ )
+			{
+				fact*=i;
+			}
+			System.out.println("fact of num "+numM+" : "+fact);
+		}
+		public static void sumOfFact(int numM)
+		{
+			int sum=0,prod=1;
+			for (int i=1;i<=numM ;i++ )
+			{
+				if (numM%i==0)
+				{
+					sum+=i;
+					prod*=i;
+				}
+			}
+			System.out.println("sum of fact of "+numM+" :"+sum);
+			System.out.println("prod of fact of "+numM+" :"+prod);
+			
+		}
+			public static void sumOfNNum(int numM)
+			{
+				System.out.println("sum of 1st "+numM+" natural number is: "+numM*(numM+1)/2);
+			
+			}
+			public static void crossBoxPatt(int numM)
+			{
+				for (int i=1;i<=numM ;i++ )
+				{
+					for (int j=1;j<=numM ;j++ )
+					{
+						if (i==1||j==1||i==numM||j==numM||i==j||i+j==numM+1||i==numM/2+1||j==numM/2+1)
+						{
+							System.out.print("* ");
+						}
+						else
+						{
+							System.out.print("  ");
+						}
+						
+					}
+						System.out.println();
+				}
+			}
+			public static void rightAngledTrianglePatt(int numM)
+			{
+				for (int i=1;i<=numM ;i++ )
+				{
+					for (int j=1;j<=i ;j++ )
+					{
+						System.out.print("* ");
+					}
+						System.out.println();
+				}
+				//LR lower digonal trianle using single loop
+			}
+			public static void rightAngledTrianglePattMI(int numM)
+			{
+			for (int i=numM;i>0 ;i-- )
+				{
+					for (int j=1;j<=i ;j++ )
+					{
+						System.out.print("* ");
+					}
+						System.out.println();
+				}
+				//change method name
+				//RL upper digonal trianle using single loop
+			}
+			public static void patt1(int numM)
+			{
+			for (int i=numM;i>0 ;i-- )
+				{
+					for (int j=i;j>0 ;j-- )
+					{
+						System.out.print("* ");
+					}
+						System.out.println();
+				}
+				//change method name
+				//RL upper digonal trianle using single loop
+				//way 2
+			}
+			public static void TPatt(int  numM)
+			{
+				for (int i=numM;i>=0 ;i--)
+				{
+					for (int j=1;j<i;j++ )
+					{
+						System.out.print("_ ");
+					}
+					System.out.println();
+					for (int k=1;k<=numM ;k++ )
+					{
+						System.out.print("* ");
+
+					}
+					 
+				}
+			}
+			public static void LCM(int numM1,int numM2)
+			{
+				int i=1;
+		int big=numM1>numM2?numM1:numM2;
+		while (true)
+		{
+			 
+
+			if(big*i%numM1==0 && big*i%numM2==0)
+			{
+				System.out.println("LCM of "+numM1+" and "+numM2 +" is :"+big*i);
+				break;
+				
+			}
+		i++;
+		}
+			}
+			public static void HCF(int numM1,int numM2)
+			{
+				int i=1;
+		int small=numM1<numM2?numM1:numM2;
+		while (true)
+		{
+			 
+
+			if(numM1%small==0 && numM2%small==0)
+			{
+				System.out.println("HCF of "+numM1+" and "+numM2 +" is :"+small);
+				break;
+				
+			}
+		small--;
+		}
+				
+				
+	}
+	public static void leapOrNot(int numM)
+	{
+		if (numM%4==0&&numM%100!=0||numM%400==0)
+		{
+			System.out.println(numM+" is a leap year.");
+		}
+		else 
+		{
+			System.out.println(numM+" is not a leap year.");
+		}
+	}
+	public static void uLCharConversion(char charM)
+	{
+		if(charM>='a'&&charM<='z')
+		{
+			System.out.println("Entered lowercase charecter "+charM+"and it's uppercase charecter :"+ (char)(charM-32));
+		}
+		else if(charM>='A'&&charM<='Z')
+		{
+			System.out.println("Entered uppercase  charecter "+charM+" and it's lowercase charecter :"+ (char)(charM+32));
+		}
+		else
+		{
+			System.out.println(charM+" is not an alphabet charecter");
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

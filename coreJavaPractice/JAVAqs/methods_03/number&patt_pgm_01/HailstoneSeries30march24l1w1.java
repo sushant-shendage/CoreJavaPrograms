@@ -1,0 +1,31 @@
+class HailstoneSeries30march24l1w1 
+{
+	public static void main(String[] args) 
+	{
+
+		hailstoneSeries(5);
+	}
+	 
+	public static void hailstoneSeries(int num)
+	{
+		int count=0;
+		 do
+		 {
+			 if (num%2==0)
+			 {
+				 num/=2;
+				 count++;
+			 }
+			 else
+			{
+				num=3*num+1;
+				count++;
+
+			}
+			//System.out.print(num+"|");
+		 }
+		 while (num!=1);
+		System.out.println("count : "+count);
+	}
+}
+//semiprime numbe program

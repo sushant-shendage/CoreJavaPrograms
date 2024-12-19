@@ -1,0 +1,28 @@
+class CheckPrimeNumWithinRangeWWLF03_7thmarch24 
+{
+	public static void main(String[] args) 
+	{
+		 int start=1,end=100;
+
+		 while(start<=end)
+		 {
+			 int num=start;
+			 int i=2;
+
+			 while(i<num)
+			 {
+				 if(num%i==0)
+				 {
+					 break;
+				 }
+				 i++;
+			 }
+			 if(i==num)
+			 {
+				System.out.println("prime+ : "+num);
+			 }
+			start++;
+		 }
+	}
+	//nested while print prime within range forword direction
+}

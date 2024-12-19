@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+class SwitchCase1 
+{
+	public static void main(String[] args) 
+	{
+		Scanner ScanVar=new Scanner(System.in);
+		
+		int switchVar;
+
+		System.out.println("Enter input :");
+		switchVar=ScanVar.nextInt();
+
+	 
+		while(true)
+		{
+			switch (switchVar)
+			{
+				case 1:
+				{
+					System.out.println("This is case1 !");
+					break; 
+				}
+				case 2:
+				{
+					System.out.println("This is case2 !");
+				}
+				case 3:
+				{
+					System.out.println("This is case3 !");
+				 
+				}
+
+				case 4:
+				{
+					System.out.println("This is case4 !");
+				 
+				}
+				default :
+				{
+					System.out.println("This is default case !");
+				 
+				
+				}
+			}
+		
+		}
+
+	}
+}

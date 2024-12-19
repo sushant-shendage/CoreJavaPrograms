@@ -1,0 +1,112 @@
+import java.util.Scanner;
+class  ArithmeticUsingSwitch
+{
+	public static void main(String[] args) 
+	{
+		char switchVar;
+		float num1,num2;
+
+while(true){
+		Scanner Sc=new Scanner(System.in);
+		
+		System.out.println("----Opration menue------");
+		System.out.println("+ : Addition");
+		System.out.println("- : Substraction");
+		System.out.println("* : Multiplication");
+		System.out.println("/ : Division ");
+		System.out.println("% : Modules ");
+		
+		System.out.println("Enter opration choice :");
+		switchVar= Sc.next().charAt(0);
+
+		//System.out.println("choice entered  :"+switchVar);
+
+		/*System.out.println("Enter number 1 :");
+		num1=sc.nextChar.charAt(0);
+		System.out.println("Enter number 2 :");
+		num2=sc.nextChar.charAt(0);*/
+
+		switch(switchVar)
+			{
+				case '+':
+					{
+						System.out.println("Enter number 1 :");
+						num1=Sc.nextFloat();
+						System.out.println("Enter number 2 :");
+						num2=Sc.nextFloat();
+
+						System.out.println("Addition of "+num1+" and "+num2+" is :" +(num1+num2));
+						break;
+					}
+					case '-':
+					{
+						System.out.println("Enter number 1 :");
+						num1=Sc.nextFloat();
+						System.out.println("Enter number 2 :");
+						num2=Sc.nextFloat();
+
+						System.out.println("Substraction of "+num1+" and "+num2+" is :" +(num1-num2));
+						break;
+					}
+					case '*':
+					{
+						System.out.println("Enter number 1 :");
+						num1=Sc.nextFloat();
+						System.out.println("Enter number 2 :");
+						num2=Sc.nextFloat();
+
+						System.out.println("Multiplication of "+num1+" and "+num2+" is :" +(num1*num2));
+						break;
+					}
+					case '/':
+					{
+						System.out.println("Enter number 1 :");
+						num1=Sc.nextFloat();
+						System.out.println("Enter number 2 :");
+						num2=Sc.nextFloat();
+
+						System.out.println("Division of "+num1+" and "+num2+" is :" +(num1/num2));
+						break;
+					}
+					case '%':
+					{
+						System.out.println("Enter number 1 :");
+						num1=Sc.nextFloat();
+						System.out.println("Enter number 2 :");
+						num2=Sc.nextFloat();
+
+						num1=(int)num1;
+						num2=(int)num2;
+
+						System.out.println("Modules of "+num1+" and "+num2+" is :" +(int)(num1%num2));
+						break;
+					}
+					default :
+					{
+						System.out.println("Entered invalid choice");
+					}
+
+			}
+}
+	}
+}
+//case value always contains constant vales 
+//as there is no proper use of switch case if we use variable in case 
+// not allowed datatypes float,double,boolean,
+//string int allowed
+//EX:
+
+/*note: variables are not allowed with case as case must have consatant values 
+-datatype such as long,float ,double,and boolean are not allwed in switch statement
+-Datatypes such as byte,short,int char and string are allowed 
+-Using break ststement in default block is optional
+
+where we use switch statement without braek statement
+
+BREAK 
+-break is keyword and control transfer statement
+-It is also known as jump statement
+-break statement can be used inside switch statement and loop statements
+-if break ststement exicutes the control is bought outside the switch/loop statement
+(stops the exicution of rest of the statements)
+*/

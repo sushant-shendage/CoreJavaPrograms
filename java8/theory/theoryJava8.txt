@@ -171,6 +171,84 @@ functional interface:
 -feature introduced in java 1.8
 - To hold lambda expression we need functional interface refrence variable
 -'@FunctionalInterface' annotation is used to specify the functional interface
+-inside functional interface we can have object class method as abstract method
+  -we can have toString(),equals()  and hashcode() methods  as abstract method
+  -why other are not abstract method
+     -(clone is native)(finalize() depriciated)(other are final)
+
+............................................................................................................
+// package javapgms.oops.functionalinterface;
+public class Driver1 {
+    public static void main(String[] args) {
+        
+    }
+}
+
+ @FunctionalInterface
+interface Demo1{
+void m1();
+}
+
+@FunctionalInterface
+interface Demo2{
+void m1();
+boolean equals(Object o);
+}
+// @FunctionalInterface
+// interface Demo3{
+// void m1();
+// void m2();
+// }
+@FunctionalInterface
+interface Demo4{
+void m1();
+ String toString();
+}
+
+@FunctionalInterface
+interface Demo5{
+void m1();
+ int hashCode();
+}
+
+// @FunctionalInterface
+// interface Demo6{
+// void m1();
+//  void finalize();
+// }
+
+// @FunctionalInterface
+// interface Demo7{
+// void m1();
+//  void notify();
+// }
+
+// @FunctionalInterface
+// interface Demo8{
+// void m1();
+//  Object clone();//as this is prefixed with protected
+// }
+
+// @FunctionalInterface
+// interface Demo9{
+// void m1();
+//  Class getClass(); 
+// }
+
+// @FunctionalInterface
+// interface Demo10{
+//  void m1();
+//  int hashCode();
+//  String toString();
+//  boolean equals();
+// }
+
+............................................................................................................
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 ...PGM(example for lambda expression:01)..............................................................................................
 public class Driver3 {
     public static void main(String[] args) {
@@ -377,7 +455,31 @@ public class Driver4 {
 [77, 67, 57, 48, 9]
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
+{
 
+  functional interface=SAM
+  what are native methods
+  
+}
+
+
+NOTE:inside a functional interface we have object class method as abstract methods
+
+inside object class we have 11 methods,
+   8. `public String toString()`  
+   2. `public boolean equals(Object obj)`  
+   5. `public int hashCode()`  
+
+   1. `protected Object clone() throws CloneNotSupportedException`  
+
+   3. `protected void finalize() throws Throwable`  
+   
+   4. `public final Class<?> getClass()`  
+   6. `public final void notify()`  
+   7. `public final void notifyAll()`  
+   9. `public final void wait() throws InterruptedException`  
+   10. `public final void wait(long timeout) throws InterruptedException`  
+   11. `public final void wait(long timeout, int nanos) throws InterruptedException`  
 ==========================================================================================================================================/
 [18/12/24]/
 
@@ -387,10 +489,7 @@ public class Driver4 {
 ==========================================================================================================================================\
 
 
-............................................................................................................
-............................................................................................................
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
  
 
 ............................................................................................................

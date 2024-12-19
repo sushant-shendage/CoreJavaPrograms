@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class  LeapYear
+{
+	
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		int year,;
+for( year=2000;year<=5000;year++)
+	{
+		//System.out.println("\nEnter a year :");
+		//int year=sc.nextInt();
+
+		//System.out.println("Entered year :"+year);
+		if(year<1582)
+		{
+			System.out.println("Please enter year after 1582 ");
+		}
+		 else if((year%4==0 && year%100!=0 )||( year%400==0 ))
+		{
+			System.out.println(year+" _/");
+		}
+		else
+		{
+			System.out.println(year+" X");	
+		}
+    }
+	}
+}
+//year<1582
+//2000 to 5000
+//leap year count
+//even leap year

@@ -1,0 +1,50 @@
+class UniqueNum25March24a1 
+{
+	public static void main(String[] args) 
+	{
+		 uniqueNum(11234);
+	}
+
+	public static void uniqueNum(int num)
+	{
+		if(unique(num))
+		{
+			System.out.println(num+" is a unique number.");
+		}
+		else
+		{
+			System.out.println(num+" is not a unique number.");
+		}
+	}
+	public static boolean unique(int num)
+	{
+		while(num>0)
+		{
+			if(UN(num/10,num%10))
+			{
+				num/=10;
+			}
+			else
+			{
+				break;
+			}
+		}
+
+		return num==0;
+			 
+	}
+	public static boolean UN(int num,int last)
+	{
+		 for (int i=num;i!=0 ;i/=10 )
+		 {
+			 if(num%10==last)
+			{
+				break;
+			}
+			num/=10;
+		 }
+
+		return num==0;
+			 
+	}
+}
