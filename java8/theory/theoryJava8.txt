@@ -3,6 +3,33 @@
   - when we go for lambda expression?
   - coding problem:print missing alphabets from given string
   -How to change default natural sorting of tree set?
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  -what is difference between abstract class and interface?
+  -What is difference between array and arraylist?
+  -What is difference between list and set?
+  -What is difference between comparable and comparator?
+  -What is difference between vector and arraylist?
+  -What is difference between hashset , linkedhashset and treeset?
+  -What is difference betwenn collection and collections?
+  -What is difference between linkedlist and arraylist?
+  -What is difference between map and collection?
+  -Write code to check given number is palindrom or not?
+  -
+  -what is exception?
+  -What is exception handling?
+  -What is exception hirarchy?
+  -Exception flow in java language programing
+  -Difference betwenn exception and error
+  -Difference between checked and checked exception
+  -Explain try , catch and finally block
+  -Explain differencre between throw and throws leyword
+  -Difference between final,finally and finalize
+  -When we will get NullPointerException ?
+  -When we will get ArrayIndexOutOfBoundException ?
+  -When we will get StringIndexOutOfBoundException ?
+  -What is exceptionPropogation?
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 }
 [12/12/2014]D2\\
  ==========================================================================================================================================\
@@ -483,19 +510,144 @@ inside object class we have 11 methods,
 ==========================================================================================================================================/
 [18/12/24]/
 
+[18/12/24]\
+==========================================================================================================================================/
+***Static methods in interface***
+-It is introduced in jdk 1.8
+-The main purpose of introducing static methods in interface to reduce number of lines of code to 
+ increase the code readability and remove the duplicate code also
+-we can call this method using method signature and interface name as refrence
+-static methods can't be inherited the child class
+-the implementation which is common for all the childs is written in static method in interface 
+-we can have more than one static method inside interface
+-we can have main method inside a interface
+............................................................................................................
+// package javapgms.java8.practicals.StaticMethods_02;
+
+public class Driver1 {
+    public static void main(String[] args) {
+        Car1 ob1 = new Car1();
+        Bicycal ob2 = new Bicycal();
+
+        ob1.fuel();
+        ob2.fuel();
+
+        Vehical.commonActivity();
+
+    }
+}
+
+interface Vehical {
+    void fuel();
+
+    static void commonActivity() {
+        start();
+        run();
+        stop();
+
+    }
+
+    static void start() {
+        System.out.print("START ");
+    }
+
+    static void run() {
+        System.out.print("RUN ");
+    }
+
+    static void stop() {
+        System.out.print("STOP ");
+    }
+}
+
+class Car1 implements Vehical {
+    @Override
+    public void fuel() {
+        System.out.println("fuel consumption:disel/petrol");
+    }
+}
+
+class Bicycal implements Vehical {
+    @Override
+    public void fuel() {
+        System.out.println("fuel consumption: No fuel");
+    }
+}
+............................................................................................................
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+[COMMON FEATURES ] :calling | SMS | FM
+[SMARTPHONES] : video call | play games |install and use apps | can run browser | camera
+[TABLETS    ] :  can VIDEO  games | can code
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+............................................................................................................
+// package javapgms.java8.practicals.StaticMethods_02;
+
+public class Driver1 {
+    public static void main(String[] args) {
+        Car1 ob1 = new Car1();
+        Bicycal ob2 = new Bicycal();
+
+        ob1.fuel();
+        ob2.fuel();
+
+        Vehical.commonActivity();
+
+    }
+}
+
+interface Vehical {
+    void fuel();
+
+    static void commonActivity() {
+        start();
+        run();
+        stop();
+
+    }
+
+    static void start() {
+        System.out.print("START ");
+    }
+
+    static void run() {
+        System.out.print("RUN ");
+    }
+
+    static void stop() {
+        System.out.print("STOP ");
+    }
+}
+
+class Car1 implements Vehical {
+    @Override
+    public void fuel() {
+        System.out.println("fuel consumption:disel/petrol");
+    }
+}
+
+class Bicycal implements Vehical {
+    @Override
+    public void fuel() {
+        System.out.println("fuel consumption: No fuel");
+    }
+}
+............................................................................................................
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+fuel consumption:disel/petrol
+fuel consumption: No fuel
+START RUN STOP 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+==========================================================================================================================================/
+[18/12/24]/
+
 
 
 [00/00/00]\
 ==========================================================================================================================================\
 
 
-
- 
-
-............................................................................................................
-............................................................................................................
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
 
 

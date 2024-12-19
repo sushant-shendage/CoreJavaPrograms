@@ -10,12 +10,12 @@ public class Driver1 {
 
         Vehical.commonActivity();
 
-
     }
 }
 
 interface Vehical {
     void fuel();
+
     static void commonActivity() {
         start();
         run();
@@ -23,13 +23,15 @@ interface Vehical {
 
     }
 
-    static void start(){
+    static void start() {
         System.out.print("START ");
     }
-    static void run(){
+
+    static void run() {
         System.out.print("RUN ");
     }
-    static void stop(){
+
+    static void stop() {
         System.out.print("STOP ");
     }
 }
