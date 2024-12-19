@@ -1,8 +1,0 @@
-class FibSeries22March24 
-{
-	public static void main(String[] args) 
-	{
-		 //fibSeries(8);
-		 System.out.println("hi");
-	}
-}
