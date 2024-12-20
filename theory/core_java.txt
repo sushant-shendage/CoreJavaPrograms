@@ -83,6 +83,7 @@
 
 -------------------------------------------------------------------------------------------------------------|
 ✅️✅️wrapper class(boxing,unboxing,auto boxing ,auto unboxing)
+   - wraper class implements comparator and comparable   
 -------------------------------------------------------------------------------------------------------------|
 ✅️✅️modifiers (acess /member )[⭐⭐⭐⭐⭐⭐⭐]
 ✅️✅️final modifiers[⭐⭐⭐⭐⭐]
