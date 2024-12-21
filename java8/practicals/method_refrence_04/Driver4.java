@@ -9,7 +9,6 @@ public class Driver4{
     static void  welcomemsg(){
         System.out.println(" Thank you for choosing Axis Bank..!..!");
         System.out.println(" You will welcome kit soon..!");
-
     }
 }   
 
