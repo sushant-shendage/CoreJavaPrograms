@@ -2,13 +2,13 @@
 
 public class AllTrianglePatterens  {
     public static void main(String[] args) {
-         StarPatterenV1Sp0St1A01(7);
-         StarPatterenV1Sp0St1A02(7);
-         StarPatterenV1Sp1St1A01(7);
- 
+        StarPatterenV1Sp0St1A01RightAngledTrianleVerticalSideFAcingToLeft(7);
+        StarPatterenV1Sp0St1A02(7);
+        StarPatterenV1Sp1St1A01RightAngledTrianleVerticalSideFAcingToRight(7);
+        StarPatterenV1Sp1St2A01(7);
     }
 
-    public static void StarPatterenV1Sp0St1A01(int numberOfRows) {
+    public static void StarPatterenV1Sp0St1A01RightAngledTrianleVerticalSideFAcingToLeft(int numberOfRows) {
         for (int i = 1; i <= numberOfRows; i++) {
             for (int j = 1; j <=numberOfRows-i; j++) {
                 System.out.print("");
@@ -19,6 +19,7 @@ public class AllTrianglePatterens  {
             System.out.println();
         }
     }
+    
 
     public static void StarPatterenV1Sp0St1A02(int numberOfRows) {
         for (int i = 1; i <= numberOfRows; i++) {
@@ -31,7 +32,7 @@ public class AllTrianglePatterens  {
             System.out.println();
         }
     }
-    public static void StarPatterenV1Sp1St1A01(int numberOfRows) {
+    public static void StarPatterenV1Sp1St1A01RightAngledTrianleVerticalSideFAcingToRight(int numberOfRows) {
         for (int i = 1; i <= numberOfRows; i++) {
             for (int j = 1; j <=numberOfRows-i; j++) {
                 System.out.print(" ");
@@ -43,9 +44,18 @@ public class AllTrianglePatterens  {
         }
     }
 
+    public static void StarPatterenV1Sp1St2A01(int numberOfRows) {
+        for (int i = 1; i <= numberOfRows; i++) {
+            for (int j = 1; j <=numberOfRows-i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("**");
+            }
+            System.out.println();
+        }
+    }
+
 }
 
-@FunctionalInterface
-interface FunctionalInterfaceForPattteren{
-    void patteren(int numberOfRows);
-}
+ 
