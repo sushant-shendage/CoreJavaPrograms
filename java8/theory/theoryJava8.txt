@@ -847,3 +847,23 @@ can move anywhere..!
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ==========================================================================================================================================/
 [00/00/00]/
+================================================================
+Basic terminologies
+  -COMPUTER
+  -SOFTWARE
+  -HARDWARE 
+
+  -what is convention why we use convention
+
+  -what is programing?what is the differnce between coding and programing
+  -levels of programing languages
+  -examples of HLL
+  -why pweple shifted from lll to MLL to HLL?
+
+  -what is compiler?
+  -what is interpreter?
+  -differce between compiler and interpreter (def|execute code...|error|usecase)
+  -JDK|JRE|JVM
+
+  -tell me about java language
+================================================================
