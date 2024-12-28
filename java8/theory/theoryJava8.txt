@@ -1236,6 +1236,7 @@ Consumer
 -presetni in java.util.Consumer and introduced in  1.8
 -Function <T  r>  T=type of parameter    r-return type
 -Abstract method : public abstract void  accept(T t);
+-when we will go for consumer :for printing purpose
 
 ............................................................................................................
 import java.util.function.Consumer;
@@ -1253,12 +1254,42 @@ public class Driver1 {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+forEach:
+-it predefined default method present in iterable interface 
+-it will take consumer  as aargument
+-default void forEach(Consumer c)
+............................................................................................................
+// package javapgms.java8.practicals.predefinedFunctionalInterface.consumerpfxi;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
+
+public class Driver1 {
+    public static void main(String[] args) {
+        Consumer <Integer> ob1=n->System.out.println(n);
+        ob1.accept(546);
+
+        List <Integer> l1=Arrays.asList(10,20,30,40);
+        l1.forEach(n->System.out.println(n));
+        
+        
+    }   
+}
+............................................................................................................
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+546
+10
+20
+30
+40
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-What are wild card charecters? ?super
+
 =========================================================================================
 
-............................................................................................................
-............................................................................................................
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 ............................................................................................................
