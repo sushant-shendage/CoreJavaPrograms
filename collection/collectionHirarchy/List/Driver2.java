@@ -46,5 +46,12 @@ public class Driver2 {
          for (Object i : list4) {
             System.out.print(i+" ");
          }
+
+         System.out.println("\nget element by index :");
+         System.out.println(list4.get(5));
+
+
+         System.out.println("get list size by refrence variable:");
+         System.out.println(list4.size());
     }
 }
