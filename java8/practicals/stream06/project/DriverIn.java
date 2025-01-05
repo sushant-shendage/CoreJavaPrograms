@@ -92,6 +92,7 @@ class StudentInterfaceImp1 implements StudentInterface {
         }
     }
 
+
     @Override
     public void sortStudents(String attributeName) {
         System.out.println("enter attribute based on you want to sort student...[name/age]");
@@ -104,7 +105,7 @@ class StudentInterfaceImp1 implements StudentInterface {
         } else if (attributeName.equals("age")) {
 
             studentInfo.sort((o1, o2) -> o1.age - o2.age);
-            System.out.println("sorted syudents based on age :");
+            System.out.println("sorted students based on age :");
             displayStudents();
         }
     }
@@ -128,7 +129,7 @@ class StudentInterfaceImp1 implements StudentInterface {
 
     @Override
     public void updateStudentName() {
-        System.out.println("Enter student roll number to remove student..!");
+        System.out.println("Enter student roll number to update student..!");
         int removeByRollNumber = sc.nextInt();
 
         if (studentInfo.stream().filter(n -> n.rollNumber == removeByRollNumber).collect(Collectors.toList())
@@ -148,7 +149,7 @@ class StudentInterfaceImp1 implements StudentInterface {
             singleStudent.name = newName;
             System.out.println("updated list..!");
             studentInfo.forEach(System.out::println);
-            System.out.println("Student removed successfully..!");
+            System.out.println("Student Updated successfully..!");
         }
     }
 }
@@ -161,7 +162,7 @@ public class DriverIn {
         do {
             menue();
             System.out.println("Enter the code to perform operation..!");
-            inputCode=StudentInterfaceImp1.sc.nextInt();
+            inputCode = StudentInterfaceImp1.sc.nextInt();
             switch (inputCode) {
                 case 1: {
 
@@ -238,3 +239,4 @@ public class DriverIn {
 
     }
 }
+
