@@ -16,7 +16,7 @@ public class Driver3 {
         }).collect(Collectors.toList());
 
         ansEmpInfo.forEach(System.out::println);
-        System.out.println("---------------------");
+        System.out.println("---------------------------------------");
 
         empInfo.stream().filter(n -> n.salary >= 50000).map(n -> {
             n.salary *= 1.20;
@@ -24,6 +24,7 @@ public class Driver3 {
             return n;
         }).forEach(System.out::println);
 
+        
     }
 }
 

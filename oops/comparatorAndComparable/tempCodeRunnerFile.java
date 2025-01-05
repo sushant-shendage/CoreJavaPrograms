@@ -19,16 +19,16 @@ public class Driver1 {
         System.out.println(listOfIntegers);
 
         //implicit sorting in asencending order by sort() method
-        System.out.println("implicit sorting in asencending order by sort() method");
         Collections.sort(listOfIntegers);
         System.out.println(listOfIntegers);
 
 
        //changing default sorting order by sort() and compare method of comparator functinal interface
-       System.out.println("changing default sorting order by sort() and compare method of comparator functinal interface");
         listOfIntegers.sort((i1,i2)->(int)i2-(int)i1);
         System.out.println(listOfIntegers);
 
-         
+         //changing default sorting order by sort() and compare method of comparable functinal interface
+         //code pending..!????????????????????????[WRITE CODE HERE..!]
+         System.out.println(listOfIntegers);
     }
 }

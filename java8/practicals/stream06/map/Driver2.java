@@ -20,7 +20,7 @@ public class Driver2 {
         List<Integer> ansList2 = streamObjectFiltermap.collect(Collectors.toList());
         ansList2.forEach(System.out::println);
 
-        System.out.println("-------------------------------");
+        System.out.println(">>------------------------------->>");
 
         List<Integer> ansList = intList.stream().filter(n -> n >= 50).map(n -> n * 2).collect(Collectors.toList());
         ansList.forEach(System.out::println);
