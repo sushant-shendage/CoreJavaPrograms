@@ -5,16 +5,16 @@ public class PascalTriangle {
         int inputRows = 5;
 
         for (int i = 0; i < inputRows; i++) {
-            for (int j = inputRows - i; j > 0; j--) {
+            for (int j = inputRows - i; j > 0; j--) 
                 System.out.print(" ");
-            }
-            for (int j = 0; j <= i; j++) {
+            
+            for (int j = 0; j <= i; j++) 
                 System.out.print(ncn(i, j) + " ");
-            }
-        System.out.println();
+            
+            System.out.println();
         }
 
-        System.out.println(ncn(7,7));
+        // System.out.println(ncn(7,7));
  
 
     }
