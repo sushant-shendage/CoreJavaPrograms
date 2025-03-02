@@ -6,11 +6,14 @@ public class Driver2 {
 }
 class Parent1{
     Parent1(){
+        
 System.out.println("constructor with no-arguments");
     }
     Parent1(char c){
         System.out.println("constructor with single char-argument");
-
+    }
+    static{
+        System.out.println("static block 1");
     }
 }
 
