@@ -2,6 +2,16 @@ import java.lang.reflect.Constructor;
 import java.util.Arrays;
 
 public class SixWaysToCreatObject {
+
+    /*
+     * 3]newInstance() method of class 
+     * 2]newInstance() method of constructor
+     * 1]new and class constructor
+     * 4]clone
+     * 5]Deserialization
+     * 6]Anonymous class
+     * 
+    */
     public static void main(String[] args) throws Exception{
         Demo1 obj = new Demo1(); // Object created normally
         System.out.println("way1-------------------------");
@@ -14,6 +24,12 @@ public class SixWaysToCreatObject {
         
             Constructor <Demo1> constructorObj = Demo1.class.getConstructor();
             Demo1 obj3 = constructorObj.newInstance(); // Object using Reflection API
+            Demo1 obj10 = Demo1.class.getConstructor().newInstance();
+            
+            
+            
+            
+
         
 
         System.out.println("way3-------------------------");

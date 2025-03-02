@@ -1,3 +1,4 @@
+package javapgms.Problems;
 // package javapgms.puzzelProblems;
 /*
  problem :

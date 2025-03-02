@@ -1,3 +1,4 @@
+package javapgms.Problems;
 public class Pattern {
     public static void main(String[] args) {
         pattern(4);;
