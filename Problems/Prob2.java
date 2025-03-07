@@ -7,7 +7,7 @@
 public class Prob2 {
     public static void main(String[] args) {
         int arr[] = { -1,9,2, 0,6,5, 11, 15,9,10,12,100 };
-        printCombination(arr, 180); // Find and print the pair that sums to the target
+        printCombination(arr, 11); // Find and print the pair that sums to the target
     }
 
     /**
@@ -24,7 +24,7 @@ public class Prob2 {
                 if ((arr[i] + arr[j]) == target) {
                     count++;
                     System.out.printf("(%d, %d)", arr[i], arr[j]);
-                    continue; // Exit after finding the first valid pair
+                    
                 }
             
         

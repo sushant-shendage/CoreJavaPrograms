@@ -4,30 +4,30 @@
   - coding problem:print missing alphabets from given string
   -How to change default natural sorting of tree set?
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  -what is difference between abstract class and interface?
-  -What is difference between array and arraylist?
-  -What is difference between list and set?
-  -What is difference between comparable and comparator?
-  -What is difference between vector and arraylist?
-  -What is difference between hashset , linkedhashset and treeset?
-  -What is difference betwenn collection and collections?
-  -What is difference between linkedlist and arraylist?
-  -What is difference between map and collection?
-  -Write code to check given number is palindrom or not?
+  - what is difference between abstract class and interface?
+  - What is difference between array and arraylist?
+  - What is difference between list and set?
+  - What is difference between comparable and comparator?
+  - What is difference between vector and arraylist?
+  - What is difference between hashset , linkedhashset and treeset?
+  - What is difference betwenn collection and collections?
+  - What is difference between linkedlist and arraylist?
+  - What is difference between map and collection?
+  - Write code to check given number is palindrom or not?
   -
-  -what is exception?
-  -What is exception handling?
-  -What is exception hirarchy?
-  -Exception flow in java language programing
-  -Difference betwenn exception and error
-  -Difference between checked and checked exception
-  -Explain try , catch and finally block
-  -Explain differencre between throw and throws leyword
-  -Difference between final,finally and finalize
-  -When we will get NullPointerException ?
-  -When we will get ArrayIndexOutOfBoundException ?
-  -When we will get StringIndexOutOfBoundException ?
-  -What is exceptionPropogation?
+  - what is exception?
+  - What is exception handling?
+  - What is exception hirarchy?
+  - Exception flow in java language programing
+  - Difference betwenn exception and error
+  - Difference between checked and checked exception
+  - Explain try , catch and finally block
+  - Explain differencre between throw and throws leyword
+  - Difference between final,finally and finalize
+  - When we will get NullPointerException ?
+  - When we will get ArrayIndexOutOfBoundException ?
+  - When we will get StringIndexOutOfBoundException ?
+  - What is exceptionPropogation?
 
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 }
@@ -70,15 +70,15 @@
        -while doing project it is mandatory to use/implement java 8 features
 ------------------------------------------------------------------------------------
 features introduced in java:
-  -A]lambda expression
-  -B]functional interface
-  -F]predefined functional interface
-  -c]static and default methods
-  -D]:: oerator (method refrence)
-  -E]constructor refrence
-  -G]streams
-  -H]date and time
-  -I]OPtional class
+  -A] lambda expression
+  -B] functional interface
+  -F] predefined functional interface
+  -c] static and default methods
+  -D] :: oerator (method refrence)
+  -E] constructor refrence
+  -G] streams
+  -H] date and time
+  -I] OPtional class
 ------------------------------------------------------------------------------------ 
 }
 
@@ -111,11 +111,11 @@ features introduced in java:
 [11/12/2014]\\
  ==========================================================================================================================================\
  ***concept 01:lambada expression(LISP)***(Ananymous expression):
-  -anonymous functional
-  -It does not have modifiers 
-  -it does not have identifier/name
-  -It does not have return type
-  -sytax:
+  - anonymous functional
+  - It does not have modifiers 
+  - it does not have identifier/name
+  - It does not have return type
+  - sytax:
     (optional:formal arguments)-->{
         //stmt
     };
@@ -389,22 +389,22 @@ return  comparableObject.compareTo(o);
 }
 
 .............................................................................................................
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-id :123 name :AB-name1
-id :456 name :AA-name1
-id :789 name :C-name1
-id :126 name :D-name1
-------sorting using comparable-------------------------------------
-id :126 name :D-name1
-id :789 name :C-name1
-id :123 name :AB-name1
-id :456 name :AA-name1
-----------sorting using comparator---------------------------------
-id :126 name :D-name1
-id :789 name :C-name1
-id :123 name :AB-name1
-id :456 name :AA-name1
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ id :123 name :AB-name1
+ id :456 name :AA-name1
+ id :789 name :C-name1
+ id :126 name :D-name1
+ ------sorting using comparable-------------------------------------
+ id :126 name :D-name1
+ id :789 name :C-name1
+ id :123 name :AB-name1
+ id :456 name :AA-name1
+ ----------sorting using comparator---------------------------------
+ id :126 name :D-name1
+ id :789 name :C-name1
+ id :123 name :AB-name1
+ id :456 name :AA-name1
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ==========================================================================================================================================/
 [16/12/24]/
 

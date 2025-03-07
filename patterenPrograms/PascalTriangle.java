@@ -15,8 +15,6 @@ public class PascalTriangle {
         }
 
         // System.out.println(ncn(7,7));
- 
-
     }
 
     static int ncn(int i, int j) {

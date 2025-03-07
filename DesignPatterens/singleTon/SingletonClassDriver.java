@@ -34,9 +34,9 @@ class SingletonClass {
      */
     public static SingletonClass createSingletonClassInstance() {
         // Lazy initialization - the instance is created only when needed
-        if (singletonClassObj == null) {
+        if (singletonClassObj == null) 
             singletonClassObj = new SingletonClass();
-        }
+        
         return singletonClassObj; // Return the same instance
     }
 }

@@ -6,17 +6,17 @@ P:program to rename thread
 P:program to prove execution of main and custom thread
 
 ------------------------------------------------------------------------------------------------------------------------------------------
--Multitasking
-  -defination
-  -type explanation
-  -advantages of each type
-  -applications of multithreading
-  -why we can't tell exact output in multithreading
-    -explanation
-    -note on thread shedular
--ways to define threads
-  -2 ways explanatinon
-  -which way is best ?why?
+ -Multitasking
+   -defination
+   -type explanation
+   -advantages of each type
+   -applications of multithreading
+   -why we can't tell exact output in multithreading
+     -explanation
+     -note on thread shedular
+ -ways to define threads
+   -2 ways explanatinon
+   -which way is best ?why?
 -thread class and it's methods and constructors
   -use
   -❌methods
