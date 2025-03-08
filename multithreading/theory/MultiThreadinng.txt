@@ -48,8 +48,8 @@ P:program to prove execution of main and custom thread
 -Runnable interface:
    -It is functional interface present in java.lang package
    -It has one abstract method i.e run() method
-   -prototype of run() method:'public absract void run()'
-   -Which is best way to definne thread ?why?
+   -prototype of run() method:'public abstract void run()'
+   -Which is best way to define thread ?why?
      -Defining thread using runnable interface is the best way.Beacuse it provides us 
       flexibility to extend other class which was not possible using thread class
 -Difference between start() and run() method:
@@ -57,16 +57,16 @@ P:program to prove execution of main and custom thread
    -help us to     (create thread        |execute thread                  )
    -it is          (concrete method      |abstract method                 )
    -called         (only once for thread |called multiple times for thread)  
-   -called         (explicitly           | implicitly                     )
+   -called         (explicitly           | implicitly                     ) ?????
 
 -thread life-cycle :
  -In java all thread follow thread life-cycle.
- -thread life cycle consist of various states and thata are,
+ -thread life cycle consist of various states and that are,
    -new:when thread object is created
    -runnable:when main method is called and thread is ready for execution
    -running:thread shedular allocates processor for thread for execution
    -blocked:current thread excution paused for execution of higher priority thread 
-   -terminated:after execution of main thread ,thread will go to dead state
+   -terminated:after execution of thread ,thread will go to dead state
 
 
 ===============================================================================================/
