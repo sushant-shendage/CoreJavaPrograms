@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Driver1 {
     public static void main(String[] args) {
-        BookMyShow ob1=new BookMyShow();
 
         Mythread person1=new Mythread();
         person1.seat=7;

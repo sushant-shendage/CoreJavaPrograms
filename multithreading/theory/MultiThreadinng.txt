@@ -122,7 +122,7 @@ P:program to prove execution of main and custom thread
 
 
 What is data inconsistency problem?[!][program to demonstrate data inconsistency problem]
-When multiple threads executing simultaneously on same java object 
+When multiple threads executing simultaneously on same resource(java object,variable or method) 
 there might be chances of data consistence .To avoid this problem we go for Synchronization.
 
 data consistency with analogy of biryani problem.
@@ -166,7 +166,7 @@ B] thread synchronization
    -a)Mutual  exclusion(synchronized block)(static synchronized method)
    -b)cooperation(inter thread communication)
       -wait and notify overloaded methods in object class
-      -itc=threads communicating is each other using object class methods mentioned above
+      -itc=threads communicating is each other using object-class's methods mentioned above
 {
 WAHT IS DEADLOCK?
 WHAT ARE DEOMON THREADS?
