@@ -1,8 +1,7 @@
-// package javapgms.patterenPrograms;
-
-public class AllTrianglePatterens  {
+public class Expt {
     public static void main(String[] args) {
-         // 1]trianlge patterens
+
+        // 1]trianlge patterens
         // 1.1] right angled triangle with vertical side facing to left and base at bottom
 
         int n = 11;
@@ -339,9 +338,7 @@ public class AllTrianglePatterens  {
 
         }
         System.out.println();
+
     }
-    
 
 }
-
- 
