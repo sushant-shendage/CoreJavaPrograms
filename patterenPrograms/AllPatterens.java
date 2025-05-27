@@ -339,7 +339,11 @@ public class AllPatterens  {
 
         }
         System.out.println();
+
+        
     }
+
+
     
 
 }
