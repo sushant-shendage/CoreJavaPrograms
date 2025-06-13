@@ -2,7 +2,7 @@
 
 public class Driver1 {
     public static void main(String[] args) {
-      Design1 d1=  new Design1(){
+        new Design1(){
 
             @Override
             public void display() {
@@ -14,10 +14,10 @@ public class Driver1 {
                  System.out.println("display2");
             }
 
-        };
+        }.display();
 
-        d1.display();
-        d1.display2();
+        // d1.display();
+        // d1.display2();
     }
 }
 
