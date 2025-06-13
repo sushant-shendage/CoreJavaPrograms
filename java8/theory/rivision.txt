@@ -1,0 +1,720 @@
+Oracal and mySQL [t+p]
+Core java [t+p]
+Advance Java ,Hibernate, spring core &mvc,springboot [t+p]
+Html css,js -css framework
+
+===================
+✳SQL(oracal,mySQl,postgreSQL)
+01) ✅✅ What is data?
+02) ✅✅ What is database?
+03) ✅✅ DBMS and RDBMS
+??)  ✅✅ types of dbms
+04) ✅✅ Relational model
+05) ✅✅ Ef codd rules
+06) ✅✅ Datatype in sql
+??)technical of Datatype 
+07) ✅ Constraints and it's types
+??)practicales
+08) ✅ Primary vs foreign key
+09) ✅ Null vs zero
+10) ✅ Difference between primary and foreign key
+11) ✅ Explain sql statements
+??)DDL what is,
+CREATE--------------------------
+??)✅✅Create(oracal)what is,syntax 
+??)✅✅How to add Constraints while table creation 
+       ✅✅How to add primary and foreign key
+
+RENAME-------------------------
+??)✅✅how to rename table name
+-------------------------
+??)✅✅How to describe table?
+-------------------------
+ALTER
+??)✅✅How to add column (oracal)
+??)✅✅How to remove column from table(oracal)
+??)✅✅How to modify column Datatype 
+??)✅How to modify Null constant?
+✅✅Add
+
+ and drop constraint
+-------------------------
+✅✅Truncate(oracal),use
+-------------------------
+??)✅✅Drop(oracal)
+??)✅✅Recover table from bin
+??)✅✅Delete table from bin
+
+-------------------------
+
+✅✅How to delete table from bin??
+✅✅DDL statements are auto commit.is it correct?
+
+
+
+DML
+??)✅✅how to insert single record
+??)✅✅How to update record
+??)✅✅How to delete record
+
+
+✅✅Diff: Truncate and delete
+
+✅✅Why we use TCL
+✅✅commit
+✅✅Rollback 2 statements
+✅✅Savepoint
+
+DCL
+??)✅✅Grant
+??)✅✅revoke
+
+
+??)✅✅Explain dual in oracal database
+12) ✅✅ Explain dql statements
+04) ✅✅ Explain from-clause
+05) ✅✅ Explain select-clause
+06) ✅✅ Explain distinct keyword
+07) ✅✅ Explain expression 
+08) ✅✅ Explain alias name,ways of alias naming
+09) ✅✅ What is selection statement ?
+10) ✅✅ Use and execution of where clause
+11) ✅✅ Explain operators in sql
+12) ✅✅Explain concatination operator
+13) ✅✅ Explain logical operator
+14) ✅✅ Explain "in" and "not in" operator
+15) ✅✅ Explain "between" and "not between" operator
+16) ✅✅ Explain "like" and "not like" operator
+17) ✅✅ Explain "%" and "_" special symbol for patterens matching in like operator 
+18) ✅✅ Explain escape sequence charecter in sql.why we use it
+
+19) ✅✅ Explain "is" and "not is" operator 
+19) ✅✅ what are functions?
+20) ✅✅ Explain types of functions in sql
+21) ✅✅ Explain mrf and it's characteristics(5 points)
+22) ✅✅ why we use group by clause& order of execution & characteristics 
+23) ✅✅ Difference between "where" & "having" clause
+24) ✅✅ what is sub-query? It's working,NOTE.case1,case2
+25) ✅✅ types of sub-query 
+26) ✅✅ note about multi-row sub-query[76]
+27) ✅✅ all vs any special operator
+28) ✅✅ What is nested sub-query[80],inner-outer query rules
+Number of queries we can nest-255
+??)✅✅nth max salary using
+--01)✅sub-query 
+--01)☑row num
+--01)☑limit
+
+
+36)✅✅max and min salary
+29) ✅✅ Employee-Manager relation
+30) ✅✅ joibs????T:employee from manager and vice versa using 
+and without using joins
+??)✅✅ANSI
+31)✅what are joins ?Explain joins,types of joins with syntax ansi&oracal
+32)✅Cartesian joins, inner joins,outer joins(left,right,full),self joins,natural joins
+??)✅✅which join do not have oracal syntax
+33)✅✅co-related sub-query working
+34)✅✅Difference between sub-query and co-related[104]
+35)✅✅exists and not exist operator
+ 
+37)SRF 16fx
+✅✅srf: Explain length()  one-arg
+✅✅srf: concat()  2-arg
+✅✅upper() 1-arg
+✅✅lower() 1-arg
+✅✅initcap() 1-arg
+✅✅reverse() 1-arg
+✅✅substr() 3-arg
+✅✅replace() 3-arg
+✅✅instr() 4arg
+✅✅Mod(,)
+✅✅round(,)??
+✅✅month_between(,)
+✅✅Last_day()
+✅✅to_char(,)
+✅✅NVL(,)
+✅✅38)DDL(5 statements)
+✅✅39)DDL are auto commit statement or not?
+✅✅40)DML language
+✅✅41)DCL 
+42)what is normalization?explain normalization 1nf,2nf,3rdnf,bcnf,
+43)index ,views
+44)stored procedures 
+
+
+what is dependent and determinant?(record)
+what is functional dependency?
+what is trivial dependency?
+what is non-trivial functional dependency?
+what is determinat/dependent?(primary key) ?
+What is non-trival functional dependency?
+What will be intersection of trivial and nontrival FD attributes?
+Explain 3 rules of FD/Armstrong's axioms ?(reflexive,augmentation,transitivity)
+Explain legal and illegal FD?
+Explain anomalies in database?(insertion,updation and deletion)
+why we use normalization?
+How we excatly do normalization?
+what is 'Signle responsibility principal'?
+Explain prime and non-prime attributes. 
+explain 1nf?(1 rule)
+explain 2f?(3 rules):
+
+explain bcnf
+}
+normalization is the process of converting large table into smaller table in order 
+to avoid data redendency and anomalies.
+
+data redeudency is nothing but duplication of data
+anaomalies:
+
+Different form of normalization
+1nf:data must be stored in table format and each cell should contain atomic value /single value
+2nf:
+bcnf
+3nf
+4nf
+5nf
+
+
+-- How to create database in mysql
+-- Explanation of 
+USE database_name;
+-- Datatype in mysql
+-- signed and unsigned datatypes
+-- create and drop 
+If not exists vs if exists
+-- show databases/tables;
+--how to select complete table data
+--how to insert multiple records in table
+--primary and foreign key Constraints 
+-- Constraints 5 +1Default
+-- how to add Constraints to table ex:check
+-- distinct keyword use with column
+-- condition based retrieval of data
+-- limit clause 
+
+===================================================
+CORE JAVA
+- What is functional programing?
+✅ Iterable Interface
+
+📌 Definition:
+
+Iterable is the root interface for all collection classes that can be traversed using 
+an enhanced for loop (for-each). It belongs to java.lang package.
+
+public interface Iterable<T> {
+    Iterator<T> iterator();
+}
+
+🔹 Key Points:
+
+Introduced in Java 5.
+
+It has only one method: iterator().
+
+Any class implementing Iterable can be used in a for-each loop.
+
+All collection classes like ArrayList, HashSet, LinkedList implement Iterable.
+
+-what is s/w,h/w,levels,platform,platform independency,about java,
+  Jre-jdk-jvm,program structure, variables datatypes,
+-tokens {literals , comments,keywords,identifiers,
+  separator and operators}
+-diff global and local variables 
+-diff-static vs non static variabels/methods and blocks
+
+
+-operator types-MACCBIRL
+-main types of operator 
+-Explain conditional operator,when to use
+-when to use ternary operator and if-else statement
+
+-comments types
+-conventions
+-widening vs narrowing tyoe casting
+-updating vs downcating
+-Types of variables local and globals
+-local variables rules
+-types of global variables
+
+
+
+
+
+-control flow statements{conditional and looping statements}
+-break ,continue,return statement
+-Explain datatypes supported by switchcase
+
+-Explain recursion with example [??]
+
+
+-static java members vs non-static java members
+
+-Methods{method,modularity with advantag,
+types,features,modifiers -access and non-access modifiers),method signature, 
+identifiers,method body,method call statement,.method defination
+-diff:actually and formal arguments 
+
+
+
+
+
+-final modifier
+-accessibility of  access modifiers
+-final modifiers{how to initilize static and non static final variable}
+-synchronized modifier ,repeat in multthreading
+
+-Explain why outer class can't  be private or protected
+-info:inner class can be private or protected
+
+
+-binding process of method(compile time binding/poly.orphism)
+-method loading
+-class loading
+-object loading
+-static members=class members{variables,methods ,block,initilizers}
+     -when to use static and non-static variables 
+         wrt object data sharing
+-non-static members. ==/==
+-multiple class file with riles
+-explain packages in java
+
+
+
+
+
+
+
+-what is Oops?why we use oop
+Why we:
+
+OOPs stands for Object-Oriented Programming System — it’s a programming paradigm 
+that organizes software design around objects rather than functions and logic.
+
+Clean  ,Maintainable,.modular, reusable code
+
+Dry principal
+
+-define class a what represents nin-static methods and variables
+-explain class loading process
+-multiple class file and it's rules 
+-top level class never prefixed with private and protected keyword
+-inner class are prefixed with 
+-Explain inner class and it's types
+-why we need inner classes
+Inner classes help logically group classes that are only used in one place, improving encapsulation and readability. They also allow access to outer class members and are useful in event handling or creating specialized behavior.
+-ways to implement abstract class
+    -extend keyword
+    -anonymous inner class
+-ways to implement functional interfaces 
+     -extend keyword
+     -using anonymous inner class
+    -lambda expression
+    -static/non-static method or constructor ref method ref
+-Object class
+      -Why we use object class in java
+"In Java, Object is the superclass of all classes,
+ providing common methods and ensuring every object can be handled generically."
+-it also provides methods for interthreadcommunication 
+of threds working on objects
+      -diff: == vs equal()
+      -methods of object class
+-which method of object class canbe inherited by functional interface as abstract method.why others are not inherited
+
+-diff:class and object
+-define object
+-how to create object in java
+
+-**Define constructors
+-What is,use
+-rules related to constructor
+-types of instructions in constructor
+-3 typezof constructor
+-constructor chaining define-why we do-
+-P-never prefixed with:static,final, abstract,Transient volatile,native
+
+Definition:
+Constructor chaining is the process of calling one constructor from another constructor within the same class or from a parent class using this() or super() respectively.
+ Why we do=>To avoid code duplication
+-constructor overloading 
+
+Constructor overloading means defining multiple constructors in a class with different parameter lists.
+   -Why we do:to define multiple ways to create object
+   -rules for overloading
+
+- relationships,new keyword 
+
+
+
+-relationship implementation
+-this  vs super keyword (when to use)
+-this vs super call statement
+-upcasting and downcating
+-
+
+
+
+
+-**polymorphism def
+✅ Simple Definition:
+
+> Polymorphism means the ability to perform a task in many different ways.
+
+✅ Technical Definition:
+
+> In Java, Polymorphism is the ability of an object to take multiple forms. It allows a single method or interface to work with different types of objects, enabling method overloading (compile-time) and method overriding (runtime).
+     -list-arraylist and likedlist,vehicle bycycle - car
+-Explain main types and sub-types
+-method overloading with example
+-constructor overloading with example
+-method/variable  shadowing/hiding example
+-diff : method overloading and overriding
+
+
+
+
+
+-relations in java
+-
+
+-Define inheritance in java
+-parent and child class | properties behaviour
+-extends and implements keyword 
+-pic not inherited
+
+
+
+
+
+
+
+
+==>EXPLAIN System. out.prinln()
+==>Explain JVM working
+==>Explain method binding process
+==>Explain class loading process
+==>Exaplin object loading process
+===================================================
+Advance Java 
+>----------×>  JDBC
+-what is implementing class,helper class?
+-types of java 3 types
+-types of applications
+-what is api 2 pints
+-what is jdbc 3 points
+-what is driver
+-group id and artifact id
+-STEP1 : forName() method of Class to register or load database driver
+-STEP2 : getConnection() method of Driver manager
+-STEP3 : createStatement()/prepareStatement()
+-STEP4 : execute()/executeUpdate()/executeQuery()
+                 Resultset,next(),getX()
+-STEP5 : close connection
+
+-executeQuery() vs getResultset() method of Resultset
+-execute() vs executeUpdate() vs executeQuery()
+-setX() vs getX() 2diff
+-Explain mvc
+-stm.addBatch("Q") and stm.executeBatch()
+-relations only Servlet vs Generic servlet vs Http servlet
+-how to create servlet api?
+-how to register servlet api in web.xml
+============================================
+Advance Java 16,17
+>----------×>  servelet.  
+-✅what is servlet 3 points
+-✅How servlet works
+-✅printWriter()
+   -- class injava.i.oi package
+   -- used to write
+   -- printWriter obj=resp.getWriter()
+   -- printEriterObj.print()
+-✅Http vs Generic class
+-✅✅tags to register servlet inside pom.xml
+--servlet-name&class inside servlet tag
+--servlet-name&urlpatyeren inside servlet mapping tag
+--✅getParameter() of request object
+--getWriter () of response object
+--getParameter() vs getinitParameter() of request object
+-✅elimination pom.xml configuration 
+using annotation based configuration
+-✅@webServlet("/url_patteren")
+-Queryparameter() to pass data to servlet
+A Query Parameter is a key-value pair appended to the URL of an HTTP GET request.
+
+Example URL:
+
+http://localhost:8080/MyApp/student?id=101&name=Ravi
+''''""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+-✅Explain servlet life cycle 5
+-✅welcome-file tag inside welcome-file-list
+  -default welcome-file[index.jsp]
+-✅load-on-startup tag inside servlet tag
+  --smaller the Integer larger the priority
+-what is request dispatcher,why we use how to
+   use and it's methods
+{
+- getRequestDispatcher( stringArg1 ) of request object
+- 
+}
+-✅response object ts sendRedirect() method
+-✅param-name,value tags inside 
+Context-param tag for servlet context
+   -inside init-param tag[servlet config]
+Context variable=getServletContext() method 
+inside service method
+-getAttribute() and setAttribute() of context variable 
+
+
+
+-✅Difference between servlet-context and 
+servlet-config
+-✅what is session?
+-✅what is session management?
+-✅why we use httpSession
+-✅how to create httpSession object 
+   --by creating httpSession object=request.getSession()
+-working of getSession() method
+-working of invalidate() method of httpSession 
+
+Advance Java 16,17
+>----------×>  jsp.  
+-✅✅why we use jsp
+-✅✅Difference.t tags of jsp
+-✅✅jsp lifecyle
+-✅✅cookie,how to create set age and fetch object,Advantages and disadvantages 
+-1✅✅fetching data from jsp page
+-✅✅sending data to jsp page using request[T]
+===================================================
+Hibernate 
+- what is orm?
+Hibernate is a popular Java framework used for object-relational mapping (ORM). It simplifies the development of Java applications that interact with a relational database (like MySQL, PostgreSQL, Oracle, etc.) by mapping Java classes to database tables.
+
+Best alternative for jdbc why 5 reasons
+
+✅✅ What is ORM (Object-Relational Mapping)?
+
+ORM stands for Object-Relational Mapping. It is a programming technique that allows developers to interact with a relational database using object-oriented programming languages like Java.
+
+✅✅Why Hibernate is best alternative for jdbc?4-6 reasions
+
+✅✅Tables and rows
+
+✅✅What are entity classes and 6 rules related to entity class
+
+✅✅2 .xml files and corresponding dependencies 
+       -postgreSQL | hibernate-core-relocation[pom.xml]
+       -url-UN-psw a d properties [persistence.xml]
+        -persitence.xml in MATA-INF folder of src/main/resource
+✅ what persistence.xml file consist of
+       Ans:database configuration info for Hibernate project in the form of.          different tags.we have to give FQN,url-UN-psw inside property tag
+
+☑✅ What is JPA
+JPA is a standardized API for Object Relational Mapping (ORM) in Java.
+
+✅✅ EntityManagerFactory vs EntityManager vs EntityTransactions
+
+
+✅✅Query interface and JPQL query
+creatQuery() of em object =query obj
+getResultList() of query obj
+queryObj.setParameter(arg1,arg2)
+
+
+✅One-to-one unidirectional
+{
+-Annotations used
+-Deleteting one entity do not results in deleting other.How to make it possible?
+}
+
+
+✅One-to -many bidirectional
+
+
+@Id,Entity,One-to-one,ineToMany,ManyToOne,ManyToMany,
+JoinColumn,_relational_mapping(mapped by ="")
+
+✅@Table(name="new_tableName"),generatedValue(strategy= generatedType.IDENTOTY)
+✅@column(name,nullable,updatelable,unique,insertable)
+
+
+✅@creationTimeStamp
+✅@updationTimeStamp
+
+
+✅@chcheable vs Entity
+✅@Transient
+
+
+
+
+
+✅✅Elimination of duplicate column
+
+✅✅FetchType,cascade
+
+
+✅✅cache mechanism
+✅✅Hibernate lifecycle with garbage collector fx
+
+
+===================================================
+Singleton class
+Serialization and deserializatio
+Transient keyword
+
+
+@Exception handler
+@restCobtrollerAdvice
+@restController,PathVariable,RequestParam,springBootApplication
+@get/put/post/deleteMapping
+@Autowored,Repository 
+@RequestMapping
+@RequestBody
+@RequestParam
+
+Spring  core 
+Coupling types
+
+3 ways to achieve coupling
+
+
+IOC and. DI
+
+
+Advantages
+Used for ti build wapp,eapp,standalones
+
+
+
+Spring container and it's types
+Types of spring container
+
+What is bean
+
+DI
+Using g xml and annotation based configurationnfiguration
+@Bean,Qualifier
+
+
+
+
+
+===================================================
+ sping mvc
+===================================================
+Spring boot
+Jason and springBoot
+Webservice vs wepApp
+RestApI
+
+
+
+Layers of springboot proje t
+
+Controller
+DTO
+DAO
+repository 
+Utility
+Entity
+ExceptionHandling package
+
+Http status codes
+
+Jpa and spring-data JPA
+
+
+Http requests of. RestAPI
+===================================================
+Html
+===================================================
+css
+===================================================
+js
+===================================================
+reactJs
+===================================================
+Projects
+===================================================
+
+Resume
+ --Continuous rivision-->
+
+
+
+✅Core java oops
+ -Core java collection | Core java exception handling
+-number program,array string program,patteren program
+-Advance Java and Hibernate rivision 
+
+
+
+-Core java multithreading
+-Core java java 8
+-spring core and MVC
+
+
+-Core java and Enum
+-Core java and string patteren
+-spring boot 
+
+
+
+
+
+
+
+
+
+
+
+
+YOUR CV SELECTED FOR
+
+https://www.aitechnosoftservices.info
+
+You have been selected on interview.
+
+Interview Languages:-
+Hindi, English, Marathi 
+
+"We Have Work Form Home & Office Work"
+
+▪Freshers Upto 16,000/-
+▪Shifts 9am-6pm / 10am-6lpm
+▪5 days working
+▪ Quali Minimum 12th pass
+Freshers can also apply
+Cab for pick and drop
+---------------------------------
+
+Interview Time: 10am to 12:00pm
+
+Vishrantwadi Interview Branch 📍
+Head Office ( Interview Venue ) Office No-201, 2nd Floor, Shpper E Orbit, Vishrantwadi, Pune, 411015.
+----------------------------------
+
+ Reference - ( HR nitya     )
+
+( So Be on Time : Best of Luck )
+
+NOTE :- Come Along With Resume & Save This Msg And Show on Reception.
+
+Contact no: 6395237143
+
+Map Location :- https://maps.app.goo.gl/9rkTpWjdq2iSCNNa7
+
+
+Core java theory 3 times
+Practicals
+
+Advance Java theory +practicals
+
+
+Spring boot 
+
+
+Html css js
