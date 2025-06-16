@@ -1,6 +1,6 @@
 public class DriverUpcastingDowncating {
     public static void main(String[] args) {
-        // upcasting
+        // upcasting 
         Parent1 ob = new Child1();
 
         System.out.println(ob.i);
@@ -8,7 +8,8 @@ public class DriverUpcastingDowncating {
         // System.out.println(ob.k);
         // System.out.println(ob.l);
 
-        System.out.println("-----------------------------------------------------");
+        System.out.println("-------------------------------------------------");
+        
         // downcasting
         Child1 ob2 = (Child1) ob;
 
@@ -16,7 +17,7 @@ public class DriverUpcastingDowncating {
         System.out.println(ob2.j);
         System.out.println(ob2.k);
         System.out.println(ob2.l);
-
+        
     }
 }
 
