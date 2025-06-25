@@ -1,3 +1,4 @@
+package NumberPgm;
 public class RotateNumber {
     public static void main(String[] args) {
 //  System.out.println("combi :"+combination(170));
