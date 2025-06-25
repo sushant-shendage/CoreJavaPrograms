@@ -30,3 +30,23 @@ class Child1 extends Parent1 {
     int k = 55;
     int l = 66;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
