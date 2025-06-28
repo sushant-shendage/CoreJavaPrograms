@@ -1,0 +1,1473 @@
+Oracal and mySQL [t+p]
+Core java [t+p]
+Advance Java ,Hibernate, spring core &mvc,springboot [t+p]
+Html css,js -css framework
+
+Enum | regex | inner class
+
+CORE JAVA
+-✅✅✅packages in java
+- ✅✅✅What is functional programing?
+✅✅✅ Iterable Interface
+
+📌 Definition:
+
+Iterable is the root interface for all collection classes that can be traversed using an enhanced for loop (for-each). It belongs to java.lang package.
+
+public interface Iterable<T> {
+    Iterator<T> iterator();
+}
+
+🔹 Key Points:
+
+Introduced in Java 5.
+
+It has only one method: iterator().
+
+Any class implementing Iterable can be used in a for-each loop.
+
+All collection classes like ArrayList, HashSet, LinkedList implement Iterable.
+
+
+
+✅✅✅CURSORS_IN_JAVA  :Iterator vs list iterator vs enumeration
+
+cursors are used to retrive collection object one by one
+
+Enumeration 
+-is one of the cursor introduced in jdk 1.0 present in java.util package
+-we can use this cursor for legacy class type of collection only
+-by using this cursor we can perform only read operation 
+-we can iterate only in forward direction
+-we use element() method to create object of Enumeration cursor
+-methods for iteration are
+     - public boolean hasMoreElement()
+     - public Object nextElement()
+-methods for operation
+     - NO METHODS ARE THERE TO PERFORM OPERATION
+
+Iterator 
+-is one of the cursor introduced in jdk 1.2 present in java.util package
+-It is universal cursor,we can use this cursor for all types of collection objects
+-by using this cursor we can perform  read and remove operation operation (add-on will lead to modification exception,try to access element which is not present get no such element exception)
+-It we can iterate only in forward direction and reverse direction
+-we use iterator() method to create object of Iterator cursor
+-methods for iteration are
+     - public boolean hasNext()
+     - public Object next()
+-methods for operation
+     -?? remove()
+
+
+ListIterator 
+-is one of the cursor introduced in jdk 1.2 present in java.util package
+-It is universal cursor,we can use this cursor for all types of collection objects
+-by using this cursor we can perform  read and remove ,add ,replace operation operation
+-It is bidirectional cursor meaning that,It we can iterate only in forward as well as reverse direction
+-we use listIterator() method to create object of ListIterator cursor
+-methods for iteration are
+     - public boolean hasNext()
+     - public Object next()
+     - public boolean hasPrivious()
+     - public Object privious()
+     - public int priviousIndex()
+      
+-methods for operation
+     -remove()
+     -set()
+     -add()
+
+
+
+✅✅-what is s/w,h/w,levels
+✅-Jre-jdk-jvm
+✅-program structure, variables ,datatypes,
+✅-about java,
+✅-Explain platform independency in java
+✅-tokens {literals , comments,keywords,identifiers,
+separator and operators}
+✅✅-diff global and local variables 
+✅✅-diff-static vs non static variabels/methods and blocks
+
+
+✅✅-operator types-MACCBIRL
+✅✅-main types of operator 
+✅✅-Explain conditional operator,when to use
+✅✅-when to use ternary operator and if-else statement
+
+✅✅-comments types
+✅✅-conventions
+✅✅-widening vs narrowing tyoe casting
+✅✅-upcasting vs downcating
+✅✅-Types of variables local and globals
+✅✅-local variables rules
+✅✅-types of global variables
+
+
+
+
+
+✅✅-control flow statements{conditional and looping statements}
+✅✅-break ,continue,return statement
+✅✅-Explain datatypes supported by switchcase
+✅✅-when to use switch case and when to use if else
+
+✅✅-Explain recursion with example [??]
+✅✅-How to do repetitive task in java? 2 ways to do repetitive task.
+
+✅✅-static java members vs non-static java members
+
+✅✅-Methods{method,modularity with advantag,
+types,features,modifiers -access and non-access modifiers),method signature, identifiers,method body,method call statement,.method defination
+-diff:actually and formal arguments 
+##
+[
+Method def
+Method def2
+Method syntax
+Return value
+Type
+Characteristics 
+
+]
+##
+
+
+
+
+✅✅-modifiers abs it's types
+-access modifiers
+
+✅✅-Why use  private modifier?
+To restruct access of members out of Class for security purposes like 
+Data protection,data misuse,encapsulation,to achieve abstraction
+✅✅-why we use protected modifier 
+Controlled extension where child class access certain 
+properties and behaviour of parent class
+
+✅✅-why we make java member default
+To achieve encapsulation eothin package
+
+✅✅-why we use public modifier
+    -to give unrestricted access
+
+
+✅✅-non-access .odifiers
+   ✅✅-final modifier
+    -in order to restrict modification of java members
+    -..
+-✅✅accessibility of  access modifiers
+-✅✅final variable{how to initilize static and non static final variable}
+✅✅-synchronized modifier ,repeat in multthreading
+
+✅✅-Explain why class can't  be private or protected
+
+
+✅✅-binding process of method(compile time binding/poly.orphism)
+✅✅-method loading
+✅✅-class loading
+✅✅-object loading
+✅✅-static members=class members{variables,methods ,block,initilizers}
+     ✅✅-when to use static and non-static variables 
+         wrt object data sharing
+✅✅-non-static members. ==/==
+✅✅-multiple class file with riles
+✅✅-explain packages in java
+
+
+
+
+
+
+
+✅✅-what is Oops?why we use oop
+Why we:
+
+OOPs stands for Object-Oriented Programming System — it’s a programming paradigm that organizes software design around objects rather than functions and logic.
+
+Clean  ,Maintainable,.modular, reusable code
+
+Dry principal
+
+✅✅-define class a what represents nin-static methods and variables
+✅✅-explain class loading process
+✅✅-multiple class file and it's rules 
+✅✅-top level class never prefixed with private and protected keyword
+✅✅-inner class are prefixed with 
+✅✅-Explain (def and why we use)inner class and it's types
+✅✅-why we need inner classes
+Inner classes in Java are classes declared inside another class. They are associated with their outer class and can access its members (even private ones).
+
+
+
+
+Inner classes help logically group classes that are only used in one place, improving encapsulation and readability. They also allow access to outer class members and are useful in event handling or creating specialized behavior.
+
+-ways to implement  ,abstract class,
+interface,and functional interface?
+
+
+
+
+
+
+✅✅-ways to implement abstract class
+    ✅✅-extend keyword
+    ✅✅-anonymous inner class
+✅✅-ways to implement functional interfaces 
+     ✅✅-extend keyword
+     ✅✅-using local inner class
+    ✅✅-lambda expression
+    ✅✅-static/non-static method or constructor ref method ref
+✅✅-Object class
+      ✅✅-Why we use object class in java
+"In Java, Object is the superclass of all classes,
+ providing common methods and ensuring every object can be handled generically."
+✅✅-it also provides methods for interthreadcommunication 
+of threds working on objects
+      ✅✅-diff: == vs equal()
+      ✅✅-methods of object class
+-which method of object class canbe inherited by functional interface as abstract method.why others are not inherited
+
+✅✅-diff:class and object
+✅✅-define object
+✅✅-how to create object in java
+
+✅✅-**Define constructors
+✅✅-What is,use
+✅✅-rules related to constructor
+✅✅-types of instructions in constructor
+✅✅-3 typezof constructor
+✅✅-constructor chaining define-why we do-
+✅✅-P-never prefixed with:static,final, abstract,Transient volatile,native
+
+✅✅Definition:
+Constructor chaining is the process of calling one constructor from another constructor within the same class or from a parent class using this() or super() respectively.
+ Why we do=>To avoid code duplication
+✅✅-constructor overloading 
+
+✅✅Constructor overloading means defining multiple constructors in a class with different parameter lists.
+  ✅✅ -Why we do:to define multiple ways to create object
+   ✅✅-rules for overloading
+
+- ✅✅relationships,new keyword 
+
+
+
+-✅✅relationship implementation
+✅✅-this  vs super keyword (when to use)
+✅✅-this vs super call statement
+✅✅-upcasting and downcating
+-
+
+
+
+
+-**polymorphism def
+✅ Simple Definition:
+
+> Polymorphism means the ability to perform a task in many different ways.
+
+✅ Technical Definition:
+
+> In Java, Polymorphism is the ability of an object to take multiple forms. It allows a single method or interface to work with different types of objects, enabling method overloading (compile-time) and method overriding (runtime).
+     -list-arraylist and likedlist,vehicle bycycle - car
+✅✅-Explain main types and sub-types
+✅✅-method overloading with example
+✅✅-constructor overloading with example
+✅✅-method/variable  shadowing/hiding example
+✅✅-diff : method overloading and overriding
+
+✅✅-diff : method overloading and overriding
+   -compile time/runtime polymorphism,
+   -form of java memebrr executed based on refrence type /object type
+   -overloading can be done with static and non-static mthod while riding is done with non-static method
+   -done in single class /2 class which are in inheritance
+
+
+
+
+
+✅✅-relations in java
+  -✅✅HAS-A
+    -✅✅ composition "Human has heart"
+       -✅✅strong dependency
+    -✅✅ aggregation "Laptop has pen drive"
+       - ✅✅weak dependency
+  -IS-A✅✅(Living things-{human ,animals})
+-✅✅Define inheritance in java
+-✅✅parent and child class | properties behavior
+-✅✅extends and implements keyword 
+-✅✅pic not inherited
+
+
+- relationships in java
+
+
+-INHERITANCE**
+- 5 types of inheritance
+- define diamond problems.2 ambiguity Reasion of diamond problem
+
+
+**INTERFACE
+-✅✅Define interface 
+-✅✅members in interface{members modifier, variables,methods},can't have constructor
+-✅✅ before 1.8 used to achive 
+-✅✅ types of interface with use
+-✅✅ multiple inheritance using interface
+
+-✅✅Define polymorphism 
+-✅✅types and sub types
+
+**✅✅object class
+- ✅✅Define
+     // Common methods from Object class
+         -public int hashCode();
+         -public String toString();
+         -public final Class<?> getClass();
+         -protected void finalize() throws Throwable;
+         -protected Object clone() throws CloneNotSupportedException;
+
+     // Wait and notify methods (used for thread synchronization)
+         -public final void wait() throws InterruptedException;
+         -public final void wait(long timeout) throws InterruptedException;
+         -public final void wait(long timeout, int nanos) throws InterruptedException;
+         -public final void notify();
+         -public final void notifyAll();       
+
+
+
+
+✅✅-**Wrapper classes
+✅✅-definition:are the classes which are used to convert primitive type of values into respective non-privitive values
+      In other words we can say that they are thge object representation of primitive dtatatypes.
+      all wrpaeer classes are final implements serializable and comparable interface and overrides toString() ,hashCode() and equals() method of object class
+
+✅✅-using wrpaper class we are able to perform boxing and unboxing
+   ✅✅-boxing it the process of converting primitive type of value to respective non-primitive type of value
+   ✅✅-while unboxing is opposite to boxing process where non-primitive vlaue is converted back to it's corresponding primitive type
+✅✅-for unboxing purpose we use non -static methods of wrapper class i.e Xvalue()
+✅✅-from jdk 1,5 boxing and unboxing made implicit throeugh the process of autoboxing and unboxing
+✅✅- before and after boxing and unbooxing [Integer i = new Integer(78); int j=i.intValue();][Integer i=67; int j=i;]
+
+✅✅- boxing,autoboxing,Xvalue() non-static methods of wrapper class,auboxing and unboxing
+✅✅-implemets serializable and comparable interface and oerides toString(),hashCode() and equals() method
+
+✅✅-define string
+✅✅-ways to create string 
+✅✅-String class
+       -✅✅ implements functional interfaces and overriding methods of objevt class
+       -✅✅ immutability of string
+- string_object_ref_var.
+equals()
+equalsIgnoreCase()
+IndexOf(charArg)(charArg,index) (stringArg)(stringArg,index)
+.isEmpty()
+.lastIdexOf()
+.length()
+.replace(char,char)(string ,string)
+-difference between string builder and buffer
+==>{
+Here’s a comprehensive overview of the String class in Java:
+
+📘 java.lang.String — Overview
+✅ Prototype (Declaration)
+java
+Copy
+Edit
+public final class String implements java.io.Serializable, Comparable<String>, CharSequence
+🔍 Key Characteristics
+Property	Description
+📦 Package	java.lang
+📌 Final	Cannot be subclassed (final class)
+🧵 Immutable	Once created, contents cannot be changed
+📚 Implements	Serializable, Comparable<String>, CharSequence
+
+🔐 Immutability
+When you create a String, its value cannot be changed:
+
+java
+Copy
+Edit
+String str = "hello";
+str.concat(" world");  // does not change str
+System.out.println(str);  // prints "hello"
+To change the content, you must assign a new String:
+
+java
+Copy
+Edit
+str = str.concat(" world");  // now str = "hello world"
+🔄 String Creation
+1. Using String Literals (Stored in String pool)
+java
+Copy
+Edit
+String s1 = "Java";
+2. Using new Keyword (Creates new object in heap)
+java
+Copy
+Edit
+String s2 = new String("Java");
+🔧 Common Methods
+Method	Description
+length()	Returns length of string
+charAt(int index)	Returns char at index
+equals(Object obj)	Compares string content
+equalsIgnoreCase(String)	Compares ignoring case
+compareTo(String)	Lexicographical comparison
+toLowerCase()	Converts to lowercase
+toUpperCase()	Converts to uppercase
+trim()	Removes leading/trailing whitespace
+substring(int beginIndex)	Returns substring
+substring(int, int)	Substring between indexes
+replace(old, new)	Replaces characters
+split(String regex)	Splits string using regex
+contains(CharSequence)	Checks if sequence exists
+startsWith(String)	Checks prefix
+endsWith(String)	Checks suffix
+indexOf(String)	Index of first match
+lastIndexOf(String)	Index of last match
+isEmpty()	Checks if string is empty
+
+📦 Memory Management: String Pool
+Strings created using literals are stored in the String Constant Pool.
+
+If two literals are the same, they point to the same memory reference (interning).
+
+Example:
+
+java
+Copy
+Edit
+String a = "Java";
+String b = "Java";
+System.out.println(a == b);  // true (same object)
+🔗 Comparison: == vs equals()
+== → Compares references
+
+.equals() → Compares content
+
+🔐 Immutable Benefits
+Thread-safe (no need for synchronization)
+
+Security (used in network classes, file paths)
+
+Caching and performance (via String pool)
+
+🧪 Example
+java
+Copy
+Edit
+public class StringExample {
+    public static void main(String[] args) {
+        String s1 = "Hello";
+        String s2 = "Hello";
+        String s3 = new String("Hello");
+
+        System.out.println(s1 == s2);       // true
+        System.out.println(s1 == s3);       // false
+        System.out.println(s1.equals(s3));  // true
+    }
+}
+Would you like details on how String behaves under the hood (e.g., memory model, interning, performance tips), or a comparison with StringBuilder and StringBuffer?
+
+}
+
+
+-super keyword
+-super() statement
+-this() statement call 
+============================>
+-what is collection
+-limitations of array
+-collection provides mechanism to perform operayrions like
+insert,update,delete,remove replace,sort etc throuch related methods 
+and constructors of related classes and interfaces
+-allows which kind of values
+-different hierarchy with use
+-collection hierarchy
+-map hierarchy
+
+- 2 resions why collection is introduced?
+- Explain collection interface with sub interfaces and implementing classes
+
+- java generics ?? completed
+- generic vs non-generic collection
+- in non-generic collection how heterogenous objects are stored
+
+
+
+
+
+
+☑-iterator and lit iterator iterable:diff
+-comparable and comparator interface
+☑ways to iterate list
+-	using for loop
+-	using for each loop
+-	iterator
+-	list iterator
+-	difference between iterator and list iterator
+
+
+
+
+
+
+
+☑Different cursors in java
+   -Iterator
+      -all_methods
+   -List iterator
+      -all_methods
+   -Enumeration
+      -all_methods
+
+
+☑Different ways to print collection 
+       -object ref var,for loop,for-each loop,iterator,list iterator
+        (only for list type) for-each method,for-each method 
+        with method refrence
+
+
+-**collection hierarchy 
+-diff:array and collection,why we use collection over array
+-what is collectio|framework |collection  framework 
+-why there is two hierarchies in collection
+-collection,collection framework and collections class
+-what are legacy classes?
+-[class/interface:version]=[LinkedHashset:1.4],[NavigableSet:1.6],[PriorityQueue:1.2],[Queue:1.5]
+
+❌-set and list hierarchy for multithreaded environment 
+
+
+--Iterable Interface explain<{
+Yes, Iterable is a functional interface starting from Java 8, but only technically.
+
+
+---
+
+✅ Why is Iterable considered a functional interface?
+
+A functional interface in Java is any interface that has exactly one abstract method.
+
+Iterable<T> has only one abstract method:
+
+
+public interface Iterable<T> {
+    Iterator<T> iterator(); // <- Single abstract method
+}
+
+All other methods (forEach, spliterator) in Iterable are default or static (not abstract), introduced in Java 8.
+
+
+Iterable package =java.lang
+
+}>
+
+-☑collection interface
+Methods::
+{
+  boolean add(Object o/❌int index)/addAll(Collection c)/isEmpty()/remove(Object o/❌int index?)/removeAll(Collection c),contains(Obje t o),containsAll(Collection c)
+
+int size()
+void clear()
+}
+☑-List interface and it's features(features and methods)
+☑-set interface and it's features(==/==)
+
+☑-fir-each method with use vs for-each loop with use
+☑-Enumeration methods
+
+-☑ArrayList  features and methods
+-☑Map interface fearures
+
+
+-☑what are data structures?why we use them?{types,when to use which type of dsa wrt project}
+
+
+☑-understand collection object and elements in collection object,how to extract them using cursor
+
+-✅diff:List and set (5 points)
+{
+Index based , allows multiple null,duplicate,
+Insertion order, cursor
+}
+-✅diff:iterator and list iterator
+{
+Object and use Method,direction,use,collection
+}
+-✅Enumeration cursor
+{
+-Introduced in version 1.0,
+-Retrieval collection object one by one,
+-Can be only used with legacy class,
+-Object creation method " elements () " ,
+-Object method hasMoreElement(),nextElement()
+-direction forward only
+-used for read operation
+}
+-✅ArrayList
+{
+Version ,impl,package
+Index based
+Allow multiple  null
+Duplicate
+Insertion order maintained
+Non-synchronised
+
+Internally uses grow able array
+Stores data in directly with index consumes less data
+Default capacity
+Load and factor
+
+Efficient for frequent retrieval 
+
+}
+-✅LinkedList
+{
+Version ,impl,package
+Index based
+Allow multiple  null
+Duplicate
+Insertion order maintained
+Non-synchronised
+
+Internally uses doubly likned list
+Stores data in node format, so consumes more memory
+Default capacity
+Load and factor
+
+Efficient for frequent insertion and deletion op
+
+}
+-✅ArrayList vs LinkedList 
+{
+-Act as 
+-internally uses
+-stores in contiguous  memeory
+-efficient for --- operation
+-worst for for --- operation
+
+}
+-✅Explain legacy classes
+{
+Stack,Vector,HashTable,Dictionary ,Properties
+}
+-✅Vector 5methodsofvectorckass
+                addElement(),addFirst(),addLast(),
+removeElemnt(),removeAllElements(),capacity()
+setElementAt()
+        -initial capacity of vector
+        -vector constructor 
+            (4)normal,capacity,capacity-incriment,collection
+        -add(object/index-value)AND addElwment() :diff
+        -removeElement() vs removeElementAr()
+
+
+-✅ArrayList vs vector :diff
+{Version,legacy classes or not,non-synchrinised,faster,not guarantee data consistency,(old*vapacity×3)/2 +1 ,no method to find calculate capacity,loadand growth factor 0.7 and 2}
+
+-✅Stack 
+       -legacy class,index based,Allows multiple null,duplicates,maintains Insertion order,synchronised-thred safe-slower-not guarantees data consistency
+       -constructor:Stack(),
+       -push(),pop() ,peek(),search(),empty()
+       - legacy classes,introduced,LIFO principal
+
+
+-☑HashSet
+      -Implemented class of set interface ,introduced in jdk 1.2 in util package
+-not index based,Allow only unique,single null value,Insertion order not maintained, 
+non-synchronised-faster-not greatness data consistency,
+Can be iterated using iterator(),forEach loop
+
+-internal data structures-hashTable
+
+-methods:add(),addAll(Collection o),clear(),contains()
+
+÷=÷÷÷=÷=÷=÷=÷=÷=÷=÷=÷=÷=
+JUST_UNDERSTAND:hasset stores element using hascode,element are stored as key
+ -hasset element E==> key-value  E:object_refrence 
+
+means element storing in hashset is actually stored in hashmap where element is key and value is dummy_object hashcode(PRESENT)
+
+add(e)==>map.put(e,PRESENT=OBJECT Class instance)
+
+=÷=÷=÷=÷=÷=÷=÷=÷÷÷=÷=÷=÷=÷=÷
+
+
+
+
+-[[T]]How to 
+- extract collection elements[print==> below +refBar+forEach()]
+     -array {for-loop,for-each loop}
+     -ArrayList/LinkedList{Iterator,listIterator,for-each loop}
+     -Stack/Vector {==/==,Enumeration}
+-convert
+   -Array to array list
+   -hashset to arraylist vice versa?????
+        - Al==>Hs constructor and addAll() method
+
+ 
+-TreeSet
+    -concrete implementing class of --- and indirectly  implements ---,---  ,present in package
+    -non-index based colle lion,allows unique value,single null.value,maintains sorting order,non-synchronised-slower-not 
+thread safe-not garuntees data consistency,stores homogenous element 
+Before 1.6 null value allowed bu after not
+
+-internally uses Red-Black tree
+
+============================>>>
+core java+exception handling +inner classes+string +wrapper class and array
+array string program
+patteren programs-->Target
+
+Basics+oops+inner class+exception handling+Array +string+collection
+Number pgm+Oops pgm+inner class pgm+exception handling pgm+Array pgm+string pgm+collection pgm
+
+
+
+
+============================>
+-java 8 features why introduced
+   - functional interface
+   - lambda expression
+   - predefined functional interfaces
+      -Boolean Predicate test()
+      -Generic Function<T,R>  apply()
+   - public static default methods
+   - default non-static abstract method
+        -difference between static and defaukt method in java
+   - method refrence(static and non-static)
+   - constructor refrence
+   - stream API
+     -stream()/collect()/Collectors class/Collector interface
+     -filter()/map()
+   - DATE and TIME API
+
+
+-**predefined functional interfaces
+-**functional interface
+-**lambda expression
+-**predefined functional interfaces
+  
+
+
+~functional interface has object class 3 method as abstract method,@Functional annotation,
+what are annotations?-why we use annotations?,explain abstract methods,abstract class has constructor or not can we create object of abstract class,upcasing types,volatile modifier
+,abstract modifier,String builder and buffer overrides which method,why strings made immutable in java,collection and map hierarchy features
+
+
+
+Multithreading
+Regex
+
+==>EXPLAIN System. out.prinln()
+==>Explain JVM working
+==>Explain method binding process
+==>Explain class loading process
+==>Exaplin object loading process
+===================================================
+Advance Java 
+>----------×>  JDBC
+-what is implementing class,helper class?
+-types of java 3 types
+-types of applications
+-what is api 2 pints
+-what is jdbc 3 points
+-what is driver
+-group id and artifact id
+-STEP1 : forName() method of Class to register or load database driver
+-STEP2 : getConnection() method of Driver manager
+-STEP3 : createStatement()/prepareStatement()
+-STEP4 : execute()/executeUpdate()/executeQuery()
+                 Resultset,next(),getX()
+-STEP5 : close connection
+
+-executeQuery() vs getResultset() method of Resultset
+-execute() vs executeUpdate() vs executeQuery()
+-setX() vs getX() 2diff
+-Explain mvc
+-stm.addBatch("Q") and stm.executeBatch()
+-relations only Servlet vs Generic servlet vs Http servlet
+-how to create servlet api?
+-how to register servlet api in web.xml
+============================================
+Advance Java 16,17
+>----------×>  servelet.  
+-✅what is servlet 3 points
+-✅How servlet works
+-✅printWriter()
+   -- class injava.i.oi package
+   -- used to write
+   -- printWriter obj=resp.getWriter()
+   -- printEriterObj.print()
+-✅Http vs Generic class
+-✅✅tags to register servlet inside pom.xml
+--servlet-name&class inside servlet tag
+--servlet-name&urlpatyeren inside servlet mapping tag
+--✅getParameter() of request object
+--getWriter () of response object
+--getParameter() vs getinitParameter() of request object
+-✅elimination pom.xml configuration 
+using annotation based configuration
+-✅@webServlet("/url_patteren")
+-Queryparameter() to pass data to servlet
+A Query Parameter is a key-value pair appended to the URL of an HTTP GET request.
+
+Example URL:
+
+http://localhost:8080/MyApp/student?id=101&name=Ravi
+''''""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+-✅Explain servlet life cycle 5
+-✅welcome-file tag inside welcome-file-list
+  -default welcome-file[index.jsp]
+-✅load-on-startup tag inside servlet tag
+  --smaller the Integer larger the priority
+-what is request dispatcher,why we use how to
+   use and it's methods
+{
+- getRequestDispatcher( stringArg1 ) of request object
+- 
+}
+-✅response object ts sendRedirect() method
+-✅param-name,value tags inside 
+Context-param tag for servlet context
+   -inside init-param tag[servlet config]
+Context variable=getServletContext() method 
+inside service method
+-getAttribute() and setAttribute() of context variable 
+
+
+
+-✅Difference between servlet-context and 
+servlet-config
+-✅what is session?
+-✅what is session management?
+-✅why we use httpSession
+-✅how to create httpSession object 
+   --by creating httpSession object=request.getSession()
+-working of getSession() method
+-working of invalidate() method of httpSession 
+
+Advance Java 16,17
+>----------×>  jsp.  
+-✅✅why we use jsp
+-✅✅Difference.t tags of jsp
+-✅✅jsp lifecyle
+-✅✅cookie,how to create set age and fetch object,Advantages and disadvantages 
+-1✅✅fetching data from jsp page
+-✅✅sending data to jsp page using request[T]
+===================================================
+Hibernate 
+- what is orm?
+Hibernate is a popular Java framework used for object-relational mapping (ORM). It simplifies the development of Java applications that interact with a relational database (like MySQL, PostgreSQL, Oracle, etc.) by mapping Java classes to database tables.
+
+Best alternative for jdbc why 5 reasons
+
+✅✅ What is ORM (Object-Relational Mapping)?
+
+ORM stands for Object-Relational Mapping. It is a programming technique that allows developers to interact with a relational database using object-oriented programming languages like Java.
+
+✅✅Why Hibernate is best alternative for jdbc?4-6 reasions
+
+✅✅Tables and rows
+
+✅✅What are entity classes and 6 rules related to entity class
+
+✅✅2 .xml files and corresponding dependencies 
+       -postgreSQL | hibernate-core-relocation[pom.xml]
+       -url-UN-psw a d properties [persistence.xml]
+        -persitence.xml in MATA-INF folder of src/main/resource
+✅ what persistence.xml file consist of
+       Ans:database configuration info for Hibernate project in the form of.          different tags.we have to give FQN,url-UN-psw inside property tag
+
+☑✅ What is JPA
+JPA is a standardized API for Object Relational Mapping (ORM) in Java.
+
+✅✅ EntityManagerFactory vs EntityManager vs EntityTransactions
+
+
+✅✅Query interface and JPQL query
+creatQuery() of em object =query obj
+getResultList() of query obj
+queryObj.setParameter(arg1,arg2)
+
+
+✅One-to-one unidirectional
+{
+-Annotations used
+-Deleteting one entity do not results in deleting other.How to make it possible?
+}
+
+
+✅One-to -many bidirectional
+
+
+@Id,Entity,One-to-one,ineToMany,ManyToOne,ManyToMany,
+JoinColumn,_relational_mapping(mapped by ="")
+
+✅@Table(name="new_tableName"),generatedValue(strategy= generatedType.IDENTOTY)
+✅@column(name,nullable,updatelable,unique,insertable)
+
+
+✅@creationTimeStamp
+✅@updationTimeStamp
+
+
+✅@chcheable vs Entity
+✅@Transient
+
+
+
+
+
+✅✅Elimination of duplicate column
+
+✅✅FetchType,cascade
+
+
+✅✅cache mechanism
+✅✅Hibernate lifecycle with garbage collector fx
+
+
+===================================================
+Singleton class
+Serialization and deserializatio
+Transient keyword
+
+
+@Exception handler
+@restCobtrollerAdvice
+@restController,PathVariable,RequestParam,springBootApplication
+@get/put/post/deleteMapping
+@Autowored,Repository 
+@RequestMapping
+@RequestBody
+@RequestParam
+
+Spring  core 
+Coupling types
+
+3 ways to achieve coupling
+
+
+IOC and. DI
+
+
+Advantages
+Used for ti build wapp,eapp,standalones
+
+
+
+Spring container and it's types
+Types of spring container
+
+What is bean
+
+DI
+Using g xml and annotation based configurationnfiguration
+@Bean,Qualifier
+
+
+××××××××××××××××××××××××××
+We use Spring Core to simplify Java application development by enabling loose coupling, dependency injection, and centralized object management through an IoC container.
+××××××××××××××××××××××××××
+
+
+
+××××××××××××××××××××××××××
+===================================================
+ sping mvc
+===================================================
+Spring boot
+Jason and springBoot
+Webservice vs wepApp
+RestApI
+
+
+
+Layers of springboot proje t
+
+Controller
+DTO
+DAO
+repository 
+Utility
+Entity
+ExceptionHandling package
+
+Http status codes
+
+Jpa and spring-data JPA
+
+
+Http requests of. RestAPI
+===================================================
+Html
+===================================================
+css
+===================================================
+js
+===================================================
+reactJs
+===================================================
+Projects
+===================================================
+
+Resume
+ --Continuous rivision-->
+
+
+
+✅Core java oops
+ -Core java collection | Core java exception handling
+-number program,array string program,patteren program
+-Advance Java and Hibernate rivision 
+
+
+
+-Core java multithreading
+-Core java java 8
+-spring core and MVC
+
+
+-Core java and Enum
+-Core java and string patteren
+-spring boot 
+
+
+
+
+
+
+
+
+
+
+
+
+YOUR CV SELECTED FOR
+
+https://www.aitechnosoftservices.info
+
+You have been selected on interview.
+
+Interview Languages:-
+Hindi, English, Marathi 
+
+"We Have Work Form Home & Office Work"
+
+▪Freshers Upto 16,000/-
+▪Shifts 9am-6pm / 10am-6lpm
+▪5 days working
+▪ Quali Minimum 12th pass
+Freshers can also apply
+Cab for pick and drop
+---------------------------------
+
+Interview Time: 10am to 12:00pm
+
+Vishrantwadi Interview Branch 📍
+Head Office ( Interview Venue ) Office No-201, 2nd Floor, Shpper E Orbit, Vishrantwadi, Pune, 411015.
+----------------------------------
+
+ Reference - ( HR nitya     )
+
+( So Be on Time : Best of Luck )
+
+NOTE :- Come Along With Resume & Save This Msg And Show on Reception.
+
+Contact no: 6395237143
+
+Map Location :- https://maps.app.goo.gl/9rkTpWjdq2iSCNNa7
+
+
+Core java theory 3 times
+Practicals
+
+Advance Java theory +practicals
+
+
+Spring boot 
+
+
+Html css js
+~functional interface has object class 3 method as abstract method,@Functional annotation,
+what are annotations?-why we use annotations?,explain abstract methods,abstract class has constructor or not can we create object of abstract class,upcasing types,volatile modifier
+,abstract modifier,String builder and buffer overrides which method,why strings made immutable in java,collection and map hierarchy features
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+24 jun===============
+- Collection ,core java with collection
+- Oracal sql and MySQL
+-Interview prep
+=======================
+
+Exception handling
+Java 8
+Stream api
+Multithreading
+Regex
+File handling
+
+
+CORE JAVA=BASICS+OOPS+COLLECTION+EXCEPTION HANDLING +ARRAYS AND STRING +WRAPPER CLASS
