@@ -1,0 +1,42 @@
+BASICS THEORY
+[theory questions]
+1] Define software? 
+2] Define interpreter
+3] Define compiler
+4] Diff:interpreter and compiler
+5] Define coading and programing
+6] Diff coading and programing
+7] Define hardware
+8] Define programing language
+
+
+
+[technical theorotical questions]
+1] Define conventions in java [*]
+2] JRE JDK JVM[***]
+3] Tell me about java language/History of java
+4] Which is the latest version of java?
+5] Define platform .Also explain platform based types of software with example
+6] Explain "java is platform independent".[***]
+7] Explain structure of java program
+[main() method]
+1] why main method made static
+2] Explain use of main method
+3] can we overload main method?How?
+[packages in java]
+1] Define packages and give it's advantages
+[wrapper class]
+1] why we use Integer.parseInt()
+[tokens in java]
+1] Explain tokens in java
+2] Explain literals in java
+3] Explain comments in java[X]
+4] Explain keywords in java[X]
+5] Explain identifiers in java[X]
+6] Explain seperators in java
+7] Explin operators in java
+
+[Differences]
+1] = vs ==
+2]== and equals()
+

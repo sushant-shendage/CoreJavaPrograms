@@ -1,0 +1,11 @@
+Difference between = and == operator
+-	A]used for:= assignment operator used to assign value to variable while == is comparison operator used to compare two primitive type values
+-	B]= is assignment operator while == is comparison operator
+-	C]return type of = is respective numerical literal datatype and of == Boolean
+-	D]not used for decision making while == used for design making
+===========================================================================================
+Difference between  == operator and .equal() method
+-	A]used with        :primitive and non-primitive data
+-	B]do comparison of :primitive value and objects(ref/content)
+C]WRT string do comparison: based on ref and based on content
+===========================================================================================

@@ -1,0 +1,74 @@
+===============================================================================
+A1]CLI input
+===============================================================================
+
+
+======================================================
+Integer(c)
+ - parseInt()
+
+======================================================
+
+
+[A]:Dynamic input from user 
+
+code A1
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Program Title:Dynamic input using CLI / How to execute java program using cmd/terminal?/ How to give input to java program through cmd?
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+// package dynamicInputsFromUser.usingCmd;
+
+public class Driver1 {
+    public static void main(String[] args) {
+        System.out.println("multiplication of inputs from CLI :"+(Integer.parseInt(args[0])*Integer.parseInt(args[1])));
+    }
+}
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+javac Driver1.java
+java Driver1 6 7
+multiplication of inputs from CLI :42
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+A2:[overloading releted program]
+code A21
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Program Title: Overloading main method
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+ // package codingQuestions;
+
+public class OverloadingMainDriver {
+    public static void main(String[] args) {
+        main();
+        main(1);
+    }
+
+    public static void main(String args) {
+        {
+            System.out.println("called main method with sigle string-argument");
+        }
+    }
+
+    public static void main(int args) {
+        {
+            System.out.println("called main method with sigle int-argument");
+        }
+    }
+
+    public static void main() {
+        {
+            System.out.println("called no-argument main method ");
+        }
+    }
+}
+
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+ OUTPUT :
+called no-argument main method 
+called main method with sigle int-argument
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+ 

@@ -3,9 +3,12 @@ Core java [t+p]
 Advance Java ,Hibernate, spring core &mvc,springboot [t+p]
 Html css,js -css framework
 
-Enum | regex | inner class
 
-CORE JAVA
+
+- CORE JAVA
+   - Explain packages in java
+
+
 -✅✅✅packages in java
 - ✅✅✅What is functional programing?
 ✅✅✅ Iterable Interface
