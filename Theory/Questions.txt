@@ -10,8 +10,24 @@ BASICS THEORY
 8] Define programing language
 
 
-
 [technical theorotical questions]
+
+[arrays]
+define array,features
+[strings]
+What is string ?
+STRING IN JAVA :
+-	string and how to create string>
+-	string is sequence of character enclosed in double coat.
+-	in java to create string we have three classes 'String','StringBuilder','StringBuffer'
+-	<string class>
+-	<constructor of string class>
+-	<way of creating string in java>(impact in memory)
+-	<immutability of string in java>
+-	<string builder and string buffer class and difference>
+-	(DIFF:{constructor for conversion to #,asynchronized/synchronized, faster/slower,consumes less/more memory})
+
+
 1] Define conventions in java [*]
 2] JRE JDK JVM[***]
 3] Tell me about java language/History of java
@@ -35,8 +51,173 @@ BASICS THEORY
 5] Explain identifiers in java[X]
 6] Explain seperators in java
 7] Explin operators in java
-
+[operators]
+1]. operator
+2] instanceOf() operator[X]
+3] new Operator
+4] relational operators in java
+5] Explain types of unary operator
 [Differences]
 1] = vs ==
 2]== and equals()
 
+[datatypes in java]
+1]Explain datatypes in java
+[variables in java]
+1] Explain variables in java
+2] Explain variable initili... process.
+3] Explain types of variables in java(Local and global variable)
+4] Explain rules of local variables in java
+5] Diff:local and global variables
+6] Diff:static non-ststic variables
+[typecasting in java]
+1]Explain typecasting in java
+2] diff primitivetype caastings and non-primitive type casting 
+explain deriver=ed typecasting
+[control flow statements] 
+1]explain control flow stattements in java with work flow
+2] explain if-eles stataements
+2] diff between for loop and while loop
+3] diff while loop and do-while loop
+4] datatypes allowed in swithch case statement
+[process]
+1]Method binding process
+2]class loading process
+3]object loading process
+4]architecure of jvm 
+5]types of class loader
+6]dividing class info in different meomeory
+[Method]
+method and code modulariry
+syntax explanation and body instructions
+types of method and charectersics of method
+
+explain access vs non access modifiers
+explain return type
+explain formal argument
+explain method signature and method body
+[recursion]
+1]explain recursion in java
+
+[return control transfer ststements]
+return ststements
+break ststement
+cotinue ststemeent
+continue vs break ststement
+
+
+[exception handling]
+what,types,type diff,exception handling by 
+try catch and try with multiple catch,
+proper and improper syntax for try with multiple catch block,
+exception flow and exception hirarchy,finally block,
+exception object prapogation,how to declare exception,
+what are custom exception how and why to use custom exception
+
+[modifiers and scope-table 2]
+[STATIC AND NON-STSTIC JAVA MEMBERS]
+explain final modifier 
+ 
+2]  variable
+3]  method
+4]  block
+2]  initilizers(variables and blocks)
+
+[WRAPPER CLASSES IN JAVA]
+define wrapper class,boxing auto boxing,
+overiding methods and implenting interfaces
+
+
+WHEN PRGRAM RUNS IT IS CONVERTED TO PROCESS
+OOPS
+class 
+multiple class file and rules
+
+inner classes
+
+object vs class
+how to create object
+why we use 'new' keyword
+
+[relations in java]
+relations in java
+[constructor]
+define constructor,use,body,types,rules,chaining,
+constructor overloading
+[polymorphism]
+define polymorphism
+method overloading 
+method overriding
+method chaining
+
+overloading vs overriding
+[inheritance in java]
+ inheritance5 types
+ 2 main types of polymorphism
+ explain compile time and runtime polymorphism
+ difference between copile time vs runtime
+ how one c;asss inherit another class
+ interfaces in java
+ which java memebers are not inherited of 
+ parent class by child class?
+
+[encapsulation in java]
+encapsulation,advantages,how to achive encapsulation
+
+[super vs this]
+super call statement and keyword
+
+
+[abstraction in java]
+explain abstraction with real world example
+
+
+[object class in java]
+what is object class and why we use object class
+
+[collection started---------------->]
+collection,framework,collection framework,collection hirarchy vs map hirarchy,
+collection interface vs map interfacelist interface vs set interface,
+  
+ 
+
+interfaces :Set,List,Queue,Map
+class:HashMap,priorityQueue,LinkedList,vector,stack,ArrayList,TreeSet,CopyOnWriteArrayList
+methods:
+
+[java generics]
+explain java generic,generic vs non-generic collection 
+
+[comparable vs comparator]
+comparator vs comparable
+[collection ended---------------->]
+
+[multithreading started---------------------------->]
+Multithreading in java
+Runnable interface in java
+Multitasking and its type and advantages of type(t)
+Applications of multithreading(t)
+What is thread ?Difference between thread and process(t)
+Ways to create thread ? Which is best way and why?(t)
+Methods of thread class and constructor with use explanation(t+p)
+Difference between start() and run() method(t)
+Uncertainty in o/p with explanation(t)
+About ‘thread scheduler’(t)
+Explain threads are independent .Write code to prove(t+p
+Why we prevent threads ? ways to prevent threads?(t+p)
+Difference between yield () ,join and sleep() method(t+p)
+Why we interrupt method? How to interrupt method?(t+p)
+Explain what is ‘data inconsistency problem’ ? How it is resolved ?(t+p)
+Explain what is Synchronization?(t+p)
+Tell me about ‘Synchronized’ keyword(t+p)
+Give difference between Synchronized block and method(t+p)
+Explain lock concept?(t)
+Give difference between object level lock and class level lock(t)
+Tell me about ‘ interthread communication’(t+p)
+Tell me about deadlock(t)
+Tell me about daemon thread(t+p)
+What is method refrence?How method reference reducing code duplication
+What will happens when number arguments are different?
+Difference static method and non-static mrthod refrence
+
+[multithreading ended----------------------------->]

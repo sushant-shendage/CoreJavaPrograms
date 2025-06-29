@@ -1,0 +1,93 @@
+
+number program using conditional statements:
+-	Voter validation based on age
+-	Using if-else statement
+-	Using ternary operator
+-	Using if statement
+-	Program to check which kind of character is entered(uppercase alphabet, lowercase alphabet ,digit, special symbol)
+-	Using character operands
+-	Using ASCII value
+-	program to demonstrate use of break and continue keyword
+-	swapping programs
+-	swapping of 2 variables using 3rd variable
+-	swapping of 2 variables without  using 3rd variable
+-	using + and – operator
+-	using * and / operator
+-	using bitwise operator
+-	all above without using else statement
+-	even/odd number
+-	using modulus operator
+-	without using modulus operator
+-	all above without using else statement
+-	divide/multiply  all number within range by specific number and print result without using / and * operator respectively
+-	create variable which can store all kind of primitive literals
+-	create variable which can store all kind of   literals
+-	give the sum/product of first natural number
+-	using loop
+-	without using loops
+-	password application (strong, weak ,medium)
+-	game application
+-	password verification within limit
+-	leap year program
+-	extract digits from number(with and without using string format)
+-	digit’s addition /multiplication in given number(with and without using string format)
+-	even /odd digits count in given number(with and without using string format)
+-	twisted even /odd number
+-	count of digits in a given number(with and without using string format)
+-	palindrome number(within range | next)
+-	palindromic even /odd
+-	reverse number (with and without using string format)
+-	check duck number
+-	factorial of a number (using recursion| using loop)
+-	digit’s factorial addition /multiplication
+-	base race to index value(using inbuilt function | using loop)
+-	factors of a number
+-	factors addition /multiplication of digit of a number
+-perfect number
+-	Tech number
+-	Check sum and product of digit is same or not
+-	Check factoral’s/factors/  multiplication and addition n is same or not
+-	Print fibonascii series
+-	Check elemnt is fibonascii or not
+-	Make element fibonacii
+-	Print nth fibonascii element
+-	Fimd sum and product check they ar eequal
+-	LCM and HCF
+-	Prime number(in range)
+-	check all digits are prime or consonant or mix
+-	find digits sum/product .check it Is prime or consonant
+-	prime factor’s multiplication and addition n is same or not
+-	co-prime number
+-	check twisted prime number
+-	twin prime in range
+-	strong number(within range)
+-	Armstrong number(within range)[Armstrong prime number]
+-	Automorphic number(within range)
+-	Pronic
+-	Happy number in range
+-	Buzz
+-	Neon
+-	Rotate number
+-	Unique number in range
+-	niven number in range
+-	ramanuj number in range
+-	smith number in range
+-	ugly number in range
+-	Adam number in range
+-	bouncy number
+-	Defficient abudent number in range
+-	Facscinatin number in range
+-	Good number in range
+-	Kaith number
+-	Strontio
+-	Sunny number
+-	Xylem phloem number
+-	Catlon  number
+-	fermats  number
+-	goldbatch number
+-	hailstone series
+-	lucas number
+-	lychral numberpell number series
+-	spenic number
+-	ALL PATTEREN PROGRAMS
+-	pascal triangle

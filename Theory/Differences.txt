@@ -9,3 +9,110 @@ Difference between  == operator and .equal() method
 -	B]do comparison of :primitive value and objects(ref/content)
 C]WRT string do comparison: based on ref and based on content
 ===========================================================================================
+5] Diff:local and global variables
+6] Diff:static non-ststic variables
+
+===========================================================================================
+Difference between local and global variables
+-	A]DECLARATION: local variables are declared in method block while global variable declared in class block
+-	B]ACCESSIBLITY OUT OF BLOCK: local variables can't be accessed out side  block while global variables can be access outside block using class or object name as reference.
+-	c]ACCESSIBLITY OUT OF CLASS: local variables can't be used in other class while global variable can be used in other class
+-	D]DEFAULT VALUE: Before use, initialization of local variable is compulsory but in case of global variable
+-	E]MEMORY:static and non-static variables are stored in method area and stack area respectively
+it is not compulsory as they are initialized with default values implicitly if programmer do not to initialize them.
+
+===========================================================================================
+Difference between static and non-static variables
+-	A]Named as: static variables are also known as class variable or class member while non-static variables are also known as instance variable
+-	B]Access :we can access static variable using class name as reference while non-static variables can be accessed using object name as reference
+-	c] Use: we use static global variables when we want do programing without using objectwhile non-static global variables are used to do programing  using objects
+-	D]static :stack memory |non-static heap memory
+
+===========================================================================================
+Difference between  widening and narrowing
+1]widening is the process of coverting smaller sized primitive datattype value into larger sized primitive datatype
+while narrowing is the process of covnverting larger sized primitive datatype value into smaller sized datatype value
+2]widening is implicilty done by compiler while narrowing we have do explicitly
+3]for widening we do not use cast operator but for narrowing we use type cast operator
+4]widening never leads to loss of data while narrowing leads to loss of data 
+===========================================================================================
+Diiference betweeen upcasting and downcasting
+def
+property access
+implicit?explicit
+generalixzation and specialization
+===========================================================================================
+diff:break vs continue
+-break loop/skip iteration
+-used with
+===========================================================================================
+Difference between  actual vs formal arguments:
+A]formal arguments: variable declared in method signature
+B]actual arguments: are variable passed to method call statement
+
+===========================================================================================
+FORMAL AND ACTUAL ARGUMENTS :
+-	formal arguments/parameters :
+Variable which are declared in method signature of method are known as formal arguments
+-	actual arguments:
+Variables which are passed to calling statement of any method are known as actual arguments
+===========================================================================================
+=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/
+OOPS
+=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/
+
+
+
+CLASS AND OBJECT
+===========================================================================================
+Method overloading and overriding
+Difference between method overloading and method overriding
+-	A]Polymorphism type: method overloading is compile time polymorphism while method overriding is run time polymorphism
+-	B]member invocation decision: member invocation decision depends in compiler in method overloading 
+      while member invocation depends on type of object created.
+-	C]member selection time: member selection done at compile time while member selection done at run time
+-	D]binding type: method overloading comes under early binding while method overriding comes under lazy binding
+
+===========================================================================================
+compile time vs rum=ntime polymorphism
+===========================================================================================
+comparator vs comparable
+===========================================================================================
+string builder vs string buffer
+Give me difference between string builder and buffer
+Difference between  Buffer and builder
+-	A]synchronized/ Asynchronized
+-	B]slower/faste
+-	C]consumes memory-less/more
+
+===========================================================================================
+stack area and heap area
+===========================================================================================
+comparable vs comparator
+
+Comparable
+Used to do sorting of object based on natural sorting of single attributes
+compareto () abstract method is used
+We have to write in class of an object
+
+Comparator
+Used to do sorting of object based on multiple attribute of object
+compare() abstract method is used
+We can’t write in class of an object
+
+
+
+Comparable
+Used to do sorting of object based on natural sorting of single attributes
+compareto () abstract method is used
+We have to write in class of an object
+
+Comparator
+Used to do sorting of object based on multiple attribute of object
+compare() abstract method is used
+We can’t write in class of an object
+
+
+===========================================================================================
+iterator vs listIterator
+===========================================================================================

@@ -1,0 +1,205 @@
+Advance Java 
+>----------×>  JDBC
+-what is implementing class,helper class?
+-types of java 3 types
+-types of applications
+-what is api 2 pints
+-what is jdbc 3 points
+-what is driver
+-group id and artifact id
+-STEP1 : forName() method of Class to register or load database driver
+-STEP2 : getConnection() method of Driver manager
+-STEP3 : createStatement()/prepareStatement()
+-STEP4 : execute()/executeUpdate()/executeQuery()
+                 Resultset,next(),getX()
+-STEP5 : close connection
+
+-executeQuery() vs getResultset() method of Resultset
+-execute() vs executeUpdate() vs executeQuery()
+-setX() vs getX() 2diff
+-Explain mvc
+-stm.addBatch("Q") and stm.executeBatch()
+-relations only Servlet vs Generic servlet vs Http servlet
+-how to create servlet api?
+-how to register servlet api in web.xml
+============================================
+Advance Java 16,17
+>----------×>  servelet.  
+-✅what is servlet 3 points
+-✅How servlet works
+-✅printWriter()
+   -- class injava.i.oi package
+   -- used to write
+   -- printWriter obj=resp.getWriter()
+   -- printEriterObj.print()
+-✅Http vs Generic class
+-✅✅tags to register servlet inside pom.xml
+--servlet-name&class inside servlet tag
+--servlet-name&urlpatyeren inside servlet mapping tag
+--✅getParameter() of request object
+--getWriter () of response object
+--getParameter() vs getinitParameter() of request object
+-✅elimination pom.xml configuration 
+using annotation based configuration
+-✅@webServlet("/url_patteren")
+-Queryparameter() to pass data to servlet
+A Query Parameter is a key-value pair appended to the URL of an HTTP GET request.
+
+Example URL:
+
+http://localhost:8080/MyApp/student?id=101&name=Ravi
+''''""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+-✅Explain servlet life cycle 5
+-✅welcome-file tag inside welcome-file-list
+  -default welcome-file[index.jsp]
+-✅load-on-startup tag inside servlet tag
+  --smaller the Integer larger the priority
+-what is request dispatcher,why we use how to
+   use and it's methods
+{
+- getRequestDispatcher( stringArg1 ) of request object
+- 
+}
+-✅response object ts sendRedirect() method
+-✅param-name,value tags inside 
+Context-param tag for servlet context
+   -inside init-param tag[servlet config]
+Context variable=getServletContext() method 
+inside service method
+-getAttribute() and setAttribute() of context variable 
+
+
+
+-✅Difference between servlet-context and 
+servlet-config
+-✅what is session?
+-✅what is session management?
+-✅why we use httpSession
+-✅how to create httpSession object 
+   --by creating httpSession object=request.getSession()
+-working of getSession() method
+-working of invalidate() method of httpSession 
+
+Advance Java 16,17
+>----------×>  jsp.  
+-✅✅why we use jsp
+-✅✅Difference.t tags of jsp
+-✅✅jsp lifecyle
+-✅✅cookie,how to create set age and fetch object,Advantages and disadvantages 
+-1✅✅fetching data from jsp page
+-✅✅sending data to jsp page using request[T]
+===================================================
+Hibernate 
+- what is orm?
+Hibernate is a popular Java framework used for object-relational mapping (ORM). It simplifies the development of Java applications that interact with a relational database (like MySQL, PostgreSQL, Oracle, etc.) by mapping Java classes to database tables.
+
+Best alternative for jdbc why 5 reasons
+
+✅✅ What is ORM (Object-Relational Mapping)?
+
+ORM stands for Object-Relational Mapping. It is a programming technique that allows developers to interact with a relational database using object-oriented programming languages like Java.
+
+✅✅Why Hibernate is best alternative for jdbc?4-6 reasions
+
+✅✅Tables and rows
+
+✅✅What are entity classes and 6 rules related to entity class
+
+✅✅2 .xml files and corresponding dependencies 
+       -postgreSQL | hibernate-core-relocation[pom.xml]
+       -url-UN-psw a d properties [persistence.xml]
+        -persitence.xml in MATA-INF folder of src/main/resource
+✅ what persistence.xml file consist of
+       Ans:database configuration info for Hibernate project in the form of.          different tags.we have to give FQN,url-UN-psw inside property tag
+
+☑✅ What is JPA
+JPA is a standardized API for Object Relational Mapping (ORM) in Java.
+
+✅✅ EntityManagerFactory vs EntityManager vs EntityTransactions
+
+
+✅✅Query interface and JPQL query
+creatQuery() of em object =query obj
+getResultList() of query obj
+queryObj.setParameter(arg1,arg2)
+
+
+✅One-to-one unidirectional
+{
+-Annotations used
+-Deleteting one entity do not results in deleting other.How to make it possible?
+}
+
+
+✅One-to -many bidirectional
+
+
+@Id,Entity,One-to-one,ineToMany,ManyToOne,ManyToMany,
+JoinColumn,_relational_mapping(mapped by ="")
+
+✅@Table(name="new_tableName"),generatedValue(strategy= generatedType.IDENTOTY)
+✅@column(name,nullable,updatelable,unique,insertable)
+
+
+✅@creationTimeStamp
+✅@updationTimeStamp
+
+
+✅@chcheable vs Entity
+✅@Transient
+
+
+
+
+
+✅✅Elimination of duplicate column
+
+✅✅FetchType,cascade
+
+
+✅✅cache mechanism
+✅✅Hibernate lifecycle with garbage collector fx
+
+
+===================================================
+Singleton class
+Serialization and deserializatio
+Transient keyword
+
+
+@Exception handler
+@restCobtrollerAdvice
+@restController,PathVariable,RequestParam,springBootApplication
+@get/put/post/deleteMapping
+@Autowored,Repository 
+@RequestMapping
+@RequestBody
+@RequestParam
+
+Spring  core 
+Coupling types
+
+3 ways to achieve coupling
+
+
+IOC and. DI
+
+
+Advantages
+Used for ti build wapp,eapp,standalones
+
+
+
+Spring container and it's types
+Types of spring container
+
+What is bean
+
+DI
+Using g xml and annotation based configurationnfiguration
+@Bean,Qualifier
+
+
+××××××××××××××××××××××××××
+We use Spring Core to simplify Java application development by enabling loose coupling, dependency injection, and centralized object management through an IoC container.
+××××××××××××××××××××××××××
