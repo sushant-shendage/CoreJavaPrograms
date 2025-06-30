@@ -1,17 +1,13 @@
 BASICS THEORY
 [theory questions]
-1] Define software? 
-2] Define interpreter
-3] Define compiler
-4] Diff:interpreter and compiler
-5] Define coading and programing
-6] Diff coading and programing
-7] Define hardware
-8] Define programing language
+✅✅1] Define software? 
+✅✅2] Define interpreter
+✅✅3] Define compiler
+✅✅4] Diff:interpreter and compiler
+✅✅5] Define coading and programing
 
 
-[technical theorotical questions]
-
+ 
 [arrays]
 define array,features
 [strings]
